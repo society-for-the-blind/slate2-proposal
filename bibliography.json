@@ -1,0 +1,117 @@
+[
+  {
+    "URL": "https://selecthub.com/customer-relationship-management/difference-crm-customer-lifecycle-management-clm-software/",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          2
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "SelectHub"
+      }
+    ],
+    "id": "sh_crm",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          12
+        ]
+      ]
+    },
+    "title": "The difference between CRM and customer lifecycle management (CLM) software",
+    "type": "webpage"
+  },
+  {
+    "URL": "https://en.wikipedia.org/w/index.php?title=Customer_relationship_management&oldid=802936657",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          2
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Wikipedia"
+      }
+    ],
+    "id": "wiki_crm",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Customer relationship management — wikipedia, the free encyclopedia",
+    "type": "webpage"
+  },
+  {
+    "URL": "http://www.techsoup.org/support/articles-and-how-tos/types-of-databases-for-managing-constituents",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          2
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Quinn",
+        "given": "Laura S."
+      }
+    ],
+    "id": "techsoup",
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          7,
+          17
+        ]
+      ]
+    },
+    "title": "Types of databases for managing constituents: Which kind of system makes sense for your nonprofit?",
+    "title-short": "Types of databases for managing constituents",
+    "type": "webpage"
+  },
+  {
+    "URL": "http://www.idealware.org/few-good-constituent-relationship-management-tools/",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          2
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Idealware Staff"
+      }
+    ],
+    "id": "idealware",
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          6
+        ]
+      ]
+    },
+    "title": "A few good constituent relationship management tools",
+    "type": "webpage"
+  }
+]
