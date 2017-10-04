@@ -52,7 +52,7 @@
         ]
       ]
     },
-    "title": "Customer relationship management — wikipedia, the free encyclopedia",
+    "title": "Customer relationship management",
     "type": "webpage"
   },
   {
@@ -143,6 +143,110 @@
     },
     "title": "The difference between application, program, software? First answer",
     "title-short": "The difference between application, program, software?",
+    "type": "webpage"
+  },
+  {
+    "URL": "https://en.wikipedia.org/wiki/Database",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          4
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Wikipedia"
+      }
+    ],
+    "id": "wiki_database",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Database",
+    "type": "webpage"
+  },
+  {
+    "URL": "https://en.wikipedia.org/wiki/Data_model",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          4
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Wikipedia"
+      }
+    ],
+    "id": "wiki_data_model",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Data model",
+    "type": "webpage"
+  },
+  {
+    "URL": "http://globin.cse.psu.edu/globin/html/docs/schema.doc.html",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          4
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Pennsylvania State University - Computer Science & Engineering and Biochemistry & Molecular Biology laboratories"
+      }
+    ],
+    "id": "schema",
+    "title": "Understanding the schema: What is the difference between a “schema”, a “schema language”, and a “data model”?",
+    "title-short": "Understanding the schema",
+    "type": "webpage"
+  },
+  {
+    "URL": "http://searchsqlserver.techtarget.com/definition/database-management-system",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          4
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Rouse",
+        "given": "Margaret"
+      }
+    ],
+    "id": "techtarget_database",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Database management system (dbms): Definition",
+    "title-short": "Database management system (dbms)",
     "type": "webpage"
   }
 ]

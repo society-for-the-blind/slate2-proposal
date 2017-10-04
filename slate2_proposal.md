@@ -4,28 +4,57 @@ I. Executive Summary
 II. Context
 ===========
 
-1. Disambiguation of database-related terms
--------------------------------------------
+1. Disambiguation of database-related concepts and terms
+--------------------------------------------------------
 
 The word "database" is often used as a shorthand for "database system" or "database schema" or sometimes even incorrectly for software that employs a database system to store its data.
 
-database
+Microsoft Excel is going to be used below to demonstrate database-related concepts but it is only a spreadsheat (i.e., record-keeping software) and it is lacking data management features that automatically keep data and their relations consistent in full-fledged database-management systems.
 
-database schema
+**database**[@wiki_database]
+: A database is an organized collection of data. For example, a filled out Excel timesheet.
 
-database system
+**database-management system (DBMS)**[@wiki_database;@techtarget_database]
+: A database management system (DBMS) is software for creating and managing databases. The DBMS provides users and programmers with a systematic way to create, retrieve, update, manage and analyze data.
 
-See [Glossary] also.
+    --------------       -------------     -----------------
+    | database 1 |------>|           |     |               |<-----> user 1
+    --------------       |           |     |               |          :
+          :              |   DBMS    |<--->|  Application  |          :
+    --------------       |           |     |               |          :
+    | database N |------>|           |     |               |<-----> user N
+    --------------       -------------     -----------------
 
-1. Definition of CRMs
--------------
+    For example, Excel can open multiple spreadsheets with which the user can work with.
 
-CRM
-:   May refer to one of the following definitions and they are usually used interchangeably:
+**data model**[@wiki_data_model]
+:   A data model explicitly determines the structure of data. The term is used in two distinct but closely related senses:
 
-    [_methodology_] One approach to capture and to manage an organization's interactions and relationships with and among entities.
+    [_data modeling_] Abstract model that describes how data elements are related to one another and to properties of the real world entities in a particular application domain. For example the customers, products, and orders found in a manufacturing organization.
 
-    [_computer science_] Application software[^footnote-application_software_definition] to persist, process and analyse captured interaction data.
+    For example, to create an agency-wide timesheet, the model needs to specify a date period, a department, an employee etc. One timesheet is for a single individual for one specific time period and so on.
+
+    [_software_] A set of rules prescribing data structure and the relationships between data elements. This specification can be then implemented by effectively hard-coding these rules into a specific database-management system.
+
+   For example, how Excel's data model is based on tables of data organized in rows and columns.
+
+**database schema**[@schema]
+: The database schema is like a blueprint that describes the layout of the data contained in the database: what kinds of fields are present and how they are organized. Compared to the abstract concept of data models, a schema is a concrete file whose format depends on the used database-management system.
+
+  For example imagine an agency-wide timesheet template in Excel:
+
+  *  it expects a specific type of data at certain places (e.g., duration of time at "Daily totals") and
+
+  *  the template itself has to adhere to how Excel organizes data (i.e., it has to stick with rows and columns instead of trying to use floating bubbles connected with arrows.)
+
+1. Introduction to CRMs
+-----------------------
+
+"CRM" may refer to one of the following definitions that are usually used interchangeably:
+
+  * [_methodology_] One approach to capture and to manage an organization's interactions and relationships with and among entities.
+
+  * [_software_] Application software[^footnote-application_software_definition] to persist, process and analyse captured interaction data.
 
 [^footnote-application_software_definition]: **Application software**: _"A program or group of programs that is designed for the end user. (...) Application software cannot run on itself but is dependent on system software to execute."_[@tth]
 
@@ -33,8 +62,9 @@ The broadness of the first definition is deliberate (and so is leaving the acron
 
 The second definition intentionally uses the phrase "[application software](#glossary)" instead of the word "database" commonly (and incorrectly) used in  literature describing CRMs. This distinction is important because a CRM, as an [application software](#glossary), consists of a **persistence layer** and a **graphical user interface**.
 
-The **persistence layer** stores captured data and is usually a database system (or DBMS) but persistence can be achieved by other means as well. For example, data can be stored in discrete files in the file system or in memory during the execution of a program.
-A **graphical user interface** hides the specific details of the storage mechanism. It is mostly an implicit contract between the user and the application: the users expect ttheir input to be saved and that it can be recalled at a later time.
+  1. The **persistence layer** stores captured data and is usually a database system (or DBMS) but persistence can be achieved by other means as well. For example, data can be stored in discrete files in the file system or in memory during the execution of a program.
+
+  2. A **graphical user interface** hides the specific details of the storage mechanism. It is mostly an implicit contract between the user and the application: the users expect ttheir input to be saved and that it can be recalled at a later time.
 
 A simplified graphical representation of CRMs:
 
@@ -97,6 +127,13 @@ Glossary
 
 **Application software**
 : _"A program or group of programs that is designed for the end user. (...) Application software cannot run on itself but is dependent on system software to execute."_[@tth]
+
+**CRM**
+:   May refer to one of the following definitions that are usually used interchangeably:
+
+    [_methodology_] One approach to capture and to manage an organization's interactions and relationships with and among entities.
+
+    [_computer science_] Application software[^footnote-application_software_definition] to persist, process and analyse captured interaction data.
 
 References
 ==========
