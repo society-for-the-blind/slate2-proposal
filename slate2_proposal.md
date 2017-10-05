@@ -78,68 +78,67 @@ To come a full circle: once a timesheet has been filled out and stored by HR bas
 2.2 Introduction to CRMs
 -----------------------
 
-"CRM" may refer to one of the following definitions that are usually used interchangeably:
+**CRM** may refer to one of the following definitions that are usually used interchangeably:
 
-  * [_methodology_] One approach to capture and to manage an organization's interactions and relationships with and among entities.
+  1. _One approach to capture and to manage an organization's interactions and relationships with and among entities._
 
-  * [_software_] Application software[^footnote-application_software_definition] to persist, process and analyse captured interaction data.
+The broadness of the definition is deliberate (and so is leaving the acronym unexpanded) because making it specific depends on the context (i.e., organization type it is used in connection with). Sections [2.3](#customer-rms) and [2.4](#constituent-rms) elaborate further on this topic.
 
-[^footnote-application_software_definition]: **Application software**: _"A program or group of programs that is designed for the end user. (...) Application software cannot run on itself but is dependent on system software to execute."_[@tth]
+  2. _Application software[^footnote-application_software_definition] that provide an interface to capture, process and analyze interaction data according to the requirements in the business domain.
 
-The broadness of the first definition is deliberate (and so is leaving the acronym unexpanded) because making it specific depends on the context (i.e., organization type it is used in connection with).
+The definition intentionally uses the phrase "application software" instead of the word "database" commonly (and incorrectly) used in  literature describing CRMs. This distinction is important because a CRM, as an application software, consists of a **persistence layer** and a **(graphical) user interface**.
 
-The second definition intentionally uses the phrase "[application software](#glossary)" instead of the word "database" commonly (and incorrectly) used in  literature describing CRMs. This distinction is important because a CRM, as an [application software](#glossary), consists of a **persistence layer** and a **graphical user interface**.
+[^footnote-application_software_definition]: **Application software**[@tth]: A program or group of programs that is designed for the end user. (...) Application software cannot run on itself but is dependent on system software to execute.
 
-  1. The **persistence layer** stores captured data and is usually a database system (or DBMS) but persistence can be achieved by other means as well. For example, data can be stored in discrete files in the file system or in memory during the execution of a program.
+  * The **persistence layer**'s role is simply to store captured data. It is usually a database-management system but persistence can be achieved by other means as well[^footnote-persistence_example].
 
-  2. A **graphical user interface** hides the specific details of the storage mechanism. It is mostly an implicit contract between the user and the application: the users expect ttheir input to be saved and that it can be recalled at a later time.
+[^footnote-persistence_example]: For example, data can be stored in discrete files in the file system or in memory during the execution of a program.
 
-A simplified graphical representation of CRMs:
+  * A **(graphical) user interface** is optimized to provide an efficient workflow and hides the minutae of how data is stored by the persistence layer. It is mostly an implicit contract between the user and the application: the users expect their input to be saved and that it can be recalled at a later time.
 
-      ---  ==============================================
-           |                                            |
-       C   |  user interface                          <-----> USERS
-           |                                            |
-       R   |--------------------------------------------|
-           |                                            |
-       M   |  persistence layer (DBMS, files etc.)      |
-           |                                            |
-      ---  ==============================================
+    \scriptsize Figure 2. A simplified graphical representation of CRMs \normalsize
 
-
-
+    ```
+    ---  ==============================================
+         |                                            |
+     C   |  user interface                          <-----> users
+         |                                            |
+     R   |--------------------------------------------|
+         |                                            |
+     M   |  persistence layer (DBMS, files etc.)      |
+         |                                            |
+    ---  ==============================================
+    ```
 
 2.3 Customer Relationship Management Systems {#customer-rms}
 -------------------------------------------
 
-Mostly used by commercial organizations to preserve "information about the interactions between a customer and a business" [@sh_crm] with a usually the one-dimensional goal to maximize profits [@wiki_crm].
+Mostly used by commercial organizations to preserve "_information about the interactions between a customer and a business_" [@sh_crm] with a usually the one-dimensional goal to maximize profits [@wiki_crm].
 
-2.4 Constituent (Relationship) Management Systems
+2.4 Constituent (Relationship) Management Systems {#constituent-rms}
 ------------------------------------------------
 
-Non-profit organizations require a different approach to capture relationships. Even though they may have clients who receive services in some form, the word **customer** does not naturally apply to them. Its meaning is also too narrow to refer to entities (i.e., individual, agency etc.) connected to non-profits.
+Non-profit organizations require a different approach to capture relationships. Even though they may have clients who receive services in some form, the word **customer** does not naturally apply to them. Its meaning is also too narrow to refer to other entities (i.e., individual, agency etc.) connected to non-profits.
 
-The umbrella term **constituent** better encompasses all the roles an entity can fulfill. A constituent is therefore someone who takes part in the life of the organization, sometimes taking on multiple roles during the same timeframe. Complexity is further exacerbated by the fact that each role has its own set of interactions and organizational requirements.
+The umbrella term **constituent** better encompasses all the different types of entities. A constituent is therefore someone who takes part in the life of the organization, sometimes taking on multiple roles during the same timeframe. Complexity is further exacerbated by the fact that each role has its own set of interactions and organizational requirements. Examples for constituent roles are that of a client, a volunteer or a donor.
 
-Examples for constituent roles are that of a client, a volunteer or a donor and these are reflected in the two most common approaches to digital constituent management by a non-profit by[^footnote-crm_examples1]:
+The two most common approaches to constituent management[@techsoup;@idealware] by a non-profit are:
 
-* either using a collection of specialist CRMs, each of them developed for a specific purpose, such as
+* either using a collection of **specialist CRMs**, each of them developed for a specific purpose, such as
 
     + volunteer management systems (e.g., Volunteer Reporter, Samaritan)
     + donor management systems (e.g., Raiser's Edge, Talisma)
     + case and/or client management systems (e.g., Slate, ClientTrack)
 
-* or rolling out a single CRM application that tries to satisfy all needs but usually only to a certain extent (e.g., CiviCRM, Salesforce)
-
-[^footnote-crm_examples1]: See [@techsoup;@idealware] for more examples.
+* or rolling out a single **generalist CRM** application that tries to satisfy all needs but usually only to a certain extent (e.g., CiviCRM, Salesforce)
 
 3 Project rationale
 ======================
 
-Problem statement
+3.1 Problem statement
 --------------------
 
-Proposed solution
+3.2 Proposed solution
 --------------------
  but they are also relevant by pointing out pros and cons of each approach. Later sections of this proposal will further evaluate these solutions in the context of blindness organizations, focusing on accessibility and on the limiting factors such as the size of an agency.
 
@@ -163,11 +162,25 @@ Glossary
 
     [_computer science_] Application software[^footnote-application_software_definition] to persist, process and analyse captured interaction data.
 
+    \scriptsize Figure 2. A simplified graphical representation of CRMs \normalsize
+
+    ```
+    ---  ==============================================
+         |                                            |
+     C   |  user interface                          <-----> users
+         |                                            |
+     R   |--------------------------------------------|
+         |                                            |
+     M   |  persistence layer (DBMS, files etc.)      |
+         |                                            |
+    ---  ==============================================
+    ```
+
 **database**[@wiki_database]
 : A database is an organized collection of data.
 
 **database-management system (DBMS)**[@wiki_database;@techtarget_database]
-:   A database management system (DBMS) is software for creating and managing databases. The DBMS provides users and programmers with a systematic way to create, retrieve, update, manage and analyze data.
+:   A database management system (DBMS) is software for creating and managing databases. The DBMS provides users and programmers with a systematic way to create, retrieve, update and manage data.
 
     \scriptsize Figure 1. The role of a DBMS in a generic application from data to end users \normalsize
 
