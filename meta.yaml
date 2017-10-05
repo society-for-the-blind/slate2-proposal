@@ -29,5 +29,8 @@ link-citations:  true
 urlcolor: blue
 
 # The current build command so far:
+# pandoc --smart --standalone --self-contained --table-of-contents --bibliography bibliography.json --filter pandoc-citeproc --csl ieee-with-url.csl slate2_proposal.md meta.yaml -o output/out.pdf
+
+### old command
 # pandoc --smart --standalone --table-of-contents --bibliography bibliography.json --filter pandoc-citeproc --csl ieee-with-url.csl slate2_proposal.md meta.yaml -o output/out.pdf
 ...

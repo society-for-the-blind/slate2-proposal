@@ -1,12 +1,12 @@
 \newpage
-I. Executive Summary
+1 Executive Summary
 ====================
 
 \newpage
-II. Context
+2 Context
 ===========
 
-1. Disambiguation of database-related concepts and terms
+2.1 Disambiguation of database-related concepts and terms
 --------------------------------------------------------
 
 An agency-wide timesheet, represented as Microsoft Excel spreadsheet, will be used as an example to demonstrate database-related concepts.
@@ -54,31 +54,28 @@ For example, Excel can open and allow manipulation of multiple monthly timesheet
 **data model**[@wiki_data_model]
 :   A data model explicitly determines the structure of data. The term is used in two distinct but closely related senses:
 
-    [_A_] Abstract model that describes how data elements are related to one another and to properties of the real world entities in a particular application domain.
+    [_definition A_] Abstract model of the problem domain that describes how data elements are related to one another and to properties of the real world entities in a particular application domain.
 
-    [_B_] A set of rules prescribing data structure and the relationships between data elements. This specification can be then implemented by effectively hard-coding these rules into a specific database-management system.
+    [_definition B_] A set of rules prescribing data structure and the relationships between data elements. This specification can be then implemented by effectively hard-coding these rules into a specific database-management system.
 
 ------------------------------------------------------------------------
 
-    For example the customers, products, and orders found in a manufacturing organization.
-    For example, to create an agency-wide timesheet, the model needs to specify a date period, a department, an employee etc. One timesheet is for a single individual for one specific time period and so on.
+The most common example for _definition A_ is a manufacturing company that has customers, products, orders etc. and the data model describes their relations with specific constraints. In the case of an agency-wide timesheet, the model needs to specify a date period, a department, an employee and so on. One of the constraints would be the fact that a timesheet is for a single individual for one specific time period.
 
-   For example, how Excel's data model is based on tables of data organized in rows and columns.
+An example for _definition B_ is how Excel's data model is based on tables of data organized strictly in rows and columns in fixed length and width spreadsheets.
 
 ------------------------------------------------------------------------
 
 **database schema**[@schema]
 : The database schema is like a blueprint that describes the layout of the data contained in the database: what kinds of fields are present and how they are organized. Compared to the abstract concept of data models, a schema is a concrete file whose format depends on the used database-management system.
 
-------------------------------------------------------------------------
+    ------------------------------------------------------------------------
 
-  For example imagine an agency-wide timesheet template in Excel:
+The database schema is very similar to an Excel template. For example, the timesheet template has to adhere to Excel's data model (i.e., has to stick with rows and columns) and it expects a specific type of data at certain places (e.g., duration of time at "Daily totals").
 
-  *  it expects a specific type of data at certain places (e.g., duration of time at "Daily totals") and
+To come a full circle: once a timesheet has been filled out and stored by HR based on their rules, it becomes the database.
 
-  *  the template itself has to adhere to how Excel organizes data (i.e., it has to stick with rows and columns instead of trying to use floating bubbles connected with arrows.)
-
-1. Introduction to CRMs
+2.2 Introduction to CRMs
 -----------------------
 
 "CRM" may refer to one of the following definitions that are usually used interchangeably:
@@ -112,12 +109,12 @@ A simplified graphical representation of CRMs:
 
 
 
-2. Customer Relationship Management Systems {#customer-rms}
+2.3 Customer Relationship Management Systems {#customer-rms}
 -------------------------------------------
 
 Mostly used by commercial organizations to preserve "information about the interactions between a customer and a business" [@sh_crm] with a usually the one-dimensional goal to maximize profits [@wiki_crm].
 
-3. Constituent (Relationship) Management Systems
+2.4 Constituent (Relationship) Management Systems
 ------------------------------------------------
 
 Non-profit organizations require a different approach to capture relationships. Even though they may have clients who receive services in some form, the word **customer** does not naturally apply to them. Its meaning is also too narrow to refer to entities (i.e., individual, agency etc.) connected to non-profits.
@@ -136,13 +133,13 @@ Examples for constituent roles are that of a client, a volunteer or a donor and 
 
 [^footnote-crm_examples1]: See [@techsoup;@idealware] for more examples.
 
-III. Project rationale
+3 Project rationale
 ======================
 
-1. Problem statement
+Problem statement
 --------------------
 
-2. Proposed solution
+Proposed solution
 --------------------
  but they are also relevant by pointing out pros and cons of each approach. Later sections of this proposal will further evaluate these solutions in the context of blindness organizations, focusing on accessibility and on the limiting factors such as the size of an agency.
 
@@ -156,15 +153,43 @@ specialist crm approach issues because of  functional_departments: everyone need
 Glossary
 ========
 
-**Application software**
-: _"A program or group of programs that is designed for the end user. (...) Application software cannot run on itself but is dependent on system software to execute."_[@tth]
+**Application software**[@tth]
+: A program or group of programs that is designed for the end user. (...) Application software cannot run on itself but is dependent on system software to execute.
 
-**CRM**
+**CRM**[@sh_crm;@wiki_crm;@techsoup;@idealware]
 :   May refer to one of the following definitions that are usually used interchangeably:
 
     [_methodology_] One approach to capture and to manage an organization's interactions and relationships with and among entities.
 
     [_computer science_] Application software[^footnote-application_software_definition] to persist, process and analyse captured interaction data.
+
+**database**[@wiki_database]
+: A database is an organized collection of data.
+
+**database-management system (DBMS)**[@wiki_database;@techtarget_database]
+:   A database management system (DBMS) is software for creating and managing databases. The DBMS provides users and programmers with a systematic way to create, retrieve, update, manage and analyze data.
+
+    \scriptsize Figure 1. The role of a DBMS in a generic application from data to end users \normalsize
+
+    ```
+    --------------       -------------     -----------------
+    | database 1 |------>|           |     |               |<-----> user 1
+    --------------       |           |     |               |          :
+          :              |   DBMS    |<--->|  Application  |          :
+    --------------       |           |     |               |          :
+    | database N |------>|           |     |               |<-----> user N
+    --------------       -------------     -----------------
+    ```
+
+**data model**[@wiki_data_model]
+:   A data model explicitly determines the structure of data. The term is used in two distinct but closely related senses:
+
+    [_definition A_] Abstract model of the problem domain that describes how data elements are related to one another and to properties of the real world entities in a particular application domain.
+
+    [_definition B_] A set of rules prescribing data structure and the relationships between data elements. This specification can be then implemented by effectively hard-coding these rules into a specific database-management system.
+
+**database schema**[@schema]
+: The database schema is like a blueprint that describes the layout of the data contained in the database: what kinds of fields are present and how they are organized. Compared to the abstract concept of data models, a schema is a concrete file whose format depends on the used database-management system.
 
 References
 ==========
