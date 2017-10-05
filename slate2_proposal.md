@@ -1,22 +1,41 @@
+\newpage
 I. Executive Summary
 ====================
 
+\newpage
 II. Context
 ===========
 
 1. Disambiguation of database-related concepts and terms
 --------------------------------------------------------
 
-The word "database" is often used as a shorthand for "database system" or "database schema" or sometimes even incorrectly for software that employs a database system to store its data.
+An agency-wide timesheet, represented as Microsoft Excel spreadsheet, will be used as an example to demonstrate database-related concepts.
 
-Microsoft Excel is going to be used below to demonstrate database-related concepts but it is only a spreadsheat (i.e., record-keeping software) and it is lacking data management features that automatically keep data and their relations consistent in full-fledged database-management systems.
+\scriptsize
+_Caveat_: Microsoft Excel is only a spreadsheat application (i.e., record-keeping software) not a DBMS but its functionality bears close resemblance to the way database-management systems structure their data to draw parallels between them.[^footnote-why_excel_is_not_a_dbms]
+\normalsize
+
+[^footnote-why_excel_is_not_a_dbms]: It would be possible to use Microsoft Excel as a DBMS but because neither integrity nor consistency is enforced on data and their relations, these would have to be maintained manually, defeating the purpose of database-management systems.
+
+------------------------------------------------------------------------
 
 **database**[@wiki_database]
-: A database is an organized collection of data. For example, a filled out Excel timesheet.
+: A database is an organized collection of data.
+
+------------------------------------------------------------------------
+
+For example, a spreadsheet with multiple tabs for each filled out timesheet belonging to an employee for a specific month.
+
+The word "database" is mostly used as a shorthand for "database-management system" or "database schema" though and sometimes even incorrectly for software that employs a database-management system to store application data in one or more databases.
+
+------------------------------------------------------------------------
 
 **database-management system (DBMS)**[@wiki_database;@techtarget_database]
-: A database management system (DBMS) is software for creating and managing databases. The DBMS provides users and programmers with a systematic way to create, retrieve, update, manage and analyze data.
+:   A database management system (DBMS) is software for creating and managing databases. The DBMS provides users and programmers with a systematic way to create, retrieve, update, manage and analyze data.
 
+    \scriptsize Figure 1. The role of a DBMS in a generic application from data to end users \normalsize
+
+    ```
     --------------       -------------     -----------------
     | database 1 |------>|           |     |               |<-----> user 1
     --------------       |           |     |               |          :
@@ -24,22 +43,34 @@ Microsoft Excel is going to be used below to demonstrate database-related concep
     --------------       |           |     |               |          :
     | database N |------>|           |     |               |<-----> user N
     --------------       -------------     -----------------
+    ```
 
-    For example, Excel can open multiple spreadsheets with which the user can work with.
+------------------------------------------------------------------------
+
+For example, Excel can open and allow manipulation of multiple monthly timesheet spreadsheets.
+
+------------------------------------------------------------------------
 
 **data model**[@wiki_data_model]
 :   A data model explicitly determines the structure of data. The term is used in two distinct but closely related senses:
 
-    [_data modeling_] Abstract model that describes how data elements are related to one another and to properties of the real world entities in a particular application domain. For example the customers, products, and orders found in a manufacturing organization.
+    [_A_] Abstract model that describes how data elements are related to one another and to properties of the real world entities in a particular application domain.
 
+    [_B_] A set of rules prescribing data structure and the relationships between data elements. This specification can be then implemented by effectively hard-coding these rules into a specific database-management system.
+
+------------------------------------------------------------------------
+
+    For example the customers, products, and orders found in a manufacturing organization.
     For example, to create an agency-wide timesheet, the model needs to specify a date period, a department, an employee etc. One timesheet is for a single individual for one specific time period and so on.
-
-    [_software_] A set of rules prescribing data structure and the relationships between data elements. This specification can be then implemented by effectively hard-coding these rules into a specific database-management system.
 
    For example, how Excel's data model is based on tables of data organized in rows and columns.
 
+------------------------------------------------------------------------
+
 **database schema**[@schema]
 : The database schema is like a blueprint that describes the layout of the data contained in the database: what kinds of fields are present and how they are organized. Compared to the abstract concept of data models, a schema is a concrete file whose format depends on the used database-management system.
+
+------------------------------------------------------------------------
 
   For example imagine an agency-wide timesheet template in Excel:
 
