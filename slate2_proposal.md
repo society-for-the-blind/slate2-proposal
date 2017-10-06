@@ -132,44 +132,58 @@ The two most common approaches to constituent management[@techsoup;@idealware] b
 
 * or rolling out a single **generalist CRM** application that tries to satisfy all needs but usually only to a certain extent (e.g., CiviCRM, Salesforce)
 
+\newpage
 3 Project rationale
 ======================
 
 3.1 Problem statement
 ---------------------
 
-Because constituents can have more than one role and may be affiliated with multiple services, their data is oftentimes managed individually by each department. For example, Joe can be a SIP client and SIP volunteer but he may be also volunteering for Access News and sometimes donating a small amount. This decentralization of information sources simplify management for programs and services by only dealing with client data that pertains to them, using their own specialized, proprietary software. Departments on the other hand that need to see the big picture (such as Resource Development, Billing, HR), will draw the short straw because data will need to be aggregated manually if automation is missing or difficult to implement (if not impossible) because of incompatible systems.
+### 3.1.1 Organizational difficulties
 
-, instead of departments dedicated to a specific role[^functional_departments].
+As constituents can have more than one role and may be affiliated with multiple services, their data is oftentimes managed individually by each department. For example, Joe can be a SIP client and SIP volunteer but he may be also volunteering for Access News and sometimes donating a small amount.
 
-[^functional_departments]: The reason behind this practice is manyfold but it is usually caused by tight budgets and as a corollary, employees having multiple responsibilites that blurs the line further. On the bright side, this simplifies management of most departments by decentralizing the sources of information on various constituent groups. Departments, that need the big picture, draw the short straw: data will need to be aggregated manually if automation is missing or difficult (if not impossible). An example for the latter is when the data managed by systems that do not directly communicate each other and/or their proprietary nature does not enable reliable workarounds.
+This decentralization of information sources simplifies management for programs and services by only dealing with client data that pertains to them, using their own specialized and mostly proprietary software. For example, SIP and CORE maintains client information in Slate, the Low Vision Clinic uses EyeCare.
 
+Departments on the other hand, that need to see the big picture (such as Resource Development, Billing, HR), draw the short straw because data will need to be aggregated manually and consolidated into their own proprietary software (e.g., Raiser's Edge, Quickbooks) if automation is missing or difficult to implement (if not impossible). Software at Society for the Blind do not communicate directly with each other because they are native Windows applications[^footnote-native_apps]. Many of these vendors are starting to move to the cloud, sharing the largest common platform (the World Wide Web) and technologies (web standards such as HTML, CSS, Javascript) but instead of embracing open standards to enable interoperation and collaboration, many of them just keep continuing bad practices.[@dzone_cloud;@iw_cloud]
 
-Each approach (generalist versus specialist) have their pros & cons and best practices (with necessary trade-offs) are available on how to adopt the best solution for traditional organizations. All of these are well-documented.[@sh_crm;@wiki_crm;@techsoup;@idealware;@heller_crm] See (Annex).
+[^footnote-native_apps]: With Slate being one exception but it can be viewed as a native application because it is not maintained anymore and its closed source.
 
-The fundamental issues with the existing products are:
+### 3.1.2 Insufficient flexibility and accessibility support of major CRMs
 
-  1. **Accessibility is mostly addressed as an afterthought**
+Approaches to adopting CRMs (generalist versus specialist) for a traditional organization are well documented, including best practices and their pros and cons[^footnote-annexes].[@sh_crm;@wiki_crm;@techsoup;@idealware;@heller_crm]
+
+[^footnote-annexes]: See [Annexes] A.1 for a comparison summary.
+
+Although when it comes to blindness organizations, they are found lacking:
+
+  1. **Accessibility is addressed as an afterthought**
 
      A fierce market dictates that a software should satisfy the needs and expectations of the majority of the users (e.g., maximalize visual pleasure, optimize for mouse usage). These properties and accessibility are not mutually exclusive but cutting corners yield faster and easier results[^footnote-web_cut_corner]. An analogy would be building a house solely by how it should look with disregard to safety standards: it can be done with toothpicks, paper mache and so on but it wouldn't be safe or useful for everyone.
 
 [^footnote-web_cut_corner]: One example of such shortcut is ignoring the semantic purpose of HTML elements, defined by web standards, by purposely misusing or abusing them to achieve a desired visual effect.
 
-  2.  **They don't necessarily cater to the needs of blindness organizations**
+  2.  **They don't necessarily cater to the needs of non-profits**
 
-      The best example is managing educational services. Most solutions offer case management capabilities but these have to be modified (if at all possible). Products specifically for this purpose are either one or more of the following:
+      Even solutions touted to be specifically for non-profits tend to be overly rigid as vendors are trying to attract as large an audiance as possible, requiring significant trade-offs[^footnote-tradeoffs].
+
+      The best example is managing educational services. Most CRMs' can be used that way indirectly, by using their generic case management system. This would need to be modified (if possible) but in many cases the organization's only option is to conform to the tool, instead of the other way around.
+
+     Products specifically for educational purposes are either one or more of the following:
 
       * expensive (with hidden costs) (e.g., [Salesforce Higher Ed](https://www.salesforce.com/solutions/industries/higher-ed/overview/))
 
-      * suitable only for traditional services (e.g., [Salesforce Higher Ed](https://www.salesforce.com/solutions/industries/higher-ed/overview/), [Affirma Educational Service Dynamics](http://www.affirmaconsulting.com/work/crm/educational-service-dynamics-crm/), [Ellucian](http://www.ellucian.com/),[CiviSchool](https://wiki.civicrm.org/confluence/display/CRMDOC/CiviSchool))
+      * suitable only for traditional services, such as K-12 or higher education (e.g., [Salesforce Higher Ed](https://www.salesforce.com/solutions/industries/higher-ed/overview/), [Affirma Educational Service Dynamics](http://www.affirmaconsulting.com/work/crm/educational-service-dynamics-crm/), [Ellucian](http://www.ellucian.com/),[CiviSchool](https://wiki.civicrm.org/confluence/display/CRMDOC/CiviSchool))
 
       * has poor documentation and/or defunct (e.g., [CiviSchool](https://wiki.civicrm.org/confluence/display/CRMDOC/CiviSchool))
 
-      * is too narrow in scope (e.g., [Intellum](https://www.intellum.com), [Canvas LMS](https://www.canvaslms.com/), [Blackboar](http://www.blackboard.com/))
+      * is too narrow in scope (e.g., [Intellum](https://www.intellum.com), [Canvas LMS](https://www.canvaslms.com/), [Blackboard](http://www.blackboard.com/))
 
       * provides one (non-modifiable) uniform scheme to track student/client progress and course/services properties (see examples above)
 
-      The corollary of the last item is that an organization with multiple schemes either needs to change its internal processes (and retroactively update their records) or needs to implement two or more specialist software that may have compatibility issues. Society for the Blind's CORE and SIP departments are the perfect example: they provide very similar services but their finances and the way they operate are fundamentally different.
+      The corollary of the last item is that an organization with multiple schemes either needs to change its internal processes (and retroactively update their records) or needs to adopt two or more specialist software that may have compatibility issues. Society for the Blind's CORE and SIP departments are the perfect example: they provide very similar services but their finances and the way they operate are fundamentally different.
+
+[^footnote-tradeoffs]: Such as making the software closed source but open sourcing the codebase is in itself no guarantee either. For example, if the application is written in a way that would require the vendor's exact infrastructure specifications to run, requiring such extensive re-writes that would amount to creating solution from scratch.
 
 3.2 Proposed solution
 --------------------
@@ -237,8 +251,8 @@ Glossary
 Annexes
 ========
 
-A.1 Specialist versus generalist approach to CRMs - Best practices and pros & cons
-----------------------------------------------------------------------------------
+A.1 Comparison of CRM implementation approaches
+-----------------------------------------------
 
 A.2 Arguments against using Salesforce
 --------------------------------------

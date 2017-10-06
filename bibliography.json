@@ -276,5 +276,67 @@
     "title": "Insights into CRM for nonprofits: How nonprofits are approaching Constituent Relationship Management (CRM) to overcome challenges and meet their goals",
     "title-short": "Insights into CRM for nonprofits",
     "type": "webpage"
+  },
+  {
+    "URL": "https://www.infoworld.com/article/2917910/cloud-computing/fix-your-applications-before-migrating-them-to-the-cloud.html",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          5
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Linthicum",
+        "given": "David"
+      }
+    ],
+    "id": "iw_cloud",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          5,
+          5
+        ]
+      ]
+    },
+    "title": "Fix your applications before migrating them to the cloud: Moving bad or ill-fitting code as is from your servers to the cloud will waste big bucks",
+    "title-short": "Fix your applications before migrating them to the cloud",
+    "type": "webpage"
+  },
+  {
+    "URL": "https://dzone.com/articles/should-you-slap-the-next-person-selling-you-cloud-1",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          5
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Schabell",
+        "given": "Eric D."
+      }
+    ],
+    "id": "dzone_cloud",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          14
+        ]
+      ]
+    },
+    "title": "Should you slap the next person selling you cloud-native? “The cloud will solve all of your problems, just sign this contract!” before you make the move to the cloud, be sure you, your team, and your organization are ready for it.",
+    "title-short": "Should you slap the next person selling you cloud-native?",
+    "type": "webpage"
   }
 ]
