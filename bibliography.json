@@ -248,5 +248,33 @@
     "title": "Database management system (dbms): Definition",
     "title-short": "Database management system (dbms)",
     "type": "webpage"
+  },
+  {
+    "URL": "http://teamheller.com/insights-crm-nonprofits/",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          5
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Heller Consulting"
+      }
+    ],
+    "id": "heller_crm",
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "title": "Insights into CRM for nonprofits: How nonprofits are approaching Constituent Relationship Management (CRM) to overcome challenges and meet their goals",
+    "title-short": "Insights into CRM for nonprofits",
+    "type": "webpage"
   }
 ]
