@@ -7,12 +7,12 @@
 ===========
 
 2.1 Disambiguation of database-related concepts and terms
---------------------------------------------------------
+---------------------------------------------------------
 
 An agency-wide timesheet, represented as Microsoft Excel spreadsheet, will be used as an example to demonstrate database-related concepts.
 
 \scriptsize
-_Caveat_: Microsoft Excel is only a spreadsheat application (i.e., record-keeping software) not a DBMS but its functionality bears close resemblance to the way database-management systems structure their data to draw parallels between them.[^footnote-why_excel_is_not_a_dbms]
+_Caveat_: Microsoft Excel is only a spreadsheet application (i.e., record-keeping software) not a DBMS but its functionality bears close resemblance to the way database-management systems structure their data to draw parallels between them.[^footnote-why_excel_is_not_a_dbms]
 \normalsize
 
 [^footnote-why_excel_is_not_a_dbms]: It would be possible to use Microsoft Excel as a DBMS but because neither integrity nor consistency is enforced on data and their relations, these would have to be maintained manually, defeating the purpose of database-management systems.
@@ -84,7 +84,7 @@ To come a full circle: once a timesheet has been filled out and stored by HR bas
 
 The broadness of the definition is deliberate (and so is leaving the acronym unexpanded) because making it specific depends on the context (i.e., organization type it is used in connection with). Sections [2.3](#customer-rms) and [2.4](#constituent-rms) elaborate further on this topic.
 
-  2. _Application software[^footnote-application_software_definition] that provide an interface to capture, process and analyze interaction data according to the requirements in the business domain.
+  2. _Application software[^footnote-application_software_definition] that provides an interface to capture, process and analyze interaction data according to the requirements in the business domain.
 
 The definition intentionally uses the phrase "application software" instead of the word "database" commonly (and incorrectly) used in  literature describing CRMs. This distinction is important because a CRM, as an application software, consists of a **persistence layer** and a **(graphical) user interface**.
 
@@ -113,7 +113,7 @@ The definition intentionally uses the phrase "application software" instead of t
 2.3 Customer Relationship Management Systems {#customer-rms}
 -------------------------------------------
 
-Mostly used by commercial organizations to preserve "_information about the interactions between a customer and a business_" [@sh_crm] with a usually the one-dimensional goal to maximize profits [@wiki_crm].
+Mostly used by commercial organizations to preserve "_information about the interactions between a customer and a business_" [@sh_crm] with a usually one-dimensional goal to maximize profits [@wiki_crm].
 
 2.4 Constituent (Relationship) Management Systems {#constituent-rms}
 ------------------------------------------------
@@ -134,7 +134,7 @@ The two most common approaches to constituent management[@techsoup;@idealware] b
 
 \newpage
 3 Project rationale
-======================
+===================
 
 3.1 Problem statement
 ---------------------
@@ -186,13 +186,46 @@ Although when it comes to blindness organizations, they are found lacking:
 [^footnote-tradeoffs]: Such as making the software closed source but open sourcing the codebase is in itself no guarantee either. For example, if the application is written in a way that would require the vendor's exact infrastructure specifications to run, requiring such extensive re-writes that would amount to creating solution from scratch.
 
 3.2 Proposed solution
---------------------
+---------------------
 
-address issue (1) - sound fundamental, es cask aztan a visual
+This paper proposes the creation of a constituent management system that is tailored to fit the need of blindness organizations.
 
+To solve the aforementioned issues, to maximize its usefulness to the community and to promote easier collaboration, the end result should be:
 
-specialist crm approach issues because of  functional_departments: everyone needs to use many different software (price, learning curve, differing levels of accessibility)
+  * **open source** collaboration and usefulness
 
+  * based on the **microservice architecture** to solve above issues
+
+  * implemented according to the **Agile software development principles** for maximum flexibility
+
+  * **web-base** for cross-platform compatibility and higher availability
+
+### 3.2.1 Open source
+
+### 3.2.2 Microservice architecture
+
+### 3.2.3 Agile software development model
+
+### 3.2.4 Web-based application
+
+\newpage
+4. Project aims
+===============
+
+4.1 Main goal
+-------------
+
+4.2 Objectives
+--------------
+
+4.3 Results
+-----------
+
+\newpage
+5. Project implementation
+=========================
+
+\newpage
 Glossary
 ========
 
@@ -248,8 +281,9 @@ Glossary
 **database schema**[@schema]
 : The database schema is like a blueprint that describes the layout of the data contained in the database: what kinds of fields are present and how they are organized. Compared to the abstract concept of data models, a schema is a concrete file whose format depends on the used database-management system.
 
+\newpage
 Annexes
-========
+=======
 
 A.1 Comparison of CRM implementation approaches
 -----------------------------------------------
@@ -257,5 +291,9 @@ A.1 Comparison of CRM implementation approaches
 A.2 Arguments against using Salesforce
 --------------------------------------
 
+A.3 Basics of microservices
+---------------------------
+
+\newpage
 References
 ==========
