@@ -190,21 +190,32 @@ Although when it comes to blindness organizations, they are found lacking:
 
 To solve the aforementioned issues, to maximize its usefulness to the community and to promote easier collaboration, the end product should be:
 
-  * **open source** collaboration and usefulness
+  * **open source**
 
-  * based on the **microservice architecture** to solve above issues, easy to (re)configure and set up and because components can be replaced other organizations may only adopt portions of it with their custom solutions.-> that is where we come in (open sourcehoz is tartozik ez)
+  * **web-based**
 
-  * implemented according to the **Agile software development principles** for maximum flexibility
+  * implemented according to the **Agile software development principles**
 
-  * **web-base** for cross-platform compatibility and higher availability
+  * based on the **Microservice Architecture**
 
+  * using the **Event Sourcing** architectural model
+
+<!--- TODO
 ### 3.2.1 Open source
-
-### 3.2.2 Microservice architecture
-
-### 3.2.3 Agile software development model
+ collaboration and usefulness
 
 ### 3.2.4 Web-based application
+ for cross-platform compatibility and higher availability
+
+### 3.2.3 Agile software development principles
+ for maximum flexibility
+
+### 3.2.2 Microservice Architecture
+ to solve above issues, easy to (re)configure and set up and because components can be replaced other organizations may only adopt portions of it with their custom solutions.-> that is where we come in (open sourcehoz is tartozik ez)
+
+### 3.2.5 Event Sourcing
+ for persistence (know the state that can be recreate from the series of events even if the main state db is discarded, see fowler)
+-->
 
 \newpage
 4. Project aims
@@ -213,18 +224,48 @@ To solve the aforementioned issues, to maximize its usefulness to the community 
 4.1 Main goal
 -------------
 
-Develop an extensible constituent management system that is tailored to fit the needs of blindness organizations.
+Develop a constituent relationship and service management system that is
+
+  * tailored to fit the needs of blindness organizations
+
+    \scriptsize Lowering the bar for easy adoption as much as possible. \normalsize
+
+  * easily configurable by end users
+
+    \scriptsize No technological background knowledge or programming expertise needed to set up. \normalsize
+
+  * extensible with new functionality without disruptions
+
+    \scriptsize For example adding a new department or deciding to add an agency-wide notification system for clients. \normalsize
+
+  * robust <!--- TODO add citation -->
+
+    \scriptsize A system that is running for a long time without the need of any user intervention and is able to cope with errors and erroneous input automatically. \normalsize
+
+  * technology-agnostic <!--- TODO add citation -->
+
+    \scriptsize That is, functionality is independent of the choices in technology used, making it easy to swap them out without the end user noticing the change. \normalsize
 
 4.2 Objectives
 --------------
 
-### 4.2.1. Create an 
+### 4.2.1 Web-service for educational services departments (CORE, SIP)
+
+### 4.2.
+
+### 4.2.
+
+### 4.2.
+
+### 4.2.
 
 Promote to blindness organizations
 
 \newpage
 5. Project implementation
 =========================
+
+<!--- holistic approach, assess organizaional lofasz, -->
 
 \newpage
 Glossary
