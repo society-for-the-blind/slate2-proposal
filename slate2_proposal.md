@@ -185,16 +185,14 @@ Although when it comes to blindness organizations, they are found lacking:
 
 [^footnote-tradeoffs]: Such as making the software closed source but open sourcing the codebase is in itself no guarantee either. For example, if the application is written in a way that would require the vendor's exact infrastructure specifications to run, requiring such extensive re-writes that would amount to creating solution from scratch.
 
-3.2 Proposed solution
+3.2 Proposed approach
 ---------------------
 
-This paper proposes the creation of a constituent management system that is tailored to fit the need of blindness organizations.
-
-To solve the aforementioned issues, to maximize its usefulness to the community and to promote easier collaboration, the end result should be:
+To solve the aforementioned issues, to maximize its usefulness to the community and to promote easier collaboration, the end product should be:
 
   * **open source** collaboration and usefulness
 
-  * based on the **microservice architecture** to solve above issues
+  * based on the **microservice architecture** to solve above issues, easy to (re)configure and set up and because components can be replaced other organizations may only adopt portions of it with their custom solutions.-> that is where we come in (open sourcehoz is tartozik ez)
 
   * implemented according to the **Agile software development principles** for maximum flexibility
 
@@ -215,11 +213,14 @@ To solve the aforementioned issues, to maximize its usefulness to the community 
 4.1 Main goal
 -------------
 
+Develop an extensible constituent management system that is tailored to fit the needs of blindness organizations.
+
 4.2 Objectives
 --------------
 
-4.3 Results
------------
+### 4.2.1. Create an 
+
+Promote to blindness organizations
 
 \newpage
 5. Project implementation
