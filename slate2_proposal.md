@@ -200,6 +200,7 @@ To solve the aforementioned issues, to maximize its usefulness to the community 
 
   * using the **Event Sourcing** architectural model
 
+TODO: expand on each item
 <!--- TODO
 ### 3.2.1 Open source
  collaboration and usefulness
@@ -249,22 +250,128 @@ Develop a constituent relationship and service management system that is
 4.2 Objectives
 --------------
 
-### 4.2.1 Web-service for educational services departments (CORE, SIP)
+  Develop a web-based agency-wide management system
 
-### 4.2.
+  a. with subsystem[^footnote-subsystem] for educational services departments (SIP, CORE)
 
-### 4.2.
+  b. and, depending on assessments, integrate existing solutions or create new subsystems for
 
-### 4.2.
+     * Resource Development
 
-### 4.2.
+     * Retail Services
 
-Promote to blindness organizations
+     * Low Vision Clinic
+
+[^footnote-subsystem]: Subsystem is equivalent to a web service in the context of this proposal but the former is used to emphasize the hierarchical relationships between the objectives below.
 
 \newpage
 5. Project implementation
 =========================
 
+5.1 Activitiy plan
+------------------
+
+Table: Activity plan
+
+---------------------------------------------------------------------------------------------------------
+**Activities/Tasks**                                    **Responsibility**     **Start**     **End**
+------------------------------------------------------- ---------------------- -----------   ------------
+1. [Plan agency-wide schema](#plan511)                  Attila Gulyas          11/01/2017     2/15/2018
+                                                        Staff
+
+1.1 [Collect information about services](#collect5111)  Attila Gulyas
+    [and departmental processes](#collect5111)
+
+1.2 [Evaluate workflows](#eval5112)                     Attila Gulyas
+
+1.3 [Identify service boundaries](#id5113)              Attila Gulyas
+
+2 [Develop subsystem for educational](#dev512)          Attila Gulyas          11/01/2017     6/15/2018
+  [services departments](#dev512)
+
+2.1 [Cater for functionality common](#dev512)           Attila Gulyas          11/01/2017     4/15/2018
+    [for both CORE and SIP](#cater5121)
+
+2.2 [Implement CORE-specific features](#imp5122)        Attila Gulyas          11/01/2017     6/15/2018
+
+2.3 [Implement SIP-specific features](#imp5123)         Attila Gulyas           2/15/2018     6/15/2018
+---------------------------------------------------------------------------------------------------------
+
+Notes:
+
+  * Writing documentation and testing is not listed as an activity because it is intrinsic to the Agile methodology.
+
+  * Most of the activities overlap because they are dependent on each other.
+
+### 5.1.1 Plan agency-wide schema {#plan511}
+
+Tasks for this activity are not dated because the entire process is inherently iterative[^footnote-no_task_dates]
+
+[^footnote-no_task_dates]: That is, gather and evaluate data, form hypotheses, test and go back to a previous step if results do not add up.
+
+#### 5.1.1.1 Collect information about services and departmental processes {#collect5111}
+
+#### 5.1.1.2 Evaluate workflows {#eval5112}
+
+Many of the current practices are the product of the limitations of the used software solutions and not the requirement of the specific domain.
+
+Examples:
+
+  * Volunteer times are aggregated manually from hard-copies at various places around the agency and from different programs/departments. (The sign-in sheets can also be a security issue because a malicious individual could collect the name of volunteers/visitors and the dates & times they were at the agency.)
+
+  * Coordination of volunteer applications and trainings are coordinated via emails and personal conversation. The process works but it always holds the risk of information not getting to the relevant person, miscommunication and misunderstandings that are hard to catch. (In contrast, a central system were every participant is added and can be audited later would make these issues obvious.)
+
+  * Volunteer applications are stored as hard copy files and look-up is manual from filing cabinets. Same applies to DOR authorizations with an informal digital methodology in place with the steps of scanning, OCR[^footnote-ocr], naming results and moving to a folder.
+
+    DOR authorizations are sometimes submitted by counselors by mail that could be just submitted through and agency portal taking care of logging it and doing OCR.
+
+  * Scheduling classes at CORE is done manually instead of only specifying certain metrics and let the work done by a scheduling subsystem.
+
+  * CORE students usually call the absence line when they are going to be absent and checking the voicemails is one extra step each day
+
+  * SIP's monthly, quarterly and yearly reports are all done by hand even though the data exists in Slate but reporting has never been implemented and extracting data is excruciatingly painful.
+
+  * Inventories are always done by hand and stored at various places. Comparison with the previous results is also done manually instead of just diffing the current and previous versions digitally. (See next item.)
+
+  * Agency-wide information and documents internal to a department are kept in a central file repository. Finding and updating information is cumbersome, because of the need to remember file system paths, and error-prone, because of proliferation of duplicated documents when the original is not found. (One solution would be a global knowledge base that everyone can edit with assigned maintainers whose role would be to keep it up-to-date and consistent. This would help the executive assistant tremendously but would also be helpful with random calls around the agency.)
+
+[^footnote-ocr]: Optical Character Recognition
+
+All these can be automated and only expose parts of the workflows that are significant to end users.
+
+
+#### 5.1.1.3 Identify service boundaries {#id5113}
+
+In order to create a collaborative ecosystem of subsystems service boundaries need to be identified and their interactions explicitly enumerated.
+
+### 5.1.2 Develop subsystem for educational services departments {#dev512}
+
+#### 5.1.2.1 Cater for functionality common for both CORE and SIP {#cater5121}
+
+  * handle and log initial contact (a.k.a. inquiry or referral)
+
+  * scheduling
+
+  * note taking system with easy consolidation
+
+  * billing
+
+  * flexible reporting
+
+#### 5.1.2.2 Implement CORE-specific features {#imp5122}
+
+#### 5.1.2.3 Implement SIP-specific features {#imp5123}
+
+5.2 Resource plan
+-----------------
+
+  2. Assess the needs of Resource Development department and depending on results, integrate existing software or create new subsystem(s) for
+
+     * volunteer management
+
+     * fundraising
+
+     * campaign coordination
 <!--- holistic approach, assess organizaional lofasz, -->
 
 \newpage
