@@ -145,7 +145,7 @@ As constituents can have more than one role and may be affiliated with multiple 
 
 This decentralization of information sources simplifies management for programs and services by only dealing with client data that pertains to them, using their own specialized and mostly proprietary software. For example, SIP and CORE maintains client information in Slate, the Low Vision Clinic uses EyeCare.
 
-Departments on the other hand, that need to see the big picture (such as Resource Development, Billing, HR), draw the short straw because data will need to be aggregated manually and consolidated into their own proprietary software (e.g., Raiser's Edge, Quickbooks) if automation is missing or difficult to implement (if not impossible). Software at Society for the Blind do not communicate directly with each other because they are native Windows applications[^footnote-native_apps]. Many of these vendors are starting to move to the cloud, sharing the largest common platform (the World Wide Web) and technologies (web standards such as HTML, CSS, Javascript) but instead of embracing open standards to enable interoperation and collaboration, many of them just keep continuing bad practices.[@dzone_cloud;@iw_cloud]
+Departments on the other hand, that need to see the big picture (such as Resource Development, Billing, HR), draw the short straw because data will need to be aggregated manually and consolidated into their own proprietary software (e.g., Raiser's Edge, Quickbooks) if automation is missing or difficult to implement (if not impossible). Software at Society for the Blind do not communicate directly with each other because they are native Windows applications[^footnote-native_apps]. Many of these vendors are starting to move to the Cloud, sharing the largest common platform (the World Wide Web) and technologies (web standards such as HTML, CSS, Javascript) but instead of embracing open standards to enable interoperation and collaboration, many of them just keep continuing bad practices.[@dzone_cloud;@iw_cloud]
 
 [^footnote-native_apps]: With Slate being one exception but it can be viewed as a native application because it is not maintained anymore and its closed source.
 
@@ -276,25 +276,106 @@ Table: Activity plan
 ---------------------------------------------------------------------------------------------------------
 **Activities/Tasks**                                    **Responsibility**     **Start**     **End**
 ------------------------------------------------------- ---------------------- -----------   ------------
-1. [Plan agency-wide schema](#plan511)                  Attila Gulyas          11/01/2017     2/15/2018
-                                                        Staff
+0. [Build local development environment](#env510)       Attila Gulyas          11/1/2017     12/15/2017
+                                                        GNT Solutions
 
-1.1 [Collect information about services](#collect5111)  Attila Gulyas
+    _______________________________________________
+
+1. [Plan agency-wide schema](#plan511)                  Attila Gulyas           11/1/2017     2/15/2018
+                                                        Staff
+<!--- Extra newlines (i.e., backslashes below) are for PDF niceness but
+      completely unnecessary for word so use the vim command below to
+      remove it:
+      :g/^\\$/d
+-->
+
+\
+
+1.1 [Collect information about services](#collect5111)
     [and departmental processes](#collect5111)
 
-1.2 [Evaluate workflows](#eval5112)                     Attila Gulyas
+\
 
-1.3 [Identify service boundaries](#id5113)              Attila Gulyas
+1.2 [Evaluate workflows](#eval5112)
 
-2 [Develop subsystem for educational](#dev512)          Attila Gulyas          11/01/2017     6/15/2018
+\
+
+1.3 [Identify service boundaries](#id5113)
+
+    _______________________________________________
+
+2 [Develop subsystem for educational](#dev512)          Attila Gulyas          11/1/2017     6/15/2018
   [services departments](#dev512)
 
-2.1 [Cater for functionality common](#dev512)           Attila Gulyas          11/01/2017     4/15/2018
+\
+
+2.1 [Cater for functionality common](#dev512)           Attila Gulyas          11/1/2017     4/15/2018
     [for both CORE and SIP](#cater5121)
 
-2.2 [Implement CORE-specific features](#imp5122)        Attila Gulyas          11/01/2017     6/15/2018
+\
+
+2.2 [Implement CORE-specific features](#imp5122)        Attila Gulyas          11/1/2017     6/15/2018
+                                                        Aser Tolentino
+
+\
 
 2.3 [Implement SIP-specific features](#imp5123)         Attila Gulyas           2/15/2018     6/15/2018
+
+    _______________________________________________
+
+3 [Prepare to move to the Cloud](#prep513)              Attila Gulyas          12/15/2017
+
+\
+
+3.1 [Replicate local development](#local5131)           Attila Gulyas          12/15/2017     3/1/2018
+    [environment in the Cloud](#local5131)
+
+\
+
+3.2 [Experiment with collaboration between](#exp5133)   Attila Gulyas           3/1/2018      4/15/2018
+    [local and remote services](#exp5133)
+
+\
+
+3.3 [Deploy stable educational](#dummy5132)             Attila Gulyas           4/15/2018     9/20/2018
+    [subsystems for testing](#dummy5132)
+
+\
+
+3.4 [Put data-processing subsystems into](#proc5134)    Attila Gulyas           6/15/2018     10/1/2018
+    [production](#proc5134)
+
+\
+
+3.5 [Finish moving educational services](#fin5135)      Attila Gulyas                         2/1/2019
+    [and assess results](#fin5135)
+
+    _______________________________________________
+
+4 [Focus on Resource Development](#resdev514)           Attila Gulyas           6/15/2018    12/15/2018
+
+\
+
+4.1 [Develop subsystem to consolidate](#vol5141)        Attila Gulyas           6/15/2018     8/15/2018
+    [volunteer management](#vol5141)
+
+\
+
+4.2 [Assess departmental needs and](#assess5142)        Attila Gulyas           6/15/2018    10/31/2018
+    [current tools](#assess5142)                        Lina Lloyd \
+                                                        Liz Culp
+
+\
+
+4.3 [Create subsystem to replace or](#don5143)          Attila Gulyas           8/15/2018    12/15/2018
+    [integrate current solutions for](#don5143)
+    [donor and campaign management](#don5143)
+
+    _______________________________________________
+
+5 Retail services
+
+6 Low Vision clinic
 ---------------------------------------------------------------------------------------------------------
 
 Notes:
@@ -303,9 +384,13 @@ Notes:
 
   * Most of the activities overlap because they are dependent on each other.
 
+### 5.1.0 Build local development environment {#env510}
+
+Utilize unused computers and servers to a local server or server farm to support following stages. Coordinate networking needs with GNT Solutions (DNS, bandwidth, firewall rules adjustments and cabling).
+
 ### 5.1.1 Plan agency-wide schema {#plan511}
 
-Tasks for this activity are not dated because the entire process is inherently iterative[^footnote-no_task_dates]
+Tasks for this activity are not dated because the entire process is inherently iterative[^footnote-no_task_dates].
 
 [^footnote-no_task_dates]: That is, gather and evaluate data, form hypotheses, test and go back to a previous step if results do not add up.
 
@@ -362,17 +447,29 @@ In order to create a collaborative ecosystem of subsystems service boundaries ne
 
 #### 5.1.2.3 Implement SIP-specific features {#imp5123}
 
+### 5.1.3 Prepare to move to the Cloud {#prep513}
+
+#### 5.1.3.1 Replicate local development environment in the Cloud {#local5131}
+
+#### 5.1.3.2 Experiment with collaboration between local and remote services {#exp5133}
+
+#### 5.1.3.3 Deploy stable subsystems for testing {#dummy5132}
+
+#### 5.1.3.4 Put data-processing subsystems into production {#proc5134}
+
+#### 5.1.3.5 Finish moving services and assess results {#fin5135}
+
+### 5.1.4 Focus on Resource Development {#resdev514}
+
+#### 5.1.4.1 Develop subsystem to consolidate volunteer management {#vol5141}
+
+#### 5.1.4.2 Assess departmental needs and current tools {#assess5142}
+
+#### 5.1.4.3 Create subsystem to replace or integrate current solutions for donor and campaign management {#don5143}
+
 5.2 Resource plan
 -----------------
 
-  2. Assess the needs of Resource Development department and depending on results, integrate existing software or create new subsystem(s) for
-
-     * volunteer management
-
-     * fundraising
-
-     * campaign coordination
-<!--- holistic approach, assess organizaional lofasz, -->
 
 \newpage
 Glossary
