@@ -2,6 +2,14 @@
 1 Executive Summary
 ====================
 
+1.1 [Main goal](#maingoal)
+--------------------------
+
+Develop a constituent relationship and service program management system that is tailored to fit the needs of blindness organizations.
+
+1.2 [Activity plan](#activity)
+------------------------------
+
 **Activities/Tasks**                                    **Responsibility**       **Start**      **End**
 ------------------------------------------------------- ---------------------- -----------   ----------
 0 [Build local development environment](#env510)        Attila Gulyas          11/1/2017     12/15/2017
@@ -14,9 +22,43 @@
 6 Low Vision clinic                                     Attila Gulyas           2019
 ---------------------------------------------------------------------------------------------------------
 
+1.3 [Budget](#bdgt)
+---------------------
+
+**Activity**                                               **From**    **From**    **Cost**
+------------------------------------------------------- ----------- ----------- -----------
+**3 [Prepare to move to the Cloud](#prep513)**          12/15/2017     2/1/2019
+\
+3.1 [Replicate local development](#local5131)           12/15/2017     3/1/2018  [$40.04](https://cloud.google.com/products/calculator/#id=3a39d0d1-67c0-467e-82c0-ff1b48545b88)
+    [environment in the Cloud](#local5131)
+3.2 [Experiment with collaboration between](#exp5133)    3/1/2018      4/15/2018 [$35.42](https://cloud.google.com/products/calculator/#id=c77898a4-c560-4639-91ed-dc4d63696d4d)
+    [local and remote services](#exp5133)
+3.3 [Deploy stable educational](#dummy5132)              4/15/2018     9/20/2018 [$519.93](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)
+    [subsystems for testing](#dummy5132)
+3.4 [Put data-processing subsystems into](#proc5134)     6/15/2018     10/1/2018 [$35.97](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)[^footnote-price]
+    [production](#proc5134)
+\
+**Total**                                                                        **$631.36**
+\
+**Ongoing costs at full capability**                     10/1/2018               **[$3117.06](https://cloud.google.com/products/calculator/#id=3c01e636-6ae5-4585-8ae7-cd41e33bec7d)**
+(see [_Notes_](#budgetnotes))
+-------------------------------------------------------------------------------
+
+1.4 [Risks](#risk)
+------------------
+
+Activity and task deadlines are conservative estimates but they may prove to be too ambitious for the only two developers (i.e., the authors of this proposal).
+
+*Recommended mitigation strategy*: The **long-term vision** is to put Society for the Blind on the information technology map as a hub for knowledge exchange that nurtures the local tech community without any barriers and bias.
+
+1.5 [Reporting](#report)
+------------------------
+
+Weekly reports on current progress, challenges and amount of time spent on specific activity or task.
+
 \newpage
 2 Context
-===========
+=========
 
 2.1 Disambiguation of database-related concepts and terms
 ---------------------------------------------------------
@@ -234,10 +276,10 @@ TODO: expand on each item
 4. Project aims
 ===============
 
-4.1 Main goal
+4.1 Main goal {#maingoal}
 -------------
 
-Develop a constituent relationship and service management system that is
+Develop a constituent relationship and service program management system that is
 
   * tailored to fit the needs of blindness organizations
 
@@ -280,7 +322,7 @@ Develop a constituent relationship and service management system that is
 5. Project implementation
 =========================
 
-5.1 Activitiy plan
+5.1 Activitiy plan {#activity}
 ------------------
 
 <!--- Extra newlines (i.e., backslashes below) are for PDF niceness but
@@ -430,8 +472,8 @@ In order to create a collaborative ecosystem of subsystems service boundaries ne
 
 #### 5.1.4.3 Create subsystem to replace or integrate current solutions for donor and campaign management {#don5143}
 
-5.2 Budget
------------------
+5.2 Budget {#bdgt}
+----------
 
 Table: Budget
 
@@ -453,19 +495,56 @@ Table: Budget
 \
 **Total**                                                                        **$631.36**
 \
-**Ongoing costs at full capability** (see _Notes_)          10/1/2018               **[$3117.06](https://cloud.google.com/products/calculator/#id=3c01e636-6ae5-4585-8ae7-cd41e33bec7d)**
+**Ongoing costs at full capability**                     10/1/2018               **[$3117.06](https://cloud.google.com/products/calculator/#id=3c01e636-6ae5-4585-8ae7-cd41e33bec7d)**
+(see [_Notes_](#budgetnotes))
 -------------------------------------------------------------------------------
 
 [^footnote-price]: Only adding the difference between task **3.3** and **3.4** which is 11 days at the same price a day as **3.3**.
 
-*Notes*:
+### 5.2.1 Notes {#budgetnotes}
 
   * Prices are based on the Google Cloud platform (click on prices to see configuration details) and are highly dependent on duration of commitment (e.g., a 3 year commitment would mean a 57% price reduction)
 Cost is an estimate of the "worst case scenario" if all the required virtual servers in the cloud would be started from day one.
 
   * "Ongoing costs at full capability" estimate is based on "worst cost scenario" when **all** services (and just the educational services department) are running at full steam
 
-  * Did not research for any possible discounts for non-profits
+  * No research done yet for any possible discounts for non-profits
+
+6. Risks {#risk}
+================
+
+6.1 Inability to meet deadline(s)
+---------------------------------
+
+Activity and task deadlines are conservative estimates but they may prove to be too ambitious for the only two developers (i.e., the authors of this proposal).
+
+### 6.1.2 Recommended mitigation strategy
+
+Because of the open source nature of the project, anyone is able to contribute and therefore larger exposure would mean more collaborators.
+
+Ways to promote project:
+
+  * advertise undertaking in online developer communities (both technology-specific and -agnostic)
+
+  * set a low bar for aspiring developers and technology enthusiasts
+
+  * open for discussion even to people who are intrigued and just would like to know more
+
+  * organize after hour meet-ups and/or study groups for interested parties, such as co-workers, SFTB, college or high school students, and so on
+
+The **long-term vision** is to put Society for the Blind on the information technology map as a hub for knowledge exchange that nurtures the local tech community without any barriers and bias.
+
+The agency probably wouldn't immediately benefit from these events directly they would also be helpful to attract attention. For example, each gathering could start with a short introduction of Society for the Blind and our mission. Many participants may move on quickly or never contribute to internal projects but there are always people who just need the opportunity or a slight nudge to start learning.
+
+7. Reporting {#report}
+======================
+
+Weekly reports on current progress, challenges and amount of time spent on specific activity or task.
+
+8. Monitoring and evaluation
+============================
+
+Continuous accessibility evaluation by Aser Tolentino.
 
 \newpage
 Glossary
