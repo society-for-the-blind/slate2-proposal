@@ -2,6 +2,18 @@
 1 Executive Summary
 ====================
 
+**Activities/Tasks**                                    **Responsibility**       **Start**      **End**
+------------------------------------------------------- ---------------------- -----------   ----------
+0 [Build local development environment](#env510)        Attila Gulyas          11/1/2017     12/15/2017
+1 [Plan agency-wide schema](#plan511)                   Attila Gulyas          11/1/2017     2/15/2018
+2 [Develop subsystem for educational](#dev512)          Attila Gulyas          11/1/2017     6/15/2018
+  [services departments](#dev512)
+3 [Prepare to move to the Cloud](#prep513)              Attila Gulyas          12/15/2017    2/1/2019
+4 [Focus on Resource Development](#resdev514)           Attila Gulyas           6/15/2018    12/15/2018
+5 Retail services                                       Attila Gulyas           2019
+6 Low Vision clinic                                     Attila Gulyas           2019
+---------------------------------------------------------------------------------------------------------
+
 \newpage
 2 Context
 ===========
@@ -271,111 +283,62 @@ Develop a constituent relationship and service management system that is
 5.1 Activitiy plan
 ------------------
 
-Table: Activity plan
-
----------------------------------------------------------------------------------------------------------
-**Activities/Tasks**                                    **Responsibility**     **Start**     **End**
-------------------------------------------------------- ---------------------- -----------   ------------
-0. [Build local development environment](#env510)       Attila Gulyas          11/1/2017     12/15/2017
-                                                        GNT Solutions
-
-    _______________________________________________
-
-1. [Plan agency-wide schema](#plan511)                  Attila Gulyas           11/1/2017     2/15/2018
-                                                        Staff
 <!--- Extra newlines (i.e., backslashes below) are for PDF niceness but
       completely unnecessary for word so use the vim command below to
       remove it:
       :g/^\\$/d
 -->
+Table: Activity plan
 
+**Activity/Task**                                       **Responsibility**       **Start**        **End**
+------------------------------------------------------- ---------------------- -----------   ------------
+**0 [Build local development environment](#env510)**    Attila Gulyas          11/1/2017     12/15/2017
+                                                        GNT Solutions
+.............................................
+**1 [Plan agency-wide schema](#plan511)**               Attila Gulyas           11/1/2017     2/15/2018
+                                                        Staff
 \
-
 1.1 [Collect information about services](#collect5111)
     [and departmental processes](#collect5111)
-
-\
-
 1.2 [Evaluate workflows](#eval5112)
-
-\
-
 1.3 [Identify service boundaries](#id5113)
-
-    _______________________________________________
-
-2 [Develop subsystem for educational](#dev512)          Attila Gulyas          11/1/2017     6/15/2018
-  [services departments](#dev512)
-
+.............................................
+**2 [Develop subsystem for educational](#dev512)**      Attila Gulyas          11/1/2017     6/15/2018
+  **[services departments](#dev512)**
 \
-
 2.1 [Cater for functionality common](#dev512)           Attila Gulyas          11/1/2017     4/15/2018
     [for both CORE and SIP](#cater5121)
-
-\
-
 2.2 [Implement CORE-specific features](#imp5122)        Attila Gulyas          11/1/2017     6/15/2018
                                                         Aser Tolentino
-
-\
-
 2.3 [Implement SIP-specific features](#imp5123)         Attila Gulyas           2/15/2018     6/15/2018
-
-    _______________________________________________
-
-3 [Prepare to move to the Cloud](#prep513)              Attila Gulyas          12/15/2017
-
+.............................................
+**3 [Prepare to move to the Cloud](#prep513)**          Attila Gulyas          12/15/2017     2/1/2019
 \
-
 3.1 [Replicate local development](#local5131)           Attila Gulyas          12/15/2017     3/1/2018
     [environment in the Cloud](#local5131)
-
-\
-
 3.2 [Experiment with collaboration between](#exp5133)   Attila Gulyas           3/1/2018      4/15/2018
     [local and remote services](#exp5133)
-
-\
-
 3.3 [Deploy stable educational](#dummy5132)             Attila Gulyas           4/15/2018     9/20/2018
     [subsystems for testing](#dummy5132)
-
-\
-
 3.4 [Put data-processing subsystems into](#proc5134)    Attila Gulyas           6/15/2018     10/1/2018
     [production](#proc5134)
-
-\
-
-3.5 [Finish moving educational services](#fin5135)      Attila Gulyas                         2/1/2019
+3.5 [Finish moving educational services](#fin5135)      Attila Gulyas          10/1/2018      2/1/2019
     [and assess results](#fin5135)
-
-    _______________________________________________
-
-4 [Focus on Resource Development](#resdev514)           Attila Gulyas           6/15/2018    12/15/2018
-
+.............................................
+**4 [Focus on Resource Development](#resdev514)**       Attila Gulyas           6/15/2018    12/15/2018
 \
-
 4.1 [Develop subsystem to consolidate](#vol5141)        Attila Gulyas           6/15/2018     8/15/2018
     [volunteer management](#vol5141)
-
-\
-
 4.2 [Assess departmental needs and](#assess5142)        Attila Gulyas           6/15/2018    10/31/2018
     [current tools](#assess5142)                        Lina Lloyd \
                                                         Liz Culp
-
-\
-
 4.3 [Create subsystem to replace or](#don5143)          Attila Gulyas           8/15/2018    12/15/2018
     [integrate current solutions for](#don5143)
     [donor and campaign management](#don5143)
-
-    _______________________________________________
-
-5 Retail services
-
-6 Low Vision clinic
+.............................................
+**5 Retail services**                                   Attila Gulyas           2019
+.............................................
+**6 Low Vision clinic**                                 Attila Gulyas           2019
 ---------------------------------------------------------------------------------------------------------
 
 Notes:
@@ -467,9 +430,42 @@ In order to create a collaborative ecosystem of subsystems service boundaries ne
 
 #### 5.1.4.3 Create subsystem to replace or integrate current solutions for donor and campaign management {#don5143}
 
-5.2 Resource plan
+5.2 Budget
 -----------------
 
+Table: Budget
+
+**Activity**                                               **From**    **From**    **Cost**
+------------------------------------------------------- ----------- ----------- -----------
+**3 [Prepare to move to the Cloud](#prep513)**          12/15/2017     2/1/2019
+\
+3.1 [Replicate local development](#local5131)           12/15/2017     3/1/2018  [$40.04](https://cloud.google.com/products/calculator/#id=3a39d0d1-67c0-467e-82c0-ff1b48545b88)
+    [environment in the Cloud](#local5131)
+\
+3.2 [Experiment with collaboration between](#exp5133)    3/1/2018      4/15/2018 [$35.42](https://cloud.google.com/products/calculator/#id=c77898a4-c560-4639-91ed-dc4d63696d4d)
+    [local and remote services](#exp5133)
+\
+3.3 [Deploy stable educational](#dummy5132)              4/15/2018     9/20/2018 [$519.93](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)
+    [subsystems for testing](#dummy5132)
+\
+3.4 [Put data-processing subsystems into](#proc5134)     6/15/2018     10/1/2018 [$35.97](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)[^footnote-price]
+    [production](#proc5134)
+\
+**Total**                                                                        **$631.36**
+\
+**Ongoing costs at full capability** (see _Notes_)          10/1/2018               **[$3117.06](https://cloud.google.com/products/calculator/#id=3c01e636-6ae5-4585-8ae7-cd41e33bec7d)**
+-------------------------------------------------------------------------------
+
+[^footnote-price]: Only adding the difference between task **3.3** and **3.4** which is 11 days at the same price a day as **3.3**.
+
+*Notes*:
+
+  * Prices are based on the Google Cloud platform (click on prices to see configuration details) and are highly dependent on duration of commitment (e.g., a 3 year commitment would mean a 57% price reduction)
+Cost is an estimate of the "worst case scenario" if all the required virtual servers in the cloud would be started from day one.
+
+  * "Ongoing costs at full capability" estimate is based on "worst cost scenario" when **all** services (and just the educational services department) are running at full steam
+
+  * Did not research for any possible discounts for non-profits
 
 \newpage
 Glossary
