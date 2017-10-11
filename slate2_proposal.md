@@ -1,13 +1,13 @@
 \newpage
-1 Executive Summary
+Executive Summary
 ====================
 
-1.1 [Main goal](#maingoal)
+[Main goal](#maingoal)
 --------------------------
 
 Develop a constituent relationship and service program management system that is tailored to fit the needs of blindness organizations.
 
-1.2 [Activity plan](#activity)
+[Activity plan](#activity)
 ------------------------------
 
 **Activities/Tasks**                                    **Responsibility**       **Start**      **End**
@@ -20,9 +20,8 @@ Develop a constituent relationship and service program management system that is
 4 [Focus on Resource Development](#resdev514)           Attila Gulyas           6/15/2018    12/15/2018
 5 Retail services                                       Attila Gulyas           2019
 6 Low Vision clinic                                     Attila Gulyas           2019
----------------------------------------------------------------------------------------------------------
 
-1.3 [Budget](#bdgt)
+[Budget](#bdgt)
 ---------------------
 
 **Activity**                                               **From**    **From**    **Cost**
@@ -32,7 +31,7 @@ Develop a constituent relationship and service program management system that is
 3.1 [Replicate local development](#local5131)           12/15/2017     3/1/2018  [$40.04](https://cloud.google.com/products/calculator/#id=3a39d0d1-67c0-467e-82c0-ff1b48545b88)
     [environment in the Cloud](#local5131)
 3.2 [Experiment with collaboration between](#exp5133)    3/1/2018      4/15/2018 [$35.42](https://cloud.google.com/products/calculator/#id=c77898a4-c560-4639-91ed-dc4d63696d4d)
-    [local and remote services](#exp5133)
+    [local and remote subsystems](#exp5133)
 3.3 [Deploy stable educational](#dummy5132)              4/15/2018     9/20/2018 [$519.93](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)
     [subsystems for testing](#dummy5132)
 3.4 [Put data-processing subsystems into](#proc5134)     6/15/2018     10/1/2018 [$35.97](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)[^footnote-price]
@@ -44,17 +43,33 @@ Develop a constituent relationship and service program management system that is
 (see [_Notes_](#budgetnotes))
 -------------------------------------------------------------------------------
 
-1.4 [Risks](#risk)
-------------------
+[Long-term vision](#vision)
+-------------------------------
 
-Activity and task deadlines are conservative estimates but they may prove to be too ambitious for the only two developers (i.e., the authors of this proposal).
+Put Society for the Blind on the information technology map as a hub for knowledge exchange that nurtures the local tech community without any barriers and bias.
 
-*Recommended mitigation strategy*: The **long-term vision** is to put Society for the Blind on the information technology map as a hub for knowledge exchange that nurtures the local tech community without any barriers and bias.
-
-1.5 [Reporting](#report)
+[Reporting](#report)
 ------------------------
 
 Weekly reports on current progress, challenges and amount of time spent on specific activity or task.
+
+1. Terminology
+==============
+
+As this proposal supports the philosophy of the free software movement, its vocabulary has been chosen carefully.[@gnu-words]
+
+**subsystem**
+: The _constituent relationship and service program management system_ proposed in this paper is a collection of subsystems collaborating with each other to provide services for organizational programs and departments. Each subsystem is a software with a specific purpose that contributes to the overall functionality of the system. An example would be a subsystem for volunteer management.
+
+---
+
+**commercial software**[@gnu-words]
+: "_A program is commercial if it is developed as a business activity. A commercial program can be free or nonfree, depending on its manner of distribution. Likewise, a program developed by a school or an individual can be free or nonfree, depending on its manner of distribution. The two questions—what sort of entity developed the program and what freedom its users have—are independent._"
+
+---
+
+**supplier**
+: The recommended term instead of **vendor** because "_many programs are developed in order to sell copies, and their developers are therefore their vendors; this even includes some free software packages. However, many programs are developed by volunteers or organizations which do not intend to sell copies. These developers are not vendors._"
 
 \newpage
 2 Context
@@ -73,7 +88,7 @@ _Caveat_: Microsoft Excel is only a spreadsheet application (i.e., record-keepin
 
 ------------------------------------------------------------------------
 
-**database**[@wiki_database]
+**database**[@wiki-database]
 : A database is an organized collection of data.
 
 ------------------------------------------------------------------------
@@ -84,7 +99,7 @@ The word "database" is mostly used as a shorthand for "database-management syste
 
 ------------------------------------------------------------------------
 
-**database-management system (DBMS)**[@wiki_database;@techtarget_database]
+**database-management system (DBMS)**[@wiki-database;@techtarget-database]
 :   A database management system (DBMS) is software for creating and managing databases. The DBMS provides users and programmers with a systematic way to create, retrieve, update, manage and analyze data.
 
     \scriptsize Figure 1. The role of a DBMS in a generic application from data to end users \normalsize
@@ -105,7 +120,7 @@ For example, Excel can open and allow manipulation of multiple monthly timesheet
 
 ------------------------------------------------------------------------
 
-**data model**[@wiki_data_model]
+**data model**[@wiki-data-model]
 :   A data model explicitly determines the structure of data. The term is used in two distinct but closely related senses:
 
     [_definition A_] Abstract model of the problem domain that describes how data elements are related to one another and to properties of the real world entities in a particular application domain.
@@ -167,7 +182,7 @@ The definition intentionally uses the phrase "application software" instead of t
 2.3 Customer Relationship Management Systems {#customer-rms}
 -------------------------------------------
 
-Mostly used by commercial organizations to preserve "_information about the interactions between a customer and a business_" [@sh_crm] with a usually one-dimensional goal to maximize profits [@wiki_crm].
+Mostly used by commercial organizations to preserve "_information about the interactions between a customer and a business_" [@sh-crm] with a usually one-dimensional goal to maximize profits [@wiki-crm].
 
 2.4 Constituent (Relationship) Management Systems {#constituent-rms}
 ------------------------------------------------
@@ -199,27 +214,27 @@ As constituents can have more than one role and may be affiliated with multiple 
 
 This decentralization of information sources simplifies management for programs and services by only dealing with client data that pertains to them, using their own specialized and mostly proprietary software. For example, SIP and CORE maintains client information in Slate, the Low Vision Clinic uses EyeCare.
 
-Departments on the other hand, that need to see the big picture (such as Resource Development, Billing, HR), draw the short straw because data will need to be aggregated manually and consolidated into their own proprietary software (e.g., Raiser's Edge, Quickbooks) if automation is missing or difficult to implement (if not impossible). Software at Society for the Blind do not communicate directly with each other because they are native Windows applications[^footnote-native_apps]. Many of these vendors are starting to move to the Cloud, sharing the largest common platform (the World Wide Web) and technologies (web standards such as HTML, CSS, Javascript) but instead of embracing open standards to enable interoperation and collaboration, many of them just keep continuing bad practices.[@dzone_cloud;@iw_cloud]
+Departments on the other hand, that need to see the big picture (such as Resource Development, Billing, HR), draw the short straw because data will need to be aggregated manually and consolidated into their own proprietary software (e.g., Raiser's Edge, Quickbooks) if automation is missing or difficult to implement (if not impossible). Software at Society for the Blind do not communicate directly with each other because they are native Windows applications[^footnote-native_apps]. Many of these software suppliers are starting to move to the Cloud, sharing the largest common platform (the World Wide Web) and technologies (web standards such as HTML, CSS, Javascript) but instead of embracing open standards to enable interoperation and collaboration, many of them just keep continuing bad practices.[@dzone-cloud;@iw-cloud]
 
 [^footnote-native_apps]: With Slate being one exception but it can be viewed as a native application because it is not maintained anymore and its closed source.
 
 ### 3.1.2 Insufficient flexibility and accessibility support of major CRMs
 
-Approaches to adopting CRMs (generalist versus specialist) for a traditional organization are well documented, including best practices and their pros and cons[^footnote-annexes].[@sh_crm;@wiki_crm;@techsoup;@idealware;@heller_crm]
+Approaches to adopting CRMs (generalist versus specialist) for a traditional organization are well documented, including best practices and their pros and cons[^footnote-annexes].[@sh-crm;@wiki-crm;@techsoup;@idealware;@heller-crm]
 
 [^footnote-annexes]: See [Annexes] A.1 for a comparison summary.
 
 Although when it comes to blindness organizations, they are found lacking:
 
-  1. **Accessibility is addressed as an afterthought**
+  1. **Accessibility is addressed as an afterthought.**
 
      A fierce market dictates that a software should satisfy the needs and expectations of the majority of the users (e.g., maximalize visual pleasure, optimize for mouse usage). These properties and accessibility are not mutually exclusive but cutting corners yield faster and easier results[^footnote-web_cut_corner]. An analogy would be building a house solely by how it should look with disregard to safety standards: it can be done with toothpicks, paper mache and so on but it wouldn't be safe or useful for everyone.
 
 [^footnote-web_cut_corner]: One example of such shortcut is ignoring the semantic purpose of HTML elements, defined by web standards, by purposely misusing or abusing them to achieve a desired visual effect.
 
-  2.  **They don't necessarily cater to the needs of non-profits**
+  2.  **They don't necessarily cater to the needs of non-profits.**
 
-      Even solutions touted to be specifically for non-profits tend to be overly rigid as vendors are trying to attract as large an audiance as possible, requiring significant trade-offs[^footnote-tradeoffs].
+      Even solutions touted to be specifically for non-profits tend to be overly rigid as suppliers are trying to attract as large an audiance as possible, requiring significant trade-offs[^footnote-tradeoffs].
 
       The best example is managing educational services. Most CRMs' can be used that way indirectly, by using their generic case management system. This would need to be modified (if possible) but in many cases the organization's only option is to conform to the tool, instead of the other way around.
 
@@ -237,14 +252,14 @@ Although when it comes to blindness organizations, they are found lacking:
 
       The corollary of the last item is that an organization with multiple schemes either needs to change its internal processes (and retroactively update their records) or needs to adopt two or more specialist software that may have compatibility issues. Society for the Blind's CORE and SIP departments are the perfect example: they provide very similar services but their finances and the way they operate are fundamentally different.
 
-[^footnote-tradeoffs]: Such as making the software closed source but open sourcing the codebase is in itself no guarantee either. For example, if the application is written in a way that would require the vendor's exact infrastructure specifications to run, requiring such extensive re-writes that would amount to creating solution from scratch.
+[^footnote-tradeoffs]: Such as making the software proprietary. On the other hand, making the source code available is in itself no guarantee either. For example, if the application is written in a way that would require the supplier's exact infrastructure specifications to run, requiring such extensive re-writes that would amount to creating solution from scratch.
 
 3.2 Proposed approach
 ---------------------
 
 To solve the aforementioned issues, to maximize its usefulness to the community and to promote easier collaboration, the end product should be:
 
-  * **open source**
+  * **free** (therefore **open source**)
 
   * **web-based**
 
@@ -359,7 +374,7 @@ Table: Activity plan
 3.1 [Replicate local development](#local5131)           Attila Gulyas          12/15/2017     3/1/2018
     [environment in the Cloud](#local5131)
 3.2 [Experiment with collaboration between](#exp5133)   Attila Gulyas           3/1/2018      4/15/2018
-    [local and remote services](#exp5133)
+    [local and remote subsystems](#exp5133)
 3.3 [Deploy stable educational](#dummy5132)             Attila Gulyas           4/15/2018     9/20/2018
     [subsystems for testing](#dummy5132)
 3.4 [Put data-processing subsystems into](#proc5134)    Attila Gulyas           6/15/2018     10/1/2018
@@ -381,7 +396,6 @@ Table: Activity plan
 **5 Retail services**                                   Attila Gulyas           2019
 .............................................
 **6 Low Vision clinic**                                 Attila Gulyas           2019
----------------------------------------------------------------------------------------------------------
 
 Notes:
 
@@ -456,7 +470,7 @@ In order to create a collaborative ecosystem of subsystems service boundaries ne
 
 #### 5.1.3.1 Replicate local development environment in the Cloud {#local5131}
 
-#### 5.1.3.2 Experiment with collaboration between local and remote services {#exp5133}
+#### 5.1.3.2 Experiment with collaboration between local and remote subsystems {#exp5133}
 
 #### 5.1.3.3 Deploy stable subsystems for testing {#dummy5132}
 
@@ -485,7 +499,7 @@ Table: Budget
     [environment in the Cloud](#local5131)
 \
 3.2 [Experiment with collaboration between](#exp5133)    3/1/2018      4/15/2018 [$35.42](https://cloud.google.com/products/calculator/#id=c77898a4-c560-4639-91ed-dc4d63696d4d)
-    [local and remote services](#exp5133)
+    [local and remote subsystems](#exp5133)
 \
 3.3 [Deploy stable educational](#dummy5132)              4/15/2018     9/20/2018 [$519.93](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)
     [subsystems for testing](#dummy5132)
@@ -497,7 +511,6 @@ Table: Budget
 \
 **Ongoing costs at full capability**                     10/1/2018               **[$3117.06](https://cloud.google.com/products/calculator/#id=3c01e636-6ae5-4585-8ae7-cd41e33bec7d)**
 (see [_Notes_](#budgetnotes))
--------------------------------------------------------------------------------
 
 [^footnote-price]: Only adding the difference between task **3.3** and **3.4** which is 11 days at the same price a day as **3.3**.
 
@@ -506,12 +519,12 @@ Table: Budget
   * Prices are based on the Google Cloud platform (click on prices to see configuration details) and are highly dependent on duration of commitment (e.g., a 3 year commitment would mean a 57% price reduction)
 Cost is an estimate of the "worst case scenario" if all the required virtual servers in the cloud would be started from day one.
 
-  * "Ongoing costs at full capability" estimate is based on "worst cost scenario" when **all** services (and just the educational services department) are running at full steam
+  * _Ongoing costs at full capability_ estimate is based on "worst cost scenario" when **all** services (and not just the educational services department) are running at full steam
 
   * No research done yet for any possible discounts for non-profits
 
-6. Risks {#risk}
-================
+6. Long-term vision {#vision}
+=============================
 
 6.1 Inability to meet deadline(s)
 ---------------------------------
@@ -536,12 +549,17 @@ The **long-term vision** is to put Society for the Blind on the information tech
 
 The agency probably wouldn't immediately benefit from these events directly they would also be helpful to attract attention. For example, each gathering could start with a short introduction of Society for the Blind and our mission. Many participants may move on quickly or never contribute to internal projects but there are always people who just need the opportunity or a slight nudge to start learning.
 
-7. Reporting {#report}
+7. Marketing
+============
+
+
+
+8. Reporting {#report}
 ======================
 
 Weekly reports on current progress, challenges and amount of time spent on specific activity or task.
 
-8. Monitoring and evaluation
+9. Monitoring and evaluation
 ============================
 
 Continuous accessibility evaluation by Aser Tolentino.
@@ -553,7 +571,7 @@ Glossary
 **Application software**[@tth]
 : A program or group of programs that is designed for the end user. (...) Application software cannot run on itself but is dependent on system software to execute.
 
-**CRM**[@sh_crm;@wiki_crm;@techsoup;@idealware]
+**CRM**[@sh-crm;@wiki-crm;@techsoup;@idealware]
 :   May refer to one of the following definitions that are usually used interchangeably:
 
     [_methodology_] One approach to capture and to manage an organization's interactions and relationships with and among entities.
@@ -574,10 +592,10 @@ Glossary
     ---  ==============================================
     ```
 
-**database**[@wiki_database]
+**database**[@wiki-database]
 : A database is an organized collection of data.
 
-**database-management system (DBMS)**[@wiki_database;@techtarget_database]
+**database-management system (DBMS)**[@wiki-database;@techtarget-database]
 :   A database management system (DBMS) is software for creating and managing databases. The DBMS provides users and programmers with a systematic way to create, retrieve, update and manage data.
 
     \scriptsize Figure 1. The role of a DBMS in a generic application from data to end users \normalsize
@@ -592,7 +610,7 @@ Glossary
     --------------       -------------     -----------------
     ```
 
-**data model**[@wiki_data_model]
+**data model**[@wiki-data-model]
 :   A data model explicitly determines the structure of data. The term is used in two distinct but closely related senses:
 
     [_definition A_] Abstract model of the problem domain that describes how data elements are related to one another and to properties of the real world entities in a particular application domain.
@@ -618,3 +636,4 @@ A.3 Basics of microservices
 \newpage
 References
 ==========
+

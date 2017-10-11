@@ -15,7 +15,7 @@
         "family": "SelectHub"
       }
     ],
-    "id": "sh_crm",
+    "id": "sh-crm",
     "issued": {
       "date-parts": [
         [
@@ -44,7 +44,7 @@
         "family": "Wikipedia"
       }
     ],
-    "id": "wiki_crm",
+    "id": "wiki-crm",
     "issued": {
       "date-parts": [
         [
@@ -161,7 +161,7 @@
         "family": "Wikipedia"
       }
     ],
-    "id": "wiki_database",
+    "id": "wiki-database",
     "issued": {
       "date-parts": [
         [
@@ -188,7 +188,7 @@
         "family": "Wikipedia"
       }
     ],
-    "id": "wiki_data_model",
+    "id": "wiki-data-model",
     "issued": {
       "date-parts": [
         [
@@ -237,7 +237,7 @@
         "given": "Margaret"
       }
     ],
-    "id": "techtarget_database",
+    "id": "techtarget-database",
     "issued": {
       "date-parts": [
         [
@@ -265,7 +265,7 @@
         "literal": "Heller Consulting"
       }
     ],
-    "id": "heller_crm",
+    "id": "heller-crm",
     "issued": {
       "date-parts": [
         [
@@ -294,7 +294,7 @@
         "given": "David"
       }
     ],
-    "id": "iw_cloud",
+    "id": "iw-cloud",
     "issued": {
       "date-parts": [
         [
@@ -325,7 +325,7 @@
         "given": "Eric D."
       }
     ],
-    "id": "dzone_cloud",
+    "id": "dzone-cloud",
     "issued": {
       "date-parts": [
         [
@@ -337,6 +337,36 @@
     },
     "title": "Should you slap the next person selling you cloud-native? “The cloud will solve all of your problems, just sign this contract!” before you make the move to the cloud, be sure you, your team, and your organization are ready for it.",
     "title-short": "Should you slap the next person selling you cloud-native?",
+    "type": "webpage"
+  },
+  {
+    "URL": "https://www.gnu.org/philosophy/words-to-avoid.html",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          11
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Stallman",
+        "given": "Richard M."
+      }
+    ],
+    "id": "gnu-words",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          2
+        ]
+      ]
+    },
+    "title": "Words to avoid (or use with care) because they are loaded or confusing",
     "type": "webpage"
   }
 ]
