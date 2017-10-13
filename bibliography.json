@@ -368,5 +368,37 @@
     },
     "title": "Words to avoid (or use with care) because they are loaded or confusing",
     "type": "webpage"
+  },
+  {
+    "ISBN": "1-565-92724-9",
+    "URL": "http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          12
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Raymond",
+        "given": "Eric Steven"
+      }
+    ],
+    "id": "bazaar",
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    },
+    "number-of-pages": "241",
+    "publisher": "O’Reilly Media",
+    "title": "The cathedral and the bazaar",
+    "type": "book",
+    "version": "1.57"
   }
 ]

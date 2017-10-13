@@ -56,8 +56,6 @@ Weekly reports on current progress, challenges and amount of time spent on speci
 1. Terminology
 ==============
 
-As this proposal supports the philosophy of the free software movement, its vocabulary has been chosen carefully.[@gnu-words]
-
 **subsystem**
 : The _constituent relationship and service program management system_ proposed in this paper is a collection of subsystems collaborating with each other to provide services for organizational programs and departments. Each subsystem is a software with a specific purpose that contributes to the overall functionality of the system. An example would be a subsystem for volunteer management.
 
@@ -65,11 +63,6 @@ As this proposal supports the philosophy of the free software movement, its voca
 
 **commercial software**[@gnu-words]
 : "_A program is commercial if it is developed as a business activity. A commercial program can be free or nonfree, depending on its manner of distribution. Likewise, a program developed by a school or an individual can be free or nonfree, depending on its manner of distribution. The two questions—what sort of entity developed the program and what freedom its users have—are independent._"
-
----
-
-**supplier**
-: The recommended term instead of **vendor** because "_many programs are developed in order to sell copies, and their developers are therefore their vendors; this even includes some free software packages. However, many programs are developed by volunteers or organizations which do not intend to sell copies. These developers are not vendors._"
 
 \newpage
 2 Context
@@ -214,7 +207,7 @@ As constituents can have more than one role and may be affiliated with multiple 
 
 This decentralization of information sources simplifies management for programs and services by only dealing with client data that pertains to them, using their own specialized and mostly proprietary software. For example, SIP and CORE maintains client information in Slate, the Low Vision Clinic uses EyeCare.
 
-Departments on the other hand, that need to see the big picture (such as Resource Development, Billing, HR), draw the short straw because data will need to be aggregated manually and consolidated into their own proprietary software (e.g., Raiser's Edge, Quickbooks) if automation is missing or difficult to implement (if not impossible). Software at Society for the Blind do not communicate directly with each other because they are native Windows applications[^footnote-native_apps]. Many of these software suppliers are starting to move to the Cloud, sharing the largest common platform (the World Wide Web) and technologies (web standards such as HTML, CSS, Javascript) but instead of embracing open standards to enable interoperation and collaboration, many of them just keep continuing bad practices.[@dzone-cloud;@iw-cloud]
+Departments on the other hand, that need to see the big picture (such as Resource Development, Billing, HR), draw the short straw because data will need to be aggregated manually and consolidated into their own proprietary software (e.g., Raiser's Edge, Quickbooks) if automation is missing or difficult to implement (if not impossible). Software at Society for the Blind do not communicate directly with each other because they are native Windows applications[^footnote-native_apps]. Many of these vendors are starting to move to the Cloud, sharing the largest common platform (the World Wide Web) and technologies (web standards such as HTML, CSS, Javascript) but instead of embracing open standards to enable interoperation and collaboration, many of them just keep continuing bad practices.[@dzone-cloud;@iw-cloud]
 
 [^footnote-native_apps]: With Slate being one exception but it can be viewed as a native application because it is not maintained anymore and its closed source.
 
@@ -234,7 +227,7 @@ Although when it comes to blindness organizations, they are found lacking:
 
   2.  **They don't necessarily cater to the needs of non-profits.**
 
-      Even solutions touted to be specifically for non-profits tend to be overly rigid as suppliers are trying to attract as large an audiance as possible, requiring significant trade-offs[^footnote-tradeoffs].
+      Even solutions touted to be specifically for non-profits tend to be overly rigid as vendors are trying to attract as large an audiance as possible, requiring significant trade-offs[^footnote-tradeoffs].
 
       The best example is managing educational services. Most CRMs' can be used that way indirectly, by using their generic case management system. This would need to be modified (if possible) but in many cases the organization's only option is to conform to the tool, instead of the other way around.
 
@@ -252,7 +245,7 @@ Although when it comes to blindness organizations, they are found lacking:
 
       The corollary of the last item is that an organization with multiple schemes either needs to change its internal processes (and retroactively update their records) or needs to adopt two or more specialist software that may have compatibility issues. Society for the Blind's CORE and SIP departments are the perfect example: they provide very similar services but their finances and the way they operate are fundamentally different.
 
-[^footnote-tradeoffs]: Such as making the software proprietary. On the other hand, making the source code available is in itself no guarantee either. For example, if the application is written in a way that would require the supplier's exact infrastructure specifications to run, requiring such extensive re-writes that would amount to creating solution from scratch.
+[^footnote-tradeoffs]: Such as making the software proprietary. On the other hand, making the source code available is in itself no guarantee either. For example, if the application is written in a way that would require the vendors's exact infrastructure specifications to run, requiring such extensive re-writes that would amount to creating solution from scratch.
 
 3.2 Proposed approach
 ---------------------
@@ -549,17 +542,20 @@ The **long-term vision** is to put Society for the Blind on the information tech
 
 The agency probably wouldn't immediately benefit from these events directly they would also be helpful to attract attention. For example, each gathering could start with a short introduction of Society for the Blind and our mission. Many participants may move on quickly or never contribute to internal projects but there are always people who just need the opportunity or a slight nudge to start learning.
 
-7. Marketing
+7. License
+==========
+
+licenses exist to unambiguously tell in what ways source code can be handled if it ever comes to a legal dispute but of course their language depends on the interpretations that wins in a legal case that will become the precedent (or not). With that said, the writers of this proposal feel strongly about using a more restrictive license towards user freedom therefore recommending a copyleft license (AGPLv3)
+
+8. business strategy or Marketing?
 ============
 
-
-
-8. Reporting {#report}
+9. Reporting {#report}
 ======================
 
 Weekly reports on current progress, challenges and amount of time spent on specific activity or task.
 
-9. Monitoring and evaluation
+10. Monitoring and evaluation
 ============================
 
 Continuous accessibility evaluation by Aser Tolentino.
