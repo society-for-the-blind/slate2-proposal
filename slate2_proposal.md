@@ -131,7 +131,7 @@ An example for _definition B_ is how Excel's data model is based on tables of da
 **database schema**[@schema]
 : The database schema is like a blueprint that describes the layout of the data contained in the database: what kinds of fields are present and how they are organized. Compared to the abstract concept of data models, a schema is a concrete file whose format depends on the used database-management system.
 
-    ------------------------------------------------------------------------
+------------------------------------------------------------------------
 
 The database schema is very similar to an Excel template. For example, the timesheet template has to adhere to Excel's data model (i.e., has to stick with rows and columns) and it expects a specific type of data at certain places (e.g., duration of time at "Daily totals").
 
@@ -144,7 +144,7 @@ To come a full circle: once a timesheet has been filled out and stored by HR bas
 
   1. _One approach to capture and to manage an organization's interactions and relationships with and among entities._
 
-The broadness of the definition is deliberate (and so is leaving the acronym unexpanded) because making it specific depends on the context (i.e., organization type it is used in connection with). Sections [2.3](#customer-rms) and [2.4](#constituent-rms) elaborate further on this topic.
+The broadness of the definition is deliberate (and so is leaving the acronym unexpanded) because making it specific depends on the context (i.e., organization type it is used in connection with). Sections [2.2.1](#customer-rms) and [2.2.2](#constituent-rms) elaborate further on this topic.
 
   2. _Application software[^footnote-application_software_definition] that provides an interface to capture, process and analyze interaction data according to the requirements in the business domain.
 
@@ -172,13 +172,11 @@ The definition intentionally uses the phrase "application software" instead of t
     ---  ==============================================
     ```
 
-2.3 Customer Relationship Management Systems {#customer-rms}
--------------------------------------------
+### 2.2.1 Customer Relationship Management Systems {#customer-rms}
 
 Mostly used by commercial organizations to preserve "_information about the interactions between a customer and a business_" [@sh-crm] with a usually one-dimensional goal to maximize profits [@wiki-crm].
 
-2.4 Constituent (Relationship) Management Systems {#constituent-rms}
-------------------------------------------------
+### 2.2.2 Constituent (Relationship) Management Systems {#constituent-rms}
 
 Non-profit organizations require a different approach to capture relationships. Even though they may have clients who receive services in some form, the word **customer** does not naturally apply to them. Its meaning is also too narrow to refer to other entities (i.e., individual, agency etc.) connected to non-profits.
 
@@ -195,6 +193,48 @@ The two most common approaches to constituent management[@techsoup;@idealware] b
 * or rolling out a single **generalist CRM** application that tries to satisfy all needs but usually only to a certain extent (e.g., CiviCRM, Salesforce)
 
 \newpage
+2.3 Open source software
+------------------------
+
+### 2.3.1 Brief history
+
+#### 1970s
+
+Computers are built from scratch by research organizations and custom software has to be written to operate them. "Software was not yet standardized and was not considered to be a monetizable product."[@roads-and-bridges]
+
+#### 1981[@roads-and-bridges]
+
+IBM introduces the "IBM PC" or "Personal Computer". Industry adoption is high winnowing out the competition and capturing half of the market share by 1986.[@23inroadsandbridges]
+
+Standardized hardware brought along the opportunity to standardize software. IBM hires Microsoft to write the operating system for their PC and they deliver MS-DOS in the same year. Other companies follow suit.
+
+Turning software into business proved lucrative, resulting in commercial licenses promoting the creation of proprietary products, preventing users from copying, modifying or redistributing software.
+
+#### 1983
+
+Concern rises among computer scientists "about the closed and proprietary direction that software was taking".[@roads-and-bridges] As a response, Richard Stallman launches GNU, a free operating system, also inadvertently laying the foundation for the "free software movement".[@https://www.gnu.org/gnu/initial-announcement.html]
+
+#### 1985
+
+Stallman founds the Free Software Foundation to support the objectives of the "free software movement".[@https://www.gnu.org/gnu/manifesto.html]
+
+#### 1992
+
+The growth of the World Wide Web gains momentum and becomes more widely available.
+
+#### 1996
+
+The commercialization of the web begins to take advantage of the new medium with great success and huge gains.
+
+#### 1998
+
+In a move unprecented at the time from a software company, Netscape releases the source code of its high market-share web browser.
+
+nem ertettek egyet wikiopensource, gnu, roadsbridges
+
+### 2.3.2 Open source versus free software
+
+
 3 Project rationale
 ===================
 
@@ -252,7 +292,7 @@ Although when it comes to blindness organizations, they are found lacking:
 
 To solve the aforementioned issues, to maximize its usefulness to the community and to promote easier collaboration, the end product should be:
 
-  * **free** (therefore **open source**)
+  * **free software** (therefore **open source**)
 
   * **web-based**
 
@@ -626,7 +666,7 @@ A.1 Comparison of CRM implementation approaches
 A.2 Arguments against using Salesforce
 --------------------------------------
 
-A.3 Basics of microservices
+A.3 Microservices
 ---------------------------
 
 \newpage
