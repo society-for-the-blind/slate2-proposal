@@ -228,12 +228,15 @@ The commercialization of the web begins to take advantage of the new medium with
 
 #### 1998
 
-In a move unprecented at the time from a software company, Netscape releases the source code of its high market-share web browser.
-
-nem ertettek egyet wikiopensource, gnu, roadsbridges
+In a move unprecented at the time from a software company, Netscape releases the source code of its high market-share web browser. This event becomes the catalyst to a group of technologists, who have been advocating a more pragmatic approach to the Free Software Foundation's principles, to create the Open Source Initiative. The new organization's focus was to promulgate "the practical benefits of free software"[@roads-and-bridges] without "the ideological and confrontational connotations of the term"[@https://en.wikipedia.org/wiki/Open-source_software_movement]
 
 ### 2.3.2 Open source versus free software
 
+Both the definition of **free software**[^footnote-word_free] and the definition of **open source software** do roughly mean the same (i.e., "_users have the freedom to run, copy, distribute, study, change and improve the software_"[@https://www.gnu.org/philosophy/free-sw.en.html]) but the former is a social movement and the latter is a development methodology[@https://www.gnu.org/philosophy/open-source-misses-the-point.en.html].
+
+[^footnote-word_free]: "_Many languages have two separate words for “free” as in freedom and “free” as in zero price. For example, French has “libre” and “gratuit”. Not so English; there is a word “gratis” that refers unambiguously to price, but no common adjective that refers unambiguously to freedom._"[@https://www.gnu.org/philosophy/categories.en.html]
+
+The main, factionalizing difference between the groups is the relationship between open source and proprietary software[@https://en.wikipedia.org/wiki/Open-source_software_movement]. Members of the open source community are willing to coexist with the makers of proprietary software[@https://opensource.org/faq#permissive] and feel that the issue of whether software is open source is a matter of practicality.[@https://opensource.org/history] In contrast, members of the free software community maintain the vision that all software is a part of freedom of speech and that proprietary software is unethical and unjust[@https://www.gnu.org/philosophy/open-source-misses-the-point.en.html].
 
 3 Project rationale
 ===================

@@ -1,31 +1,6 @@
 free vs open source
 ===================
 
-http://www.fordfoundation.org/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf
-
-from page 29 stallman open source etc
-
-https://www.gnu.org/philosophy/categories.en.html
-“Free software” means software that respects users' freedom and community. Roughly, it means that the users have the freedom to run, copy, distribute, study, change and improve the software. Thus, “free software” is a matter of liberty, not price. To understand the concept, you should think of “free” as in “free speech,” not as in “free beer”. We sometimes call it “libre software,” borrowing the French or Spanish word for “free” as in freedom, to show we do not mean the software is gratis.
-
-We campaign for these freedoms because everyone deserves them. With these freedoms, the users (both individually and collectively) control the program and what it does for them. When users don't control the program, we call it a “nonfree” or “proprietary” program. The nonfree program controls the users, and the developer controls the program; this makes the program an instrument of unjust power.
-
-The four essential freedoms
-
-A program is free software if the program's users have the four essential freedoms:
-
-The freedom to run the program as you wish, for any purpose (freedom 0).
-The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
-The freedom to redistribute copies so you can help your neighbor (freedom 2).
-The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
-
-
-https://www.gnu.org/philosophy/categories.en.html
-(see diagram)
-Free software is a matter of freedom, not price. But proprietary software companies typically use the term “free software” to refer to price. Sometimes they mean that you can obtain a binary copy at no charge; sometimes they mean that a copy is bundled with a computer that you are buying, and the price includes both. Either way, it has nothing to do with what we mean by free software in the GNU project.
-
-Many languages have two separate words for “free” as in freedom and “free” as in zero price. For example, French has “libre” and “gratuit”. Not so English; there is a word “gratis” that refers unambiguously to price, but no common adjective that refers unambiguously to freedom.
-
 https://www.gnu.org/philosophy/open-source-misses-the-point.en.html
 >  'When we call software “free,” we mean that it respects the users' essential freedoms: the freedom to run it, to study and change it, and to redistribute copies with or without changes. This is a matter of freedom, not price, so think of “free speech,” not “free beer.”'
 
@@ -282,3 +257,7 @@ Suppose the application you create for your client is a software model of the co
 
 NOTE: in our case re-distribution is a boon because we are a non profit and do not treat other agencies as competition. What about attribution? there you go:
 https://opensource.stackexchange.com/questions/4971/what-are-the-attribution-requirements-of-the-agpl-license
+
+gpl v3 notes
+============
+
