@@ -232,11 +232,31 @@ In a move unprecented at the time from a software company, Netscape releases the
 
 ### 2.3.2 Open source versus free software
 
-Both the definition of **free software**[^footnote-word_free] and the definition of **open source software** do roughly mean the same (i.e., "_users have the freedom to run, copy, distribute, study, change and improve the software_"[@https://www.gnu.org/philosophy/free-sw.en.html]) but the former is a social movement and the latter is a development methodology[@https://www.gnu.org/philosophy/open-source-misses-the-point.en.html].
+#### 2.3.2.1 Common ground
+
+Both **free[^footnote-word_free] software** and **open source software** do roughly mean the same: "_users have the freedom to run, copy, distribute, study, change and improve the software_"[@https://www.gnu.org/philosophy/free-sw.en.html][^footnote-compare_os].
 
 [^footnote-word_free]: "_Many languages have two separate words for “free” as in freedom and “free” as in zero price. For example, French has “libre” and “gratuit”. Not so English; there is a word “gratis” that refers unambiguously to price, but no common adjective that refers unambiguously to freedom._"[@https://www.gnu.org/philosophy/categories.en.html]
 
-The main, factionalizing difference between the groups is the relationship between open source and proprietary software[@https://en.wikipedia.org/wiki/Open-source_software_movement]. Members of the open source community are willing to coexist with the makers of proprietary software[@https://opensource.org/faq#permissive] and feel that the issue of whether software is open source is a matter of practicality.[@https://opensource.org/history] In contrast, members of the free software community maintain the vision that all software is a part of freedom of speech and that proprietary software is unethical and unjust[@https://www.gnu.org/philosophy/open-source-misses-the-point.en.html].
+[^footnote-compare_os]: Compare with the summary from the Open Source Initiative's own summary: "_Generally, Open Source software is software that can be freely accessed, used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the [Open Source Definition](https://opensource.org/osd-annotated)._"[@https://opensource.org/faq#osd]
+
+See [Glossary](#glossary) for their formal definitions.
+
+#### 2.3.2.2 Differences
+
+"_Open source is a development methodology; free software is a social movement._"[@https://www.gnu.org/philosophy/open-source-misses-the-point.en.html] Although often discussed together, they are politically distinct: "free software" being more closely associated with ethics ("_essential respect for the users' freedom"[@https://www.gnu.org/philosophy/open-source-misses-the-point.en.html]) and "open source" with pragmatism (i.e., a practical, business-case approach to free software[@https://opensource.org/history]).
+
+On the practical side, every existing free software would qualify as open source but not vice versa. Exceptions include the following:
+
+  * Open source licenses are more permissive (or restrictive, depending on the perspective).
+
+    For example, some licences that do not allow modification of program  are still deemed as valid open source licenses by the Open Source Initiative whereas these terms are unacceptable by the Free Software Foundation as they limit the users' freedom.
+
+  * Difference between the groups' relationship between free and proprietary software.
+
+    Members of the open source community are willing to coexist with the makers of proprietary software[@https://en.wikipedia.org/wiki/Open-source_software_movement,@https://opensource.org/faq#permissive] and feel that the issue of whether software is open source is a matter of practicality.[@https://opensource.org/history]
+
+    In contrast, members of the free software community maintain the vision that all software is a part of freedom of speech and that proprietary software is unethical and unjust[@https://www.gnu.org/philosophy/open-source-misses-the-point.en.html,@https://www.gnu.org/proprietary/proprietary.en.html,@https://www.gnu.org/proprietary/proprietary-surveillance.en.html,@https://www.gnu.org/proprietary/proprietary-back-doors.en.html].
 
 3 Project rationale
 ===================
