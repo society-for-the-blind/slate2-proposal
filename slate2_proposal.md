@@ -193,8 +193,8 @@ The two most common approaches to constituent management[@techsoup;@idealware] b
 * or rolling out a single **generalist CRM** application that tries to satisfy all needs but usually only to a certain extent (e.g., CiviCRM, Salesforce)
 
 \newpage
-2.3 Open source software
-------------------------
+2.3 Free (libre) and open source software (FLOSS)
+---------------------------------
 
 ### 2.3.1 Brief history
 
@@ -257,6 +257,36 @@ On the practical side, every existing free software would qualify as open source
     Members of the open source community are willing to coexist with the makers of proprietary software[@https://en.wikipedia.org/wiki/Open-source_software_movement,@https://opensource.org/faq#permissive] and feel that the issue of whether software is open source is a matter of practicality[@https://opensource.org/history]. One example is [tivoization](https://en.wikipedia.org/wiki/Tivoization).
 
     In contrast, members of the free software community maintain the vision that all software is a part of freedom of speech and that proprietary software is unethical and unjust[@https://www.gnu.org/philosophy/open-source-misses-the-point.en.html,@https://www.gnu.org/proprietary/proprietary.en.html,@https://www.gnu.org/proprietary/proprietary-surveillance.en.html,@https://www.gnu.org/proprietary/proprietary-back-doors.en.html].
+
+### 2.3.3 Licenses[^footnote-which_license]
+
+[^footnote-which_license]: Choosing a FLOSS license is a controversial topic, see [@https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21,@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant,@https://news.ycombinator.com/item?id=1273231,@roads-and-bridges].
+
+#### 2.3.3.1 Why are licenses necessary?[^footnote-osguide]
+
+[^footnote-osguide]: Content based on [github.com/github/opensource.guide] used under the CC-BY-4.0 license.
+
+An original creative work (such as writing, graphics, or code) is under exclusive copyright by default, meaning that by law only the author has a say in what others can do with it. Open source is an unusual circumstance, however, because the author expects that others will use, modify, and share the work. But because the legal default is still exclusive copyright, a license is needed to explicitly state these permissions.
+
+Without a license, everybody who contributes to the project also becomes an exclusive copyright holder of their work. That means nobody can use, copy, distribute, or modify their contributions – and that “nobody” includes the author as well.
+
+#### 2.3.3.2 Free software licenses
+
+Free software tend to be licensed under [copyleft](#glossary) licenses[^footnote-copyleft] that basically allow the creation of derivative works but require them to use the same license as the original work.[@https://opensource.org/faq#copyleft] For software, the added stipulation is that the original/derivative program's source code also has to be made available to recipients to prevent the creation of proprietary products.[@https://www.gnu.org/copyleft/copyleft.html] See [Glossary](#glossary) for the formal defintion.
+
+[^footnote-copyleft]: Also referred to as *reciprocal* or *protective* licenses.
+
+The most prominent example are the versions of the GNU General Public License[^footnote-gpl_v3].
+
+[^footnote-gpl_v3]: The latest version is the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) and [an extensive legal analysis is also available by the Software Freedom Law Center](https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html).
+
+#### 2.3.3.2 Open source licenses
+
+Open source licenses are licenses that comply with the [Open Source Definition](https://opensource.org/osd) (i.e., they allow software to be freely used, modified, and shared), including non-copyleft[^footnote-noncopyleft] (or "permissive") licenses that allow proprietary derivative works[@https://opensource.org/faq#permissive].
+
+[^footnote-noncopyleft]: As the defintion of open source software is an extension of [the four essential freedoms of the Free Software Definition](https://www.gnu.org/philosophy/free-sw.html), all copyleft licenses are also open source licenses.
+
+### 2.3.4 Pros and cons of FLOSS
 
 3 Project rationale
 ===================
@@ -629,6 +659,11 @@ Glossary
 
 **Application software**[@tth]
 : A program or group of programs that is designed for the end user. (...) Application software cannot run on itself but is dependent on system software to execute.
+
+**copyleft**[@https://en.wikipedia.org/wiki/Copyleft]
+:   A form of licensing to maintain copyright conditions for works but giving permission to recipients of the work to reproduce, change or distribute it, with the accompanying requirement that any resulting copies or adaptations are also bound by the same licensing agreement.
+
+    Copyleft licenses for software require that information necessary for reproducing and modifying the work must be made available to recipients of the binaries. The source code files will usually contain a copy of the license terms and acknowledge the authors.
 
 **CRM**[@sh-crm;@wiki-crm;@techsoup;@idealware]
 :   May refer to one of the following definitions that are usually used interchangeably:

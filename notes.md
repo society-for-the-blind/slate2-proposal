@@ -159,48 +159,6 @@ PROS
 licenses
 ========
 
-basics
-------
-https://opensource.guide/legal/
-
-> When you make a creative work (such as writing, graphics, or code), that work is under exclusive copyright by default. That is, the law assumes that as the author of your work, you have a say in what others can do with it. In general, that means nobody else can use, copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or litigation.
-
-> Open source is an unusual circumstance, however, because the author expects that others will use, modify, and share the work. But because the legal default is still exclusive copyright, you need a license that explicitly states these permissions.
-
-> If you don’t apply an open source license, everybody who contributes to your project also becomes an exclusive copyright holder of their work. That means nobody can use, copy, distribute, or modify their contributions – and that “nobody” includes you.
-
-> Finally, your project may have dependencies with license requirements that you weren’t aware of. Your project’s community, or your employer’s policies, may also require your project to use specific open source licenses. We’ll cover these situations below.
-
-> If you want others to use, copy, modify, or contribute back to your project, you need to include an open source license. For example, someone cannot legally use any part of your GitHub project in their code, even if it’s public, unless you explicitly give them the right to do so.
-
-A standardized license serves as a proxy for those without legal training to know precisely what they can and can’t do with the software.
-
-MIT - allows anyone to do anything so long as they keep a copy of the license, including your copyright notice. You’ll be able to release the project under a different license if you ever need to.
-
-Your project very likely has (or will have) dependencies. For example, if you’re open sourcing a Node.js project, you’ll probably use libraries from the Node Package Manager (npm). Each of those libraries you depend on will have its own open source license. If each of their licenses is “permissive” (gives the public permission to use, modify, and share, without any condition for downstream licensing), you can use any license you want. Common permissive licenses include MIT, Apache 2.0, ISC, and BSD.
-
-On the other hand, if any of your dependencies’ licenses are “strong copyleft” (also gives public same permissions, subject to condition of using the same license downstream), then your project will have to use the same license. Common strong copyleft licenses include GPLv2, GPLv3, and AGPLv3.
-
-You may also want to consider the communities you hope will use and contribute to your project:
-
-Do you want your project to be used as a dependency by other projects? Probably best to use the most popular license in your relevant community. For example, MIT is the most popular license for npm libraries.
-Do you want your project to appeal to large businesses? A large business will likely want an express patent license from all contributors. In this case, Apache 2.0 has you (and them) covered.
-Do you want your project to appeal to contributors who do not want their contributions to be used in closed source software? GPLv3 or (if they also do not wish to contribute to closed source services) AGPLv3 will go over well.
-
-https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21
-SUMMARY: more permissive licenses promote the growth of open source whereas GPL is so controversial that software with such license is best not considered
-
-Adherents of GPL-style licensing continue to insist that all software should be free and the license must manacle any attempts to extend it with proprietary software. Unlike the Apache license, the GPL embeds the decision as to the code’s open source nature into the code itself: if you use the software, you must release any derivative works as open source. You have no choice. Apache is very different. Apache adherents believe that software can be free and is perhaps best when free. But, these same adherents are not prepared to force other developers to agree with them, and the license does not embed a final decision into the code itself. Downstream users of Apache-licensed software are given wide latitude as to how they use (and license) the software.
-NOTE: this would serve us because we don't want the end product to be made nonfree by someone else but the building blocks are free
-
-However, these early open source companies have not stood still. Taking their cue from the web companies, open source vendors such as Cloudera increasingly contribute heavily to a core open source project and then sell complementary proprietary software or services. This strategy allows them to contribute fully and without conflict to their chosen open source projects, even while making more money. Not surprisingly, since their primary aim is now developer adoption of these core open source projects, and not direct monetization of them, such companies generally turn to Apache-style licensing.
-
-https://wordpress.org/about/license/
-(gpl)
-
-http://www.fordfoundation.org/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf
-
-
 GPL or AGPLv3
 ------
 
