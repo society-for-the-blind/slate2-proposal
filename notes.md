@@ -1,33 +1,31 @@
-foss vs floss vs free software
-=============
-[@gnu-words]
-“FLOSS”
-
-The term “FLOSS,” meaning “Free/Libre and Open Source Software,” was coined as a way to be neutral between free software and open source. If neutrality is your goal, “FLOSS” is the best way to be neutral. But if you want to show you stand for freedom, don't use a neutral term.
-
-“FOSS”
-
-The term “FOSS,” meaning “Free and Open Source Software,” was coined as a way to be neutral between free software and open source, but it doesn't really do that. If neutrality is your goal, “FLOSS” is better. But if you want to show you stand for freedom, don't use a neutral term.
-
-Instead of FOSS, we say, free software or free (libre) software.
-
 commercial vs open source / free
 ================================
 
-https://www.gnu.org/philosophy/words-to-avoid.html#Commercial
-: "A program is commercial if it is developed as a business activity. A commercial program can be free or nonfree, depending on its manner of distribution. Likewise, a program developed by a school or an individual can be free or nonfree, depending on its manner of distribution. The two questions—what sort of entity developed the program and what freedom its users have—are independent."
+https://blog.codecentric.de/en/2012/05/using-gpl-licensed-components-in-proprietary-projects/
 
-https://www.gnu.org/philosophy/categories.en.html
-Commercial software
+ The two most frequently found myths are:
 
-“Commercial” and “proprietary” are not the same! Commercial software is software developed by a business as part of its business. Most commercial software is proprietary, but there is commercial free software, and there is noncommercial nonfree software.
+ You cannot ask for license fees.
+ The source code of the project must be published.
+ If these claims were true, GPL-licensed software would indeed be unsuitable for proprietary projects. But they aren’t. So, let’s have a closer look and see what the situation is really like.
 
-For example, GNU Ada is developed by a company. It is always distributed under the terms of the GNU GPL, and every copy is free software; but its developers sell support contracts. When their salesmen speak to prospective customers, sometimes the customers say, “We would feel safer with a commercial compiler.” The salesmen reply, “GNU Ada is a commercial compiler; it happens to be free software.”
+ The GPL does not contain any passage stating that license fees can not be asked for. The GPL faq list states explicitly that one can ask for license fees for software under the GPL (see, e.g., here).
 
-For the GNU Project, the priorities are in the other order: the important thing is that GNU Ada is free software; that it is commercial is just a detail. However, the additional development of GNU Ada that results from its being commercial is definitely beneficial.
+ Neither does the GPL state that the source code has to be made public. It is the licensees and only the licensees who must be granted assess to the source code. And the licensor decides who his licensees are. The fact that a GPL-licensed component is publicly available, e.g., over the internet, does in no ways mean that a project building on this component must also be publicly available.
 
-Please help spread the awareness that free commercial software is possible. You can do this by making an effort not to say “commercial” when you mean “proprietary.”
 
+ “Ordinary” Client Projects
+ An “ordinary” client project is a project where a software company develops an application for one particular client or a particular small set of clients, usually on demand of the client. Even in these projects, the use of GPL-licensed components can be feasible. Actually, the requirement to hand over the source code of the project to the client is not really a big restriction because contracts regularly contain clauses by which the source code is handed over anyway. Since the client pays for the development of the software he has the right to receive all artefacts of the development including the source.
+
+ NOTE this clearly wasn't the case with slate...
+
+ The issue that is more relevant here is that the client also receives the right to re-distribute the software including the option to ask for fees. So an important question here is whether or not the client may have an interest in re-distributing the software. Let’s consider two examples. Suppose your company developed an application which is not only useful for the client but also for many companies in the industrial sector of client. An example may be an application managing end customer data like addresses and payment management. Such a system is not particular specific to your client. He may thus have an interest in re-selling the application to his competitors. The GPL provides him the freedom to do so.
+
+Suppose the application you create for your client is a software model of the core process of the client’s business model. The application models the key properties that sets the client ahead of his competitors. In the automotive industry, to give an example, this may be car configurator that directly interacts with order systems and production lines. The application is essential to the economic success of your client and constitutes one of his core values. In such a situation, the client has almost no reason at all to re-distribute the application. Thus, though the client is granted certain rights under the GPL, you can be quite sure the client has no interest in actually putting these rights to use. It is therefore a valid option to use GPL-licensed components in such projects.
+
+NOTE: in our case re-distribution is a boon because we are a non profit and do not treat other agencies as competition. What about attribution? there you go:
+
+https://opensource.stackexchange.com/questions/4971/what-are-the-attribution-requirements-of-the-agpl-license
 
 http://peerproduction.net/issues/issue-1/peer-reviewed-papers/why-free-software-is-not-the-antonym-of-commercial-software/
 NOTE: free and open source software is not an antonym of commercial software (proprietary is)
@@ -39,14 +37,6 @@ NOTE: so you can sell it but you have to provide the source code and the buyer (
 Open Design Alliance members have created the following free utilities, based on the OpenDWG Libraries, for your unrestricted, non-commercial use. Please note that inclusion of any utility in a commercial product does require commercial licensing [14]
 This post clarifies to GRASS developers that it is not possible for them to use the OpenDWG Library together with GRASS, due to the clear commercial nature of GRASS granted by the terms of the GPL (for instance by the term 1 ). Indeed, the OpenDWG source code can be freely used, as it is clearly stated above, but only for non-commercial purposes. Therefore we have an opposition between FLOSS and non-commercial software and not between FLOSS and commercial software.
 
-
-copyleft vs copyright
-=====================
-
-https://www.gnu.org/philosophy/categories.en.html
-Under the Berne Convention, which most countries have signed, anything written down is automatically copyrighted. This includes programs. Therefore, if you want a program you have written to be in the public domain, you must take some legal steps to disclaim the copyright on it; otherwise, the program is copyrighted.
-
-Copylefted software is free software whose distribution terms ensure that all copies of all versions carry more or less the same distribution terms. This means, for instance, that copyleft licenses generally disallow others to add additional requirements to the software (though a limited set of safe added requirements can be allowed) and require making source code available. This shields the program, and its modified versions, from some of the common ways of making a program proprietary.
 
 Lessons for creating good open source software[edit]
 ====================================================
@@ -155,44 +145,4 @@ PROS
   * contributing to the community
 
     just as the project is using open source projects, whenever our development generates tools that can be used by the greater public, those can be shared as well. It is also free advertising and generates attention
-
-licenses
-========
-
-GPL or AGPLv3
-------
-
-e.g., CiviCRM
-
-
-https://www.gnu.org/licenses/why-affero-gpl.html
-https://www.gnu.org/licenses/license-list.en.html
-
-https://blog.codecentric.de/en/2012/05/using-gpl-licensed-components-in-proprietary-projects/
-
- The two most frequently found myths are:
-
- You cannot ask for license fees.
- The source code of the project must be published.
- If these claims were true, GPL-licensed software would indeed be unsuitable for proprietary projects. But they aren’t. So, let’s have a closer look and see what the situation is really like.
-
- The GPL does not contain any passage stating that license fees can not be asked for. The GPL faq list states explicitly that one can ask for license fees for software under the GPL (see, e.g., here).
-
- Neither does the GPL state that the source code has to be made public. It is the licensees and only the licensees who must be granted assess to the source code. And the licensor decides who his licensees are. The fact that a GPL-licensed component is publicly available, e.g., over the internet, does in no ways mean that a project building on this component must also be publicly available.
-
-
- “Ordinary” Client Projects
- An “ordinary” client project is a project where a software company develops an application for one particular client or a particular small set of clients, usually on demand of the client. Even in these projects, the use of GPL-licensed components can be feasible. Actually, the requirement to hand over the source code of the project to the client is not really a big restriction because contracts regularly contain clauses by which the source code is handed over anyway. Since the client pays for the development of the software he has the right to receive all artefacts of the development including the source.
-
- NOTE this clearly wasn't the case with slate...
-
- The issue that is more relevant here is that the client also receives the right to re-distribute the software including the option to ask for fees. So an important question here is whether or not the client may have an interest in re-distributing the software. Let’s consider two examples. Suppose your company developed an application which is not only useful for the client but also for many companies in the industrial sector of client. An example may be an application managing end customer data like addresses and payment management. Such a system is not particular specific to your client. He may thus have an interest in re-selling the application to his competitors. The GPL provides him the freedom to do so.
-
-Suppose the application you create for your client is a software model of the core process of the client’s business model. The application models the key properties that sets the client ahead of his competitors. In the automotive industry, to give an example, this may be car configurator that directly interacts with order systems and production lines. The application is essential to the economic success of your client and constitutes one of his core values. In such a situation, the client has almost no reason at all to re-distribute the application. Thus, though the client is granted certain rights under the GPL, you can be quite sure the client has no interest in actually putting these rights to use. It is therefore a valid option to use GPL-licensed components in such projects.
-
-NOTE: in our case re-distribution is a boon because we are a non profit and do not treat other agencies as competition. What about attribution? there you go:
-https://opensource.stackexchange.com/questions/4971/what-are-the-attribution-requirements-of-the-agpl-license
-
-gpl v3 notes
-============
 

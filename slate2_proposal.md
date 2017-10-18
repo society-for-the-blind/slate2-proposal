@@ -61,8 +61,17 @@ Weekly reports on current progress, challenges and amount of time spent on speci
 
 ---
 
-**commercial software**[@gnu-words]
-: "_A program is commercial if it is developed as a business activity. A commercial program can be free or nonfree, depending on its manner of distribution. Likewise, a program developed by a school or an individual can be free or nonfree, depending on its manner of distribution. The two questions—what sort of entity developed the program and what freedom its users have—are independent._"
+**commercial software**
+: "A program is commercial if it is developed as a business activity. A commercial program can be free or nonfree, depending on its manner of distribution. Likewise, a program developed by a school or an individual can be free or nonfree, depending on its manner of distribution. The two questions—what sort of entity developed the program and what freedom its users have—are independent."[@gnu-words]
+
+---
+
+**proprietary software**
+: A usually commercial software[^footnote-noncommercial-proprietary] with a closed source code (i.e., made unavailable for the users). Proprietary licenses are most often associated with proprietary programs that further restrict user interaction, such as the prohibition to distribute or use outside the prescribed scope (e.g., install on multiple computers, lend it to a friend etc.).
+
+[^footnote-noncommercial-proprietary]: Most commercial software is proprietary, but is noncommercial nonfree software.[@https://www.gnu.org/philosophy/categories.en.html] [Winamp](https://en.wikipedia.org/wiki/Winamp), the popular audio player on Windows, is one example.
+
+  Free software proponents also refer to these as *nonfree* software[@gnu-words].
 
 \newpage
 2 Context
@@ -260,7 +269,7 @@ On the practical side, every existing free software would qualify as open source
 
 ### 2.3.3 Licenses[^footnote-which_license]
 
-[^footnote-which_license]: Choosing a FLOSS license is a controversial topic, see [@https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21,@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant,@https://news.ycombinator.com/item?id=1273231,@roads-and-bridges].
+[^footnote-which_license]: Choosing a FLOSS license depends largely on the use case and can be controversial, see [@https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21,@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant,@https://news.ycombinator.com/item?id=1273231,@roads-and-bridges].
 
 #### 2.3.3.1 Why are licenses necessary?[^footnote-osguide]
 
@@ -272,7 +281,7 @@ Without a license, everybody who contributes to the project also becomes an excl
 
 #### 2.3.3.2 Free software licenses
 
-Free software tend to be licensed under [copyleft](#glossary) licenses[^footnote-copyleft] that basically allow the creation of derivative works but require them to use the same license as the original work.[@https://opensource.org/faq#copyleft] For software, the added stipulation is that the original/derivative program's source code also has to be made available to recipients to prevent the creation of proprietary products.[@https://www.gnu.org/copyleft/copyleft.html] See [Glossary](#glossary) for the formal defintion.
+Free software tend to be licensed under [copyleft](#glossary) licenses[^footnote-copyleft] that basically allow the creation of derivative works but require them to use the same license as the original work.[@https://opensource.org/faq#copyleft] For software, the added stipulation is that the original/derivative program's source code also has to be made available to recipients to prevent the creation of proprietary products[@https://www.gnu.org/copyleft/copyleft.html].
 
 [^footnote-copyleft]: Also referred to as *reciprocal* or *protective* licenses.
 
@@ -286,7 +295,41 @@ Open source licenses are licenses that comply with the [Open Source Definition](
 
 [^footnote-noncopyleft]: As the defintion of open source software is an extension of [the four essential freedoms of the Free Software Definition](https://www.gnu.org/philosophy/free-sw.html), all copyleft licenses are also open source licenses.
 
-### 2.3.4 Pros and cons of FLOSS
+### 2.3.4 Pros and cons
+
+The advantages and disadvantages boil down to the main beliefs that
+
+  * **open source is not free**[@https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider/;@https://jaxenter.com/think-open-source-software-free-think-131436.html;@https://crowdsourcedtesting.com/resources/pros-cons-open-source-software/;@http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software]
+ 
+  * **open source is cheaper to build**[@https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider/;@http://entrepreneurhandbook.co.uk/open-source-software/;@https://crowdsourcedtesting.com/resources/pros-cons-open-source-software/;@roads-and-bridges,@osmovement].
+
+These are not dichotomous statements though and categorization of their supporting arguments mostly depend on the scope of the adopting organization and the parties involved in making their case. They both argue that open source code can obtained for free (in the monetary sense) and there are hidden costs but they disagree on the extent.
+
+The most cited arguments:
+
+  * 
+
+
+
+The most comprehensive source regarding this topic is the report titled "Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure"[@roads-and-bridges] written by Nadia Eghbal for the [Ford Foundation](http://www.fordfoundation.org)[^footnote-cc_license]. It gives a quick overview, brushes up on the advantages and the bulk of the report provides details about the hidden costs of open source, current challenges, dangers to avoid and recommendations for the future.
+
+[^footnote-cc_license]: Licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
+
+### 2.3.5 Commercial versus proprietary software
+
+GNU's "Categories of free and nonfree software" article[^footnote-gnu_commercial_link] sums this up perfectly:
+
+[^footnote-gnu_commercial_link]: https://www.gnu.org/philosophy/categories.en.html#commercialSoftware
+
+>“Commercial” and “proprietary” are not the same! Commercial software is software developed by a business as part of its business. Most commercial software is proprietary, but there is commercial free software, and there is noncommercial nonfree software.
+>
+>For example, GNU Ada[^footnote-ada_link] is developed by a company. It is always distributed under the terms of the GNU GPL, and every copy is free software; but its developers sell support contracts. When their salesmen speak to prospective customers, sometimes the customers say, “We would feel safer with a commercial compiler.” The salesmen reply, “GNU Ada is a commercial compiler; it happens to be free software.”
+
+[^footnote-ada_link]: https://en.wikipedia.org/wiki/GNAT
+
+### 2.3.4 Commercial use of open source software
+
+
 
 3 Project rationale
 ===================
