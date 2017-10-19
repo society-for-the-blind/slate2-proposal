@@ -296,17 +296,69 @@ Open source licenses are licenses that comply with the [Open Source Definition](
 
 [^footnote-noncopyleft]: As the defintion of open source software is an extension of [the four essential freedoms of the Free Software Definition](https://www.gnu.org/philosophy/free-sw.html), all copyleft licenses are also open source licenses.
 
-### 2.3.4 Pros and cons
+### 2.3.4 Factors to consider before adoption
 
-The advantages and disadvantages boil down to the main beliefs that
+  * **Cost**
 
-  * **open source is not free**[@https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider/;@https://jaxenter.com/think-open-source-software-free-think-131436.html;@https://crowdsourcedtesting.com/resources/pros-cons-open-source-software/;@http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software]
+    Proprietary software is always more expensive because a company has to pay for development, distribution, support, legal fees etc.
 
-  * **open source is cheaper to build**[@https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider/;@http://entrepreneurhandbook.co.uk/open-source-software/;@https://crowdsourcedtesting.com/resources/pros-cons-open-source-software/;@roads-and-bridges,@osmovement].
+    On the contrary, open source code can be obtained free of charge but all sources agree that there are hidden costs (if not about their extent).[@https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider/;@https://jaxenter.com/think-open-source-software-free-think-131436.html;@https://crowdsourcedtesting.com/resources/pros-cons-open-source-software/;@http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software;@https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider/;@http://entrepreneurhandbook.co.uk/open-source-software/;@https://crowdsourcedtesting.com/resources/pros-cons-open-source-software/;@roads-and-bridges,@osmovement].
 
-These are not dichotomous statements though and categorization of their supporting arguments mostly depend on the scope of the adopting organization and the parties involved in making their case. They both argue that open source code can obtained for free (in the monetary sense) and there are hidden costs but they disagree on the extent.
+    The next items expand on the nature of these costs (monetary, organizational or otherwise). Their categorization into pros and cons is not straightforward because it depends on the scope of the adopting organization and the parties involved making their case.
 
-The most cited arguments:
+  * **Risk of abandonment of dependent projects.**
+
+    The argument stems from the fear of the decentralized open source workflow and that project governance is unclear in many cases. (One reason why proprietary software costs more is that the developing company has a clear business model and pays for the development, marketing and distribution infrastructure.)
+
+    On the other hand this fear is also valid regarding proprietary software: companies phase out older products or functionality (sometimes without any notice) regardless of users relying on them and even profiting from the fact by offering additional transitional support.
+
+    See **Control** below for the worst case scenario.
+
+  * **Support and ongoing maintenance**
+
+    Commercial proprietary products are usually shipped with guaranteed support whereas this is not necessarily the case with open source.[@http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software] With the latter, the user at least has the opportunity to look under the hood even if it means a steep learning curve (see later).
+
+   The provided commercial support for proprietary software on the other hand can be so poor that another company needs to be hired for deployment and for ongoing operations. The worst case scenario is that local staff takes up the mantle even though they had no role in development and have little ability to do anything else other than coming up with workarounds.[@osmovement]
+
+    This brings up the issue of control:
+
+  * **Control**
+
+    Proprietary vendors have iron grip over the software's functionality and future evolution. Monopolies eliminate any upstart innovators, effectively locking the organizations into a platform with the ability to demand any price as there is no other choice.
+
+    Open source's alluring promise is to return control over the tools one would like to use and how one would like to use them.
+
+  * **Standards and tools**
+
+    Ever since the business opportunity of selling software has been recognized, companies have been creating programs to solve a specific problem (networking, data management, etc.). Many times the problem domains have been complex enough to develop a proprietary standard solution and patent it, leading the way to reinvent the wheel over and over. Overall secrecy made it difficult to prove the superiority of one product over the other and mostly the corporation with the most resources and/or better campaign prevailed. Organizations required long periods of deliberation before any purchase as it would lock them in in the long haul because these products
+
+      * stored information in a proprietary format
+
+      * did not interoperate with other vendor's product
+
+      * accumulated experience would not translate to other similar solutions requiring re-training and/or new hires
+
+    With the emergence of the free and the open source movement large-scale collaboration on *open standards* became the norm. Proprietary software could still be built upon them but many went down the open source path. Of course this led to the proliferation of tools but now one had a choice even if in the end a proprietary product ended up being use. Open standards also incentivized corporations to get involved as more and more customers started to trust the new process of laying down the foundations of a new technology in the open.
+
+  * **Qualified labor**
+
+    Proprietary software usually has one setup for each use case (because many times they are tied to a specific proprietary hardware) that makes life easier but this ease comes with the aforementioned costs. Vendors usually sell trainings and certifications for individuals and/or they provide support services to help operations. Such specialization comes with high prices and limits the mobility of the workforce (i.e., seek opportunitites only at companies with the same equipment or setup).
+
+    The learning curve of open source is steeper but becoming versed in its ways may yield many advantages:
+
+      * Individuals get a reusable set of skills and a more holistic view of how principles from multiple fields can be tied together.
+
+        Specialization to proprietary systems is easier using this path because companies use their own obfuscated terminology based on marketing buzzwords whereas the underlying principles have their standard terminology rooted in (academic) research. Open standards used the latter as clarity is crucial in wide-spread adoption.
+
+      * Organizations lay down a foundation for future flexibility and continuous improvement.
+
+        Open source has a vibrant community based around popular and well documented programming languages and frameworks with their own support support networks sharing the same infrastructure (e.g., Github, Stackoverflow, Slack). Switches between *technology stacks* are common and seamless because the underlying tools are the same and/or based on similar principles.
+
+        Adopted tools can also be further specialized/improved and these modifications can be contributed back to the larger community.
+
+      * Wide-spread availability promotes easy entry for anyone interested
+
+      * Most people working on open source projects are characterized mostly by enthusiasm[@https://ocw.mit.edu/courses/sloan-school-of-management/15-352-managing-innovation-emerging-trends-spring-2005/readings/lakhaniwolf.pdf]
 
   * **Security**
 
@@ -318,25 +370,41 @@ The most cited arguments:
 
     Opponents argue that "proprietary programs whose code is closed cannot be as easily inspected by malicious hackers who are looking for security holes to exploit"[@http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software].
 
-    Proprietary software is most often tied to business interests and therefore withhold disclosure for certain period of time or entirely until revealed by a leak. Examples include the Equifax breach[@https://www.wired.com/story/equifax-breach-no-excuse/], Yahoo breach[@https://techcrunch.com/2017/10/03/yahoo-says-all-3b-accounts-were-impacted-by-2013-breach-not-1b-as-thought/] or a Microsoft breach that remained undisclosed since 2013[@https://ca.reuters.com/article/technologyNews/idCAKBN1CM0D0-OCATC]. The exploits could have been easily prevented because the open source projects, that the proprietary solutions were building upon, had their security holes already patched but these haven't been applied due to neglect.[@https://jaxenter.com/think-open-source-software-free-think-131436.html] Aside from business misconducts, the "United States National Institute of Standards and Technology (NIST) specifically recommends against using closed source as a way to secure the software (i.e. “security through obscurity”)"[@https://www.efrontlearning.com/blog/2012/04/open-source-and-the-security-through-obscurity-fallacy.html], and they state, “system security should not depend on the secrecy of the implementation or its components” [@https://csrc.nist.gov/publications/detail/sp/800-123/final].
+    Proprietary software is most often tied to business interests and therefore withhold disclosure for certain period of time or entirely until revealed by a leak. Examples include the Equifax breach[@https://www.wired.com/story/equifax-breach-no-excuse/], Yahoo breach[@https://techcrunch.com/2017/10/03/yahoo-says-all-3b-accounts-were-impacted-by-2013-breach-not-1b-as-thought/] or a Microsoft breach that remained undisclosed since 2013[@https://ca.reuters.com/article/technologyNews/idCAKBN1CM0D0-OCATC]. The exploits could have been easily prevented because the open source projects, that the proprietary solutions were building upon, had their security holes already fixed but these patches haven't been applied due to neglect.[@https://jaxenter.com/think-open-source-software-free-think-131436.html] Aside from business misconducts, the "United States National Institute of Standards and Technology (NIST) specifically recommends against using closed source as a way to secure the software (i.e. “security through obscurity”)"[@https://www.efrontlearning.com/blog/2012/04/open-source-and-the-security-through-obscurity-fallacy.html], and they state, “system security should not depend on the secrecy of the implementation or its components” [@https://csrc.nist.gov/publications/detail/sp/800-123/final].
 
     A recent (10/16/2017) flaw in the WPA2 protocol[@https://www.krackattacks.com/] (a protocol that secures all modern protected Wi-Fi networks) proves that security bugs sometimes stem from accepted industry standards therefore any correct implementation would be affected, regardless of being an open source or a proprietary product.
 
-### 2.3.5 Commercial versus proprietary software
+  * **Compliance requirements**
 
-GNU's "Categories of free and nonfree software" article[^footnote-gnu_commercial_link] sums this up perfectly:
+    Software compliance means to keep track of all the copyright notices and licenses, and oblige to their requirements. Compliance tracking is also important to document the software supply chain (e.g. to be able to produce a Bill of Materials on request) and to respond quickly to a newly disclosed security vulnerability (i.e., to know which parts are affected, if any).
 
-[^footnote-gnu_commercial_link]: https://www.gnu.org/philosophy/categories.en.html#commercialSoftware
+    From a software development standpoint, large corporations have advantage as they usually own all of the source code. Even if they incorporate open source projects in their closed source product(s), they have the legal apparatus to tip the scale to their favour should it come to a legal dispute over license ambiguities. Therefore in the case of proprietary software, the burden of compliance falls to the users, especially if the products are going to be used in a commercial setting.
+
+    With open source software the users are the clear winners because they have complete freedom on how to use the products and they only have to satisfy license obligations if they are planning on commercial re-distribution of the (modified) works or if they would like to create a proprietary product from open source projects.[^footnote-proprietary_opensource]
+
+[^footnote-proprietary_opensource]: Although if they steer clear of strong copylefted code than their situation becomes magnitudes easier.
+
+    Building on open source code on the other becomes more complex as each included project may have different (or even multiple) licenses. Fortunately, this requirement has become more and more a standardized and automated process with the lead of large open source non-profits such as the Linux Foundation or the Open Source Initiative.[@https://www.linuxfoundation.org/blog/why-companies-that-use-open-source-need-a-compliance-program/] One example is the Software Composition Analysis methodology[@https://blog.blackducksoftware.com/software-composition-analysis-compatible-agile-devops].
+
+### 2.3.5 Commercialization of open source software
+
+#### 2.3.5.1 Commercial versus proprietary software
+
+It is worth emphasizing: 
 
 >“Commercial” and “proprietary” are not the same! Commercial software is software developed by a business as part of its business. Most commercial software is proprietary, but there is commercial free software, and there is noncommercial nonfree software.
 >
->For example, GNU Ada[^footnote-ada_link] is developed by a company. It is always distributed under the terms of the GNU GPL, and every copy is free software; but its developers sell support contracts. When their salesmen speak to prospective customers, sometimes the customers say, “We would feel safer with a commercial compiler.” The salesmen reply, “GNU Ada is a commercial compiler; it happens to be free software.”
+>For example, GNU Ada[^footnote-ada_link] is developed by a company. It is always distributed under the terms of the GNU GPL, and every copy is free software; but its developers sell support contracts. When their salesmen speak to prospective customers, sometimes the customers say, “We would feel safer with a commercial compiler.” The salesmen reply, “GNU Ada is a commercial compiler; it happens to be free software.”[@GNU's "Categories of free and nonfree software"  https://www.gnu.org/philosophy/categories.en.html#commercialSoftware]
 
 [^footnote-ada_link]: https://en.wikipedia.org/wiki/GNAT
 
-### 2.3.4 Commercial use of open source software
+#### 2.3.5.2 Free/open source software versus commercial software
 
+Commercial software is not the antonym of free and open source software, proprietary software is. Misunderstandings stem from conflicting uses of the adjectives *commercial* and *proprietary*.[@http://peerproduction.net/issues/issue-1/peer-reviewed-papers/why-free-software-is-not-the-antonym-of-commercial-software/]
 
+Software licensed under an open source (or even under a more strict free software) license can be sold for a price or licensed for a fee just like any other product.[@https://blog.codecentric.de/en/2012/05/using-gpl-licensed-components-in-proprietary-projects/,@https://www.gnu.org/licenses/gpl-faq#DoesTheGPLAllowMoney,]
+
+#### 2.3.5.3 Business models for open source software
 
 3 Project rationale
 ===================
