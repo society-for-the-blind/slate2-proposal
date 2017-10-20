@@ -302,41 +302,79 @@ Open source licenses are licenses that comply with the [Open Source Definition](
 
     Proprietary software is always more expensive because a company has to pay for development, distribution, support, legal fees etc.
 
-    On the contrary, open source code can be obtained free of charge but all sources agree that there are hidden costs (if not about their extent).[@https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider/;@https://jaxenter.com/think-open-source-software-free-think-131436.html;@https://crowdsourcedtesting.com/resources/pros-cons-open-source-software/;@http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software;@https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider/;@http://entrepreneurhandbook.co.uk/open-source-software/;@https://crowdsourcedtesting.com/resources/pros-cons-open-source-software/;@roads-and-bridges,@osmovement].
-
-    The next items expand on the nature of these costs (monetary, organizational or otherwise). Their categorization into pros and cons is not straightforward because it depends on the scope of the adopting organization and the parties involved making their case.
+    On the contrary, open source code can be obtained free of charge but all sources agree that there are hidden costs (if not about their extent).[@https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider/;@https://jaxenter.com/think-open-source-software-free-think-131436.html;@https://crowdsourcedtesting.com/resources/pros-cons-open-source-software/;@http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software;@https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider/;@http://entrepreneurhandbook.co.uk/open-source-software/;@https://crowdsourcedtesting.com/resources/pros-cons-open-source-software/;@roads-and-bridges,@osmovement] and the next items expand on the nature of these. Their categorization into pros and cons is not straightforward because it depends on the scope of the adopting organization and the parties involved making their case.
 
   * **Risk of abandonment of dependent projects.**
 
-    The argument stems from the fear of the decentralized open source workflow and that project governance is unclear in many cases. (One reason why proprietary software costs more is that the developing company has a clear business model and pays for the development, marketing and distribution infrastructure.)
+    The argument stems from the fear of the decentralized open source workflow and that project governance is unclear in many cases.
 
-    On the other hand this fear is also valid regarding proprietary software: companies phase out older products or functionality (sometimes without any notice) regardless of users relying on them and even profiting from the fact by offering additional transitional support.
-
-    See **Control** below for the worst case scenario.
+    On the other hand this fear is also valid regarding proprietary software: companies phase out older products or functionality (sometimes without any notice) regardless of users relying on them (e.g., subsequent iterations of Microsoft products routinely defy assumptions based on previous versions) and even profiting from offering additional transitional support.
 
   * **Support and ongoing maintenance**
 
-    Commercial proprietary products are usually shipped with guaranteed support whereas this is not necessarily the case with open source.[@http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software] With the latter, the user at least has the opportunity to look under the hood even if it means a steep learning curve (see later).
+    Commercial proprietary products are traditionally shipped with guaranteed support whereas open source is perceived to lack this level of care[@http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software]. This may be due to the fact that it is not stated explicitly in every project but is an intrinsic part of open source culture:
 
-   The provided commercial support for proprietary software on the other hand can be so poor that another company needs to be hired for deployment and for ongoing operations. The worst case scenario is that local staff takes up the mantle even though they had no role in development and have little ability to do anything else other than coming up with workarounds.[@osmovement]
+    * documentation is kept up to date
+
+    * communities around a project have mailing lists, chat rooms, meet-ups set up (even regular office hours specified![@https://make.wordpress.org/community/handbook/wordcamp-organizer/planning-details/gpl-primer/]
+
+    * sites dedicated to answering questions of almost any nature, such as Stackoverflow or Quora
+
+    * issues and feature requests can be directly opened on the project's source code repository (e.g., on Github)
+
+    * as a last resort, the source code is always available
+
+    Open source companies also offer commercial support as part of their business model.
+
+   Commercial support for proprietary software on the other hand can be so poor that another company needs to be hired for deployment and for ongoing operations. The worst case scenario is that local staff takes up the mantle even though they had no role in development and have little ability to do anything else other than coming up with workarounds by trial and error as the implementation details are not known.[@osmovement]
 
     This brings up the issue of control:
 
   * **Control**
 
-    Proprietary vendors have iron grip over the software's functionality and future evolution. Monopolies eliminate any upstart innovators, effectively locking the organizations into a platform with the ability to demand any price as there is no other choice.
+    Proprietary vendors have iron grip over the software's functionality and future evolution. Monopolies eliminate any upstart innovators, effectively locking the organizations into a platform with the ability to demand any price.
 
-    Open source's alluring promise is to return control over the tools one would like to use and how one would like to use them.
+    Open source's alluring promise is to return control.
+    over the tools one would like to use and how one would like to use them.
+
+    Examples to the former are alternatives to proprietary software such as
+    Control over the choice of tools one would like to use:
+
+      * OpenOffice instead of Microsoft Office
+
+      * Linux, BSD or other open source operating systems instead of Microsoft Windows or Apple Mac OS X[^footnote-macosx_open]
+
+      * FreeSWITCH instead of Avaya IP Office
+
+    Control over how one would like to use these tools:
+
+      * Restrictions of proprietary software licenses are able to limit any aspect of a program (such as JAWS, Raiser's Edge, EyeCare, Microsoft Office): the number of times a software can be installed, the number of computers it can be present simultaneously, the number of database records, the date until it can be used and so on.
+
+        Alternatives, such as NVDA, CiviCRM, OpenERM, OpenOffice etc. do not have these restrictions.
+
+      * Avaya IP Office phone system only allows certain functionality in combination with specific hardware (and even then it is not guaranteed).
+
+        FreeSWITCH may be compiled on any commodity hardware and can be extended programmatically or by community modules.
+
+    Control over one's own data because by the lack of regulations, users' have little authority over what should happen to their voluntarily supplied information to large corporations[@https://www.economist.com/news/leaders/21721656-data-economy-demands-new-approach-antitrust-rules-worlds-most-valuable-resource]. Open Stack is one solution to create a private or public cloud on any available hardware.
+
+[^footnote-macosx_open]: Even though Apple recently open sourced the kernel of Mac OS X but it is only responsible for booting up the computer - all the useful programs are still proprietary and are not included[@https://www.techrepublic.com/article/why-apple-open-sourcing-mac-os-x-isnt-terribly-exciting/]
 
   * **Standards and tools**
 
-    Ever since the business opportunity of selling software has been recognized, companies have been creating programs to solve a specific problem (networking, data management, etc.). Many times the problem domains have been complex enough to develop a proprietary standard solution and patent it, leading the way to reinvent the wheel over and over. Overall secrecy made it difficult to prove the superiority of one product over the other and mostly the corporation with the most resources and/or better campaign prevailed. Organizations required long periods of deliberation before any purchase as it would lock them in in the long haul because these products
+    Ever since the business opportunity of selling software has been recognized, companies have been creating programs to solve a specific problem (networking, data management, etc.) with the intent of successful commercial distribution. Many times the problem domains have been complex enough to develop a proprietary standard solution and patent it, leading the way to reinvent the wheel over and over. Overall secrecy made it difficult to prove the superiority of one product over the other and typically the corporation with the most resources and/or better marketing campaign prevailed.
 
-      * stored information in a proprietary format
+    Adopting organizations still require long periods of deliberation before purchasing any proprietary software suite because:
 
-      * did not interoperate with other vendor's product
+    * The rigidness of the tools would require adjusting organizational processes and workflows (i.e., serving the tool instead of the other way around)
 
-      * accumulated experience would not translate to other similar solutions requiring re-training and/or new hires
+    * It would lock them in in the long haul. Reasons include:
+
+        * information is stored in a proprietary format
+
+        * no interoperation with other vendor's products
+
+        * accumulated experience would not translate to other similar solutions requiring re-training and/or new hires
 
     With the emergence of the free and the open source movement large-scale collaboration on *open standards* became the norm. Proprietary software could still be built upon them but many went down the open source path. Of course this led to the proliferation of tools but now one had a choice even if in the end a proprietary product ended up being use. Open standards also incentivized corporations to get involved as more and more customers started to trust the new process of laying down the foundations of a new technology in the open.
 
