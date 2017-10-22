@@ -1,32 +1,6 @@
 commercial vs open source / free
 ================================
 
-https://blog.codecentric.de/en/2012/05/using-gpl-licensed-components-in-proprietary-projects/
-
- The two most frequently found myths are:
-
- You cannot ask for license fees.
- The source code of the project must be published.
- If these claims were true, GPL-licensed software would indeed be unsuitable for proprietary projects. But they aren’t. So, let’s have a closer look and see what the situation is really like.
-
- The GPL does not contain any passage stating that license fees can not be asked for. The GPL faq list states explicitly that one can ask for license fees for software under the GPL (see, e.g., here).
-
- Neither does the GPL state that the source code has to be made public. It is the licensees and only the licensees who must be granted assess to the source code. And the licensor decides who his licensees are. The fact that a GPL-licensed component is publicly available, e.g., over the internet, does in no ways mean that a project building on this component must also be publicly available.
-
-
- “Ordinary” Client Projects
- An “ordinary” client project is a project where a software company develops an application for one particular client or a particular small set of clients, usually on demand of the client. Even in these projects, the use of GPL-licensed components can be feasible. Actually, the requirement to hand over the source code of the project to the client is not really a big restriction because contracts regularly contain clauses by which the source code is handed over anyway. Since the client pays for the development of the software he has the right to receive all artefacts of the development including the source.
-
- NOTE this clearly wasn't the case with slate...
-
- The issue that is more relevant here is that the client also receives the right to re-distribute the software including the option to ask for fees. So an important question here is whether or not the client may have an interest in re-distributing the software. Let’s consider two examples. Suppose your company developed an application which is not only useful for the client but also for many companies in the industrial sector of client. An example may be an application managing end customer data like addresses and payment management. Such a system is not particular specific to your client. He may thus have an interest in re-selling the application to his competitors. The GPL provides him the freedom to do so.
-
-Suppose the application you create for your client is a software model of the core process of the client’s business model. The application models the key properties that sets the client ahead of his competitors. In the automotive industry, to give an example, this may be car configurator that directly interacts with order systems and production lines. The application is essential to the economic success of your client and constitutes one of his core values. In such a situation, the client has almost no reason at all to re-distribute the application. Thus, though the client is granted certain rights under the GPL, you can be quite sure the client has no interest in actually putting these rights to use. It is therefore a valid option to use GPL-licensed components in such projects.
-
-NOTE: in our case re-distribution is a boon because we are a non profit and do not treat other agencies as competition. What about attribution? there you go:
-
-https://opensource.stackexchange.com/questions/4971/what-are-the-attribution-requirements-of-the-agpl-license
-
 http://peerproduction.net/issues/issue-1/peer-reviewed-papers/why-free-software-is-not-the-antonym-of-commercial-software/
 NOTE: free and open source software is not an antonym of commercial software (proprietary is)
 
