@@ -203,8 +203,12 @@ The two most common approaches to constituent management[@techsoup;@idealware] b
 * or rolling out a single **generalist CRM** application that tries to satisfy all needs but usually only to a certain extent (e.g., CiviCRM, Salesforce)
 
 \newpage
-2.3 Free (libre) and open source software (FLOSS)
+2.3 Free and open source software
 ---------------------------------
+
+The usage of the word "free" is misleading because it both means "freedom" and "zero price". The problem is that English, unlike other languages, does not have a common adjective that unambiguously refers to freedom. French for example has "libre" for "freedom" and "gratuit" for "free of charge".[@https://www.gnu.org/philosophy/categories.en.html]
+
+In this context, the intended meaning was "freedom", as in "freedom of users".
 
 ### 2.3.1 Brief history
 
@@ -214,15 +218,15 @@ Computers are built from scratch by research organizations and custom software h
 
 #### 1981[@roads-and-bridges]
 
-IBM introduces the "IBM PC" or "Personal Computer". Industry adoption is high winnowing out the competition and capturing half of the market share by 1986.[@23inroadsandbridges]
+IBM introduces the "IBM PC" or "Personal Computer". Industry adoption is high, winnowing out the competition and capturing half of the market share by 1986.[@23inroadsandbridges]
 
 Standardized hardware brought along the opportunity to standardize software. IBM hires Microsoft to write the operating system for their PC and they deliver MS-DOS in the same year. Other companies follow suit.
 
-Turning software into business proved lucrative, resulting in commercial licenses promoting the creation of proprietary products, preventing users from copying, modifying or redistributing software.
+Turning software into business proves lucrative, resulting in commercial licenses promoting the creation of proprietary products, preventing users from copying, modifying or redistributing software.
 
 #### 1983
 
-Concern rises among computer scientists "about the closed and proprietary direction that software was taking".[@roads-and-bridges] As a response, Richard Stallman launches GNU, a free operating system, also inadvertently laying the foundation for the "free software movement".[@https://www.gnu.org/gnu/initial-announcement.html]
+Concern rises among computer scientists "_about the closed and proprietary direction that software was taking_".[@roads-and-bridges] As a response, Richard Stallman launches GNU, a free operating system, also inadvertently laying the foundation for the "free software movement".[@https://www.gnu.org/gnu/initial-announcement.html]
 
 #### 1985
 
@@ -234,21 +238,21 @@ The growth of the World Wide Web gains momentum and becomes more widely availabl
 
 #### 1996
 
-The commercialization of the web begins to take advantage of the new medium with great success and huge gains.
+The commercialization of the web begins with great success and huge gains.
 
 #### 1998
 
-In a move unprecented at the time from a software company, Netscape releases the source code of its high market-share web browser. This event becomes the catalyst to a group of technologists, who have been advocating a more pragmatic approach to the Free Software Foundation's principles, to create the Open Source Initiative. The new organization's focus was to promulgate "the practical benefits of free software"[@roads-and-bridges] without "the ideological and confrontational connotations of the term"[@https://en.wikipedia.org/wiki/Open-source_software_movement]
+In a move unprecented at the time from a software company, Netscape releases the source code of its high market-share web browser. This event becomes the catalyst to a group of technologists, who have been advocating a more pragmatic approach to the Free Software Foundation's principles, to create the Open Source Initiative. The new organization's focus is to promulgate "_the practical benefits of free software_"[@roads-and-bridges] without "_the ideological and confrontational connotations of the term_"[@https://en.wikipedia.org/wiki/Open-source_software_movement]
 
 ### 2.3.2 Open source versus free software
 
 #### 2.3.2.1 Common ground
 
-Both **free[^footnote-word_free] software** and **open source software** do roughly mean the same: "_users have the freedom to run, copy, distribute, study, change and improve the software_"[@https://www.gnu.org/philosophy/free-sw.en.html][^footnote-compare_os].
+Both **free[^footnote-word_free] software** and **open source software** do roughly mean the same:
 
-[^footnote-word_free]: "_Many languages have two separate words for “free” as in freedom and “free” as in zero price. For example, French has “libre” and “gratuit”. Not so English; there is a word “gratis” that refers unambiguously to price, but no common adjective that refers unambiguously to freedom._"[@https://www.gnu.org/philosophy/categories.en.html]
+  * According to the Free Software Foundation's summary, it means that "_users have the freedom to run, copy, distribute, study, change and improve the software_"[@https://www.gnu.org/philosophy/free-sw.en.html][^footnote-compare_os].
 
-[^footnote-compare_os]: Compare with the summary from the Open Source Initiative's own summary: "_Generally, Open Source software is software that can be freely accessed, used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the [Open Source Definition](https://opensource.org/osd-annotated)._"[@https://opensource.org/faq#osd]
+  * The Open Source Initiative defines it as "_software that can be freely accessed, used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the [Open Source Definition](https://opensource.org/osd-annotated)._"[@https://opensource.org/faq#osd]
 
 See [Glossary](#glossary) for their formal definitions.
 
