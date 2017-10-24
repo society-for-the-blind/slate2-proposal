@@ -250,7 +250,7 @@ In a move unprecented at the time from a software company, Netscape releases the
 
 Both **free[^footnote-word_free] software** and **open source software** do roughly mean the same:
 
-  * According to the Free Software Foundation's summary, it means that "_users have the freedom to run, copy, distribute, study, change and improve the software_"[@https://www.gnu.org/philosophy/free-sw.en.html][^footnote-compare_os].
+  * According to the Free Software Foundation's summary, it means that "_users have the freedom to run, copy, distribute, study, change and improve the software_"[@https://www.gnu.org/philosophy/free-sw.en.html].
 
   * The Open Source Initiative defines it as "_software that can be freely accessed, used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the [Open Source Definition](https://opensource.org/osd-annotated)._"[@https://opensource.org/faq#osd]
 
@@ -260,19 +260,19 @@ See [Glossary](#glossary) for their formal definitions.
 
 "_Open source is a development methodology; free software is a social movement._"[@https://www.gnu.org/philosophy/open-source-misses-the-point.en.html] Although often discussed together, they are politically distinct: "free software" being more closely associated with ethics ("_essential respect for the users' freedom"[@https://www.gnu.org/philosophy/open-source-misses-the-point.en.html]) and "open source" with pragmatism (i.e., a practical, business-case approach to free software[@https://opensource.org/history]).
 
-On the practical side, every existing free software would qualify as open source but not vice versa. Exceptions include the following:
+The groups' relationship between free and proprietary software is one of the most defining difference:
 
-  * Open source licenses are more permissive (or restrictive, depending on the perspective).
+  * Members of the open source community are willing to coexist with the makers of proprietary software[@https://en.wikipedia.org/wiki/Open-source_software_movement,@https://opensource.org/faq#permissive] and feel that the issue of whether software is open source is a matter of practicality[@https://opensource.org/history]. One example is [tivoization](https://en.wikipedia.org/wiki/Tivoization).
 
-    For example, some licences that do not allow modification of program  are still deemed as valid open source licenses by the Open Source Initiative whereas these terms are unacceptable by the Free Software Foundation as they limit the users' freedom.
+  * In contrast, members of the free software community maintain the vision that all software is a part of freedom of speech and that proprietary software is unethical and unjust[@https://www.gnu.org/philosophy/open-source-misses-the-point.en.html,@https://www.gnu.org/proprietary/proprietary.en.html,@https://www.gnu.org/proprietary/proprietary-surveillance.en.html,@https://www.gnu.org/proprietary/proprietary-back-doors.en.html].
 
-  * Difference between the groups' relationship between free and proprietary software.
+This differentiation is best reflected by the software licenses used: the open source community allows the use of licenses that permit developing proprietary (i.e., closed sourced) software. This is unacceptable to proponents of free software.
 
-    Members of the open source community are willing to coexist with the makers of proprietary software[@https://en.wikipedia.org/wiki/Open-source_software_movement,@https://opensource.org/faq#permissive] and feel that the issue of whether software is open source is a matter of practicality[@https://opensource.org/history]. One example is [tivoization](https://en.wikipedia.org/wiki/Tivoization).
+Therefore, on the practical side, every existing free software would qualify as open source because the Open Source Initiative allows the more restrictive (or permissive, depending on the perspective) free software licenses but not vice versa.
 
-    In contrast, members of the free software community maintain the vision that all software is a part of freedom of speech and that proprietary software is unethical and unjust[@https://www.gnu.org/philosophy/open-source-misses-the-point.en.html,@https://www.gnu.org/proprietary/proprietary.en.html,@https://www.gnu.org/proprietary/proprietary-surveillance.en.html,@https://www.gnu.org/proprietary/proprietary-back-doors.en.html].
+### 2.3.3 Licenses
 
-### 2.3.3 Licenses[^footnote-which_license]
+Choosing a license depends on many factors, such as use cases (e.g., end user product, software module), adopting entities (e.g., company, group of hobby developers), project goals (e.g., commercial product, free or for fee services).
 
 [^footnote-which_license]: Choosing a FLOSS license depends largely on the use case and can be controversial, see [@https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21,@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant,@https://news.ycombinator.com/item?id=1273231,@roads-and-bridges].
 
@@ -432,7 +432,7 @@ Open source licenses are licenses that comply with the [Open Source Definition](
 
 #### 2.3.5.1 Commercial versus proprietary software
 
-It is worth emphasizing: 
+It is worth emphasizing:
 
 >“Commercial” and “proprietary” are not the same! Commercial software is software developed by a business as part of its business. Most commercial software is proprietary, but there is commercial free software, and there is noncommercial nonfree software.
 >
