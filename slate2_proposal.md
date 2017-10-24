@@ -54,27 +54,6 @@ Put Society for the Blind on the information technology map as a hub for knowled
 
 Weekly reports on current progress, challenges and amount of time spent on specific activity or task.
 
-1. Terminology
-==============
-
-**subsystem**
-: The _constituent relationship and service program management system_ proposed in this paper is a collection of subsystems collaborating with each other to provide services for organizational programs and departments. Each subsystem is a software with a specific purpose that contributes to the overall functionality of the system. An example would be a subsystem for volunteer management.
-
----
-
-**commercial software**
-: "A program is commercial if it is developed as a business activity. A commercial program can be free or nonfree, depending on its manner of distribution. Likewise, a program developed by a school or an individual can be free or nonfree, depending on its manner of distribution. The two questions—what sort of entity developed the program and what freedom its users have—are independent."[@gnu-words]
-
----
-
-**proprietary software**
-: A usually commercial software[^footnote-noncommercial-proprietary] with a closed source code (i.e., made unavailable for the users). Proprietary licenses are most often associated with proprietary programs that further restrict user interaction, such as the prohibition to distribute or use outside the prescribed scope (e.g., install on multiple computers, lend it to a friend etc.).
-
-[^footnote-noncommercial-proprietary]: Most commercial software is proprietary, but is noncommercial nonfree software.[@https://www.gnu.org/philosophy/categories.en.html] [Winamp](https://en.wikipedia.org/wiki/Winamp), the popular audio player on Windows, is one example.
-
-  Free software proponents also refer to these as *nonfree* software[@gnu-words].
-
-\newpage
 2 Context
 =========
 
@@ -272,19 +251,17 @@ Therefore, on the practical side, every existing free software would qualify as 
 
 ### 2.3.3 Licenses
 
-Choosing a license depends on many factors, such as use cases (e.g., end user product, software module), adopting entities (e.g., company, group of hobby developers), project goals (e.g., commercial product, free or for fee services).
+#### 2.3.3.1 Copyright and the necessity of open source licenses
 
-[^footnote-which_license]: Choosing a FLOSS license depends largely on the use case and can be controversial, see [@https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21,@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant,@https://news.ycombinator.com/item?id=1273231,@roads-and-bridges].
+The majority of developers (commercial or otherwise) agree that licenses are crucial to be able to collaborate effectively as authors expect that others will use, modify and share their code but the legal default for original works are still exclusive copyright.
 
-#### 2.3.3.1 Why are licenses necessary?[^footnote-osguide]
+Copyright grants the creator of an original work exclusive but limited rights for its use and distribution[@https://en.wikipedia.org/wiki/Copyright;@http://www.etymonline.com/word/copyright;@https://opensource.com/resources/what-is-copyleft] by default under the Berne Convention[@https://en.wikipedia.org/wiki/Berne_Convention;@https://en.wikipedia.org/wiki/Berne_Convention_Implementation_Act_of_1988]. Authors therefore have complete authority and they have to provide explicitly permit any actions that would involve the use of their work.
 
-[^footnote-osguide]: Content based on [github.com/github/opensource.guide] used under the CC-BY-4.0 license.
+The corollary is that "_without a license, everybody who contributes to the project also becomes an exclusive copyright holder of their work. That means nobody can use, copy, distribute, or modify their contributions – and that “nobody” includes the author as well._"[@github.com/github/opensource.guide]
 
-An original creative work (such as writing, graphics, or code) is under exclusive copyright by default, meaning that by law only the author has a say in what others can do with it. Open source is an unusual circumstance, however, because the author expects that others will use, modify, and share the work. But because the legal default is still exclusive copyright, a license is needed to explicitly state these permissions.
+A license resolves this conflict by explicitly stating permissions on actions that are accepted by a given community (which in this context is the free and open source community).
 
-Without a license, everybody who contributes to the project also becomes an exclusive copyright holder of their work. That means nobody can use, copy, distribute, or modify their contributions – and that “nobody” includes the author as well.
-
-#### 2.3.3.2 Free software licenses
+#### 2.3.3.0 Copyleft
 
 Free software tend to be licensed under [copyleft](#glossary) licenses[^footnote-copyleft] that basically allow the creation of derivative works but require them to use the same license as the original work.[@https://opensource.org/faq#copyleft] For software, the added stipulation is that the original/derivative program's source code also has to be made available to recipients to prevent the creation of proprietary products[@https://www.gnu.org/copyleft/copyleft.html].
 
@@ -294,11 +271,23 @@ The most prominent example are the versions of the GNU General Public License[^f
 
 [^footnote-gpl_v3]: The latest version is the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) and [an extensive legal analysis is also available by the Software Freedom Law Center](https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html).
 
+#### 2.3.3.0 Public domain
+It is worth mentioning that some reject the necessity of software licenses altogether therefore do not use licenses[@https://en.wikipedia.org/wiki/License-free_software] or put their work explicitly in the public domain[@http://cr.yp.to/distributors.html].
+
+
+"_An original creative work (such as writing, graphics, or code) is under exclusive copyright by default, meaning that by law only the author has a say in what others can do with it. Open source is an unusual circumstance, however, because the author expects that others will use, modify, and share the work. But because the legal default is still exclusive copyright, a license is needed to explicitly state these permissions._
+
+
+
 #### 2.3.3.2 Open source licenses
 
 Open source licenses are licenses that comply with the [Open Source Definition](https://opensource.org/osd) (i.e., they allow software to be freely used, modified, and shared), including non-copyleft[^footnote-noncopyleft] (or "permissive") licenses that allow proprietary derivative works[@https://opensource.org/faq#permissive].
 
 [^footnote-noncopyleft]: As the defintion of open source software is an extension of [the four essential freedoms of the Free Software Definition](https://www.gnu.org/philosophy/free-sw.html), all copyleft licenses are also open source licenses.
+
+#### 2.3.3.4 Choosing a license
+
+Choosing a license depends on many factors, such as use cases (e.g., end user product, software module), adopting entities (e.g., company, group of hobby developers), project goals (e.g., commercial product, free or for fee services).[@https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21,@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant,@https://news.ycombinator.com/item?id=1273231,@roads-and-bridges]
 
 ### 2.3.4 Factors to consider before adoption
 
@@ -428,7 +417,7 @@ Open source licenses are licenses that comply with the [Open Source Definition](
 
     Building on open source code on the other becomes more complex as each included project may have different (or even multiple) licenses. Fortunately, this requirement has become more and more a standardized and automated process with the lead of large open source non-profits such as the Linux Foundation or the Open Source Initiative.[@https://www.linuxfoundation.org/blog/why-companies-that-use-open-source-need-a-compliance-program/] One example is the Software Composition Analysis methodology[@https://blog.blackducksoftware.com/software-composition-analysis-compatible-agile-devops].
 
-### 2.3.5 Commercialization of open source software
+### 2.3.5 Commercialization
 
 #### 2.3.5.1 Commercial versus proprietary software
 
@@ -448,9 +437,34 @@ Software licensed under an open source (or even under a more strict free softwar
 
 #### 2.3.5.3 Business models for open source software
 
+#### 2.3.5.2 Controversies
+
+It can be especially hard if one would like to choose an open source license for a commercial project as some of them are historically abused for unethical business practices[@http://www.dr-chuck.com/csev-blog/2014/09/how-to-achieve-vendor-lock-in-with-a-legit-open-source-license-affero-gpl/;@http://www.davewentzel.com/content/open-source-licensing] and some have pejorative connotations associated with them by negative campaigns at the time when open source practices where perceived as a threat by corporations (e.g., adjectives "viral" and "infectious" used for copyleft licenses[@https://en.wikipedia.org/wiki/Viral_license]).
+
 3 Project rationale
 ===================
 
+1. Terminology
+==============
+
+**subsystem**
+: The _constituent relationship and service program management system_ proposed in this paper is a collection of subsystems collaborating with each other to provide services for organizational programs and departments. Each subsystem is a software with a specific purpose that contributes to the overall functionality of the system. An example would be a subsystem for volunteer management.
+
+---
+
+**commercial software**
+: "A program is commercial if it is developed as a business activity. A commercial program can be free or nonfree, depending on its manner of distribution. Likewise, a program developed by a school or an individual can be free or nonfree, depending on its manner of distribution. The two questions—what sort of entity developed the program and what freedom its users have—are independent."[@gnu-words]
+
+---
+
+**proprietary software**
+: A usually commercial software[^footnote-noncommercial-proprietary] with a closed source code (i.e., made unavailable for the users). Proprietary licenses are most often associated with proprietary programs that further restrict user interaction, such as the prohibition to distribute or use outside the prescribed scope (e.g., install on multiple computers, lend it to a friend etc.).
+
+[^footnote-noncommercial-proprietary]: Most commercial software is proprietary, but is noncommercial nonfree software.[@https://www.gnu.org/philosophy/categories.en.html] [Winamp](https://en.wikipedia.org/wiki/Winamp), the popular audio player on Windows, is one example.
+
+  Free software proponents also refer to these as *nonfree* software[@gnu-words].
+
+\newpage
 3.1 Problem statement
 ---------------------
 
