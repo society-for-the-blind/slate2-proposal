@@ -255,13 +255,37 @@ Therefore, on the practical side, every existing free software would qualify as 
 
 The majority of developers (commercial or otherwise) agree that licenses are crucial to be able to collaborate effectively as authors expect that others will use, modify and share their code but the legal default for original works are still exclusive copyright.
 
-Copyright grants the creator of an original work exclusive but limited rights for its use and distribution[@https://en.wikipedia.org/wiki/Copyright;@http://www.etymonline.com/word/copyright;@https://opensource.com/resources/what-is-copyleft] by default under the Berne Convention[@https://en.wikipedia.org/wiki/Berne_Convention;@https://en.wikipedia.org/wiki/Berne_Convention_Implementation_Act_of_1988]. Authors therefore have complete authority and they have to provide explicitly permit any actions that would involve the use of their work.
+Copyright grants the creator of an original work exclusive but limited rights[^footnote-copyright_limits] for its use and distribution[@https://en.wikipedia.org/wiki/Copyright;@http://www.etymonline.com/word/copyright;@https://opensource.com/resources/what-is-copyleft] by default under the Berne Convention[@https://en.wikipedia.org/wiki/Berne_Convention;@https://en.wikipedia.org/wiki/Berne_Convention_Implementation_Act_of_1988]. Authors therefore have complete authority and they have to provide explicitly permit any actions that would involve the use of their work.
+
+[^footnote-copyright_limits]: "_Copyright law does not protect the titles of books or movies, nor does it protect short phrases such as, “Make my day.” Copyright protection also doesn’t cover facts, ideas, or theories. These things are free for all to use without authorization._"[@https://fairuse.stanford.edu/overview/public-domain/welcome/]
 
 The corollary is that "_without a license, everybody who contributes to the project also becomes an exclusive copyright holder of their work. That means nobody can use, copy, distribute, or modify their contributions – and that “nobody” includes the author as well._"[@github.com/github/opensource.guide]
 
-A license resolves this conflict by explicitly stating permissions on actions that are accepted by a given community (which in this context is the free and open source community).
+A license resolves this conflict by explicitly stating permitted actions that are accepted by a given community (which in this context is the free and open source community).
 
-#### 2.3.3.0 Copyleft
+#### 2.3.3.0 Public domain software
+
+Some developers reject the necessity of software licenses altogether and therefore do not use licenses[@https://en.wikipedia.org/wiki/License-free_software] or put their work explicitly in the public domain[@http://cr.yp.to/distributors.html].
+
+License-free software are usually avoided because it is not explicitly in the public domain and the absence of a license makes the software fully copyright protected according to the Berne convention.
+
+Dedicating software to the public domain is somewhat better received. Works in the public domain are creative material that are not protected by copyright, trademark or patent laws and can be modified, distributed, or sold even without any attribution by anyone.[@https://en.wikipedia.org/wiki/Public-domain_software;@https://en.wikipedia.org/wiki/Public_domain;@https://fairuse.stanford.edu/overview/public-domain/welcome/] Legal ambiguities still exist however, especially when it comes to software, such as:
+
+  * What is the legally accepted way to place software in the public domain?
+
+    There are four common ways for works to end up in the public domain: the copyright has expired, forfeited, waived or inapplicable.[@https://en.wikipedia.org/wiki/Public_domain;@https://fairuse.stanford.edu/overview/public-domain/welcome/]
+
+    Abandoning the copyright is the most pertinent in this case and there is a debate about what methods are legally accepted[@https://lists.opensource.org/pipermail/license-review/2012-March/001679.html;@http://cr.yp.to/distributors.html] or whether it can be done at all[^footnote-abandon_copyright].
+
+[^footnote-abandon_copyright]: There is legal precedent to it, at least by the US Ninth Circuit: "_Abandonment of such rights, however, must be manifested by some overt act indicative of a purpose to surrender the rights and allow the public to copy._"[@1960hampton]
+
+  * How can public domain software be re-used in proprietary software?
+
+    Modifications to a public domain work may be protected by copyright[@https://fairuse.stanford.edu/overview/public-domain/trouble-spots/] if the modification is non-trivial (i.e., meets the applicable laws' originality and creativity requirements)[@https://copyleft.org/guide/comprehensive-gpl-guidech2.html#x5-50001.1;@http://www.publicdomainsherpa.com/10-misconceptions-about-the-public-domain.html#five] and this could be interpreted that only the modification itself can copyrighted[@http://www.publicdomainsherpa.com/10-misconceptions-about-the-public-domain.html#five].
+
+    The meaning of "public domain" also depends on jurisdiction[@https://www.quora.com/When-you-create-a-proprietary-software-after-using-quite-a-few-open-source-software-projects-as-a-starting-point-how-is-this-legal;@https://en.wikipedia.org/wiki/Public_domain] and licenses are necessary that emulate the public domain, such as CC0[@https://wiki.creativecommons.org/wiki/CC0], Unilicense[@http://unlicense.org/] or WTFPL[@http://www.wtfpl.net/].
+
+#### 2.3.3.0 Copyleft and the rationale behind its conception
 
 Free software tend to be licensed under [copyleft](#glossary) licenses[^footnote-copyleft] that basically allow the creation of derivative works but require them to use the same license as the original work.[@https://opensource.org/faq#copyleft] For software, the added stipulation is that the original/derivative program's source code also has to be made available to recipients to prevent the creation of proprietary products[@https://www.gnu.org/copyleft/copyleft.html].
 
@@ -271,19 +295,11 @@ The most prominent example are the versions of the GNU General Public License[^f
 
 [^footnote-gpl_v3]: The latest version is the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) and [an extensive legal analysis is also available by the Software Freedom Law Center](https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html).
 
-#### 2.3.3.0 Public domain
-It is worth mentioning that some reject the necessity of software licenses altogether therefore do not use licenses[@https://en.wikipedia.org/wiki/License-free_software] or put their work explicitly in the public domain[@http://cr.yp.to/distributors.html].
-
-
-"_An original creative work (such as writing, graphics, or code) is under exclusive copyright by default, meaning that by law only the author has a say in what others can do with it. Open source is an unusual circumstance, however, because the author expects that others will use, modify, and share the work. But because the legal default is still exclusive copyright, a license is needed to explicitly state these permissions._
-
-
-
 #### 2.3.3.2 Open source licenses
 
-Open source licenses are licenses that comply with the [Open Source Definition](https://opensource.org/osd) (i.e., they allow software to be freely used, modified, and shared), including non-copyleft[^footnote-noncopyleft] (or "permissive") licenses that allow proprietary derivative works[@https://opensource.org/faq#permissive].
+Open source licenses are licenses that comply with the [Open Source Definition](https://opensource.org/osd) (i.e., they allow software to be freely used, modified, and shared), including non-copyleft licenses that allow proprietary derivative works[@https://opensource.org/faq#permissive]. (A reason why they are also called "permissive" licenses).
 
-[^footnote-noncopyleft]: As the defintion of open source software is an extension of [the four essential freedoms of the Free Software Definition](https://www.gnu.org/philosophy/free-sw.html), all copyleft licenses are also open source licenses.
+As the defintion of open source software is an extension of [the four essential freedoms of the Free Software Definition](https://www.gnu.org/philosophy/free-sw.html), all copyleft licenses are also open source licenses.
 
 #### 2.3.3.4 Choosing a license
 
