@@ -285,8 +285,41 @@ Dedicating software to the public domain is somewhat better received. Works in t
 
     The meaning of "public domain" also depends on jurisdiction[@https://www.quora.com/When-you-create-a-proprietary-software-after-using-quite-a-few-open-source-software-projects-as-a-starting-point-how-is-this-legal;@https://en.wikipedia.org/wiki/Public_domain] and licenses are necessary that emulate the public domain, such as CC0[@https://wiki.creativecommons.org/wiki/CC0], Unilicense[@http://unlicense.org/] or WTFPL[@http://www.wtfpl.net/].
 
-#### 2.3.3.0 Copyleft and the rationale behind its conception
+#### 2.3.3.0 Copyleft
 
+##### 2.3.3.0.1 History and rationale
+
+Since the emergence of computer science, developing and sharing programs was entirely in the public domain, mostly in academia and software was not copyrightable.
+
+In 1974, the US Commission on New Technological Uses of Copyrighted Works (CONTU) decided that "_computer programs, to the extent that they embody an author's original creation, are proper subject matter of copyright_"[@http://www.digital-law-online.info/CONTU/].
+
+The Copyright Act of 1976[@https://www.law.cornell.edu/uscode/text/17/117] (and following legal precedents, such as Apple v. Franklin[@https://openjurist.org/714/f2d/1240/apple-computer-inc-v-franklin-computer-corporation]) "_clarified that the Copyright Act gave computer programs the copyright status of literary works_"[@https://en.wikipedia.org/wiki/Public-domain_software].
+
+The Berne Convention Implementation Act of 1988 puts any original creative works under copyright after creation by default.
+
+The legislation gave rise to the development of proprietary software and helped it become a lucrative business opportunity from the early 1980s, causing the decline of the academic public domain software ecosystem[@https://en.wikipedia.org/wiki/History_of_Unix].
+
+Richard Stallman, himself an academic and alarmed by the growing trend, founds the GNU Project, and with that, the free software movement. He writes the first version of GNU General Public License in 1989 as a response, to encode public domain rights on software, relying "_on the enforceability of the copyright to be effective_"[@https://en.wikipedia.org/wiki/Public-domain_software].
+
+##### 2.3.3.0.2 What is copyleft?
+
+Copyleft is a form of licensing to maintain copyright conditions for works but giving permission to recipients of the work to reproduce, change or distribute it, with the accompanying requirement that any resulting copies or adaptations are also bound by the same licensing agreement.
+
+It is a play on the word "copyright" because just as "_copyright law is used by an author to prohibit recipients from reproducing, adapting, or distributing copies of their work_"[@https://en.wikipedia.org/wiki/Copyleft], copyright law is used to enforce sharing the "_information necessary for reproducing and modifying the work must be made available to recipients of the binaries_"[@https://en.wikipedia.org/wiki/Copyleft] (i.e., source code).
+
+The differences between copyleft and public domain is that copyleft
+
+  * retains the author's exclusive copyrights
+
+  * but uses it to prohibit re-licensing or sublicensing the work
+
+  * and to enforce sharing of the source code.
+
+The last item is probably the most important as "_an executable program can be in the public domain but the source code is not available_"[@https://www.gnu.org/philosophy/categories.en.html].
+
+The idea of copyleft can be also applied to works that are not software. These licenses are usually called share-alike[@https://creativecommons.org/licenses/by-sa/4.0/].
+
+---
 Free software tend to be licensed under [copyleft](#glossary) licenses[^footnote-copyleft] that basically allow the creation of derivative works but require them to use the same license as the original work.[@https://opensource.org/faq#copyleft] For software, the added stipulation is that the original/derivative program's source code also has to be made available to recipients to prevent the creation of proprietary products[@https://www.gnu.org/copyleft/copyleft.html].
 
 [^footnote-copyleft]: Also referred to as *reciprocal* or *protective* licenses.
