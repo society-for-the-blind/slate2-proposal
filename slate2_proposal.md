@@ -303,30 +303,29 @@ Richard Stallman, himself an academic and alarmed by the growing trend, founds t
 
 ##### 2.3.3.0.2 What is copyleft?
 
-Copyleft is a form of licensing to maintain copyright conditions for works but giving permission to recipients of the work to reproduce, change or distribute it, with the accompanying requirement that any resulting copies or adaptations are also bound by the same licensing agreement.
+Also referred to as *reciprocal* or *protective* licenses.
 
-It is a play on the word "copyright" because just as "_copyright law is used by an author to prohibit recipients from reproducing, adapting, or distributing copies of their work_"[@https://en.wikipedia.org/wiki/Copyleft], copyright law is used to enforce sharing the "_information necessary for reproducing and modifying the work must be made available to recipients of the binaries_"[@https://en.wikipedia.org/wiki/Copyleft] (i.e., source code).
+Copyleft is a form of licensing that retains the author's exclusive copyrights for works but gives permission to recipients of the work to reproduce, change or distribute it, with the accompanying requirement that any resulting copies or adaptations are also bound by the same licensing agreement. (Hence the term "reciprocal".)
 
-The differences between copyleft and public domain is that copyleft
+Copyleft software intentionally shares properties with public domain software and by requiring the same copyleft license downstream is an attempt to close one of its loopholes: "_any nontrivial modification made to the [public domain] work is fully copyrightable_", ergo "_over time, some entities will choose to proprietarize their modified versions_" with little "_incentive to contribute back to the commons_", until "_almost no interesting work is left in the public domain, because nearly all new work is done by proprietarization._"[@https://copyleft.org/guide].
 
-  * retains the author's exclusive copyrights
+"Copyleft" is a play on the word "copyright" because just as "_copyright law is used by an author to prohibit recipients from reproducing, adapting, or distributing copies of their work_"[@https://en.wikipedia.org/wiki/Copyleft], paradoxically the same copyright law is utilized to enforce sharing the "_information necessary for reproducing and modifying the work must be made available to recipients of the binaries_"[@https://en.wikipedia.org/wiki/Copyleft] (i.e., source code) and to prohibit re-licensing and sublicensing. (Hence the term "protective".)
 
-  * but uses it to prohibit re-licensing or sublicensing the work
+The stipulation to share the source code is added to prevent the creation of proprietary products[@https://www.gnu.org/copyleft/copyleft.html] and it is probably the most notable difference to public domain software because "_an executable program can be in the public domain but the source code is not available_"[@https://www.gnu.org/philosophy/categories.en.html].
 
-  * and to enforce sharing of the source code.
-
-The last item is probably the most important as "_an executable program can be in the public domain but the source code is not available_"[@https://www.gnu.org/philosophy/categories.en.html].
-
-The idea of copyleft can be also applied to works that are not software. These licenses are usually called share-alike[@https://creativecommons.org/licenses/by-sa/4.0/].
+The idea of copyleft can be also applied to works that are not software. These licenses are usually called share-alike (see Creative Commons[@https://creativecommons.org/].
 
 ---
 Free software tend to be licensed under [copyleft](#glossary) licenses[^footnote-copyleft] that basically allow the creation of derivative works but require them to use the same license as the original work.[@https://opensource.org/faq#copyleft] For software, the added stipulation is that the original/derivative program's source code also has to be made available to recipients to prevent the creation of proprietary products[@https://www.gnu.org/copyleft/copyleft.html].
 
-[^footnote-copyleft]: Also referred to as *reciprocal* or *protective* licenses.
 
 The most prominent example are the versions of the GNU General Public License[^footnote-gpl_v3].
 
 [^footnote-gpl_v3]: The latest version is the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) and [an extensive legal analysis is also available by the Software Freedom Law Center](https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html).
+
+##### 2.3.5.2.3 Controversies
+
+It can be especially hard if one would like to choose an open source license for a commercial project as some of them are historically abused for unethical business practices[@http://www.dr-chuck.com/csev-blog/2014/09/how-to-achieve-vendor-lock-in-with-a-legit-open-source-license-affero-gpl/;@http://www.davewentzel.com/content/open-source-licensing] and some have pejorative connotations associated with them by negative campaigns at the time when open source practices where perceived as a threat by corporations (e.g., adjectives "viral" and "infectious" used for copyleft licenses[@https://en.wikipedia.org/wiki/Viral_license]).
 
 #### 2.3.3.2 Open source licenses
 
@@ -485,10 +484,6 @@ Commercial software is not the antonym of free and open source software, proprie
 Software licensed under an open source (or even under a more strict free software) license can be sold for a price or licensed for a fee just like any other product.[@https://blog.codecentric.de/en/2012/05/using-gpl-licensed-components-in-proprietary-projects/,@https://www.gnu.org/licenses/gpl-faq#DoesTheGPLAllowMoney,]
 
 #### 2.3.5.3 Business models for open source software
-
-#### 2.3.5.2 Controversies
-
-It can be especially hard if one would like to choose an open source license for a commercial project as some of them are historically abused for unethical business practices[@http://www.dr-chuck.com/csev-blog/2014/09/how-to-achieve-vendor-lock-in-with-a-legit-open-source-license-affero-gpl/;@http://www.davewentzel.com/content/open-source-licensing] and some have pejorative connotations associated with them by negative campaigns at the time when open source practices where perceived as a threat by corporations (e.g., adjectives "viral" and "infectious" used for copyleft licenses[@https://en.wikipedia.org/wiki/Viral_license]).
 
 3 Project rationale
 ===================
