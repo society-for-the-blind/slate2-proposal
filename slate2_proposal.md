@@ -303,9 +303,9 @@ Richard Stallman, himself an academic and alarmed by the growing trend, founds t
 
 ##### 2.3.3.0.2 What is copyleft?
 
-Also referred to as *reciprocal* or *protective* licenses.
+Also referred to as *reciprocal* or *protective* licenses. The derogatory adjectives "viral" or "infectious" are also used[@https://en.wikipedia.org/wiki/Viral_license]. (See [Controversies]).
 
-Copyleft is a form of licensing that retains the author's exclusive copyrights for works but gives permission to recipients of the work to reproduce, change or distribute it, with the accompanying requirement that any resulting copies or adaptations are also bound by the same licensing agreement. (Hence the term "reciprocal".)
+It is a form of licensing that retains the author's exclusive copyrights for works but gives permission to recipients of the work to reproduce, change or distribute it, with the accompanying requirement that any resulting copies or adaptations are also bound by the same licensing agreement. (Hence the term "reciprocal".)
 
 Copyleft software intentionally shares properties with public domain software and by requiring the same copyleft license downstream is an attempt to close one of its loopholes: "_any nontrivial modification made to the [public domain] work is fully copyrightable_", ergo "_over time, some entities will choose to proprietarize their modified versions_" with little "_incentive to contribute back to the commons_", until "_almost no interesting work is left in the public domain, because nearly all new work is done by proprietarization._"[@https://copyleft.org/guide].
 
@@ -315,7 +315,17 @@ The stipulation to share the source code is added to prevent the creation of pro
 
 The idea of copyleft can be also applied to works that are not software. These licenses are usually called share-alike (see Creative Commons[@https://creativecommons.org/].
 
----
+#### 2.3.3.2 Open source licenses
+
+Open source licenses are licenses that comply with the [Open Source Definition](https://opensource.org/osd) (i.e., they allow software to be freely used, modified, and shared), including non-copyleft licenses that allow proprietary derivative works[@https://opensource.org/faq#permissive]. (A reason why they are also called "permissive" licenses).
+
+As the defintion of open source software is an extension of [the four essential freedoms of the Free Software Definition](https://www.gnu.org/philosophy/free-sw.html), all copyleft licenses are also open source licenses.
+
+The Open Source Initiative maintains the list of approved licenses:
+<https://opensource.org/licenses>
+
+#### 2.3.3.3 Free software licenses
+
 Free software tend to be licensed under [copyleft](#glossary) licenses[^footnote-copyleft] that basically allow the creation of derivative works but require them to use the same license as the original work.[@https://opensource.org/faq#copyleft] For software, the added stipulation is that the original/derivative program's source code also has to be made available to recipients to prevent the creation of proprietary products[@https://www.gnu.org/copyleft/copyleft.html].
 
 
@@ -323,16 +333,7 @@ The most prominent example are the versions of the GNU General Public License[^f
 
 [^footnote-gpl_v3]: The latest version is the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) and [an extensive legal analysis is also available by the Software Freedom Law Center](https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html).
 
-##### 2.3.5.2.3 Controversies
-
-It can be especially hard if one would like to choose an open source license for a commercial project as some of them are historically abused for unethical business practices[@http://www.dr-chuck.com/csev-blog/2014/09/how-to-achieve-vendor-lock-in-with-a-legit-open-source-license-affero-gpl/;@http://www.davewentzel.com/content/open-source-licensing] and some have pejorative connotations associated with them by negative campaigns at the time when open source practices where perceived as a threat by corporations (e.g., adjectives "viral" and "infectious" used for copyleft licenses[@https://en.wikipedia.org/wiki/Viral_license]).
-
-#### 2.3.3.2 Open source licenses
-
-Open source licenses are licenses that comply with the [Open Source Definition](https://opensource.org/osd) (i.e., they allow software to be freely used, modified, and shared), including non-copyleft licenses that allow proprietary derivative works[@https://opensource.org/faq#permissive]. (A reason why they are also called "permissive" licenses).
-
-As the defintion of open source software is an extension of [the four essential freedoms of the Free Software Definition](https://www.gnu.org/philosophy/free-sw.html), all copyleft licenses are also open source licenses.
-
+#### 2.3.3.4 hybrid licenses, MPL, middle ground?
 #### 2.3.3.4 Choosing a license
 
 Choosing a license depends on many factors, such as use cases (e.g., end user product, software module), adopting entities (e.g., company, group of hobby developers), project goals (e.g., commercial product, free or for fee services).[@https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21,@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant,@https://news.ycombinator.com/item?id=1273231,@roads-and-bridges]
@@ -465,7 +466,7 @@ Choosing a license depends on many factors, such as use cases (e.g., end user pr
 
     Building on open source code on the other becomes more complex as each included project may have different (or even multiple) licenses. Fortunately, this requirement has become more and more a standardized and automated process with the lead of large open source non-profits such as the Linux Foundation or the Open Source Initiative.[@https://www.linuxfoundation.org/blog/why-companies-that-use-open-source-need-a-compliance-program/] One example is the Software Composition Analysis methodology[@https://blog.blackducksoftware.com/software-composition-analysis-compatible-agile-devops].
 
-### 2.3.5 Commercialization
+### 2.3.5 Commercial applicability
 
 #### 2.3.5.1 Commercial versus proprietary software
 
@@ -484,6 +485,10 @@ Commercial software is not the antonym of free and open source software, proprie
 Software licensed under an open source (or even under a more strict free software) license can be sold for a price or licensed for a fee just like any other product.[@https://blog.codecentric.de/en/2012/05/using-gpl-licensed-components-in-proprietary-projects/,@https://www.gnu.org/licenses/gpl-faq#DoesTheGPLAllowMoney,]
 
 #### 2.3.5.3 Business models for open source software
+
+##### 2.3.5.2.3 Controversies
+
+It can be especially hard if one would like to choose an open source license for a commercial project as some of them are historically abused for unethical business practices[@http://www.dr-chuck.com/csev-blog/2014/09/how-to-achieve-vendor-lock-in-with-a-legit-open-source-license-affero-gpl/;@http://www.davewentzel.com/content/open-source-licensing] and some have pejorative connotations associated with them by negative campaigns at the time when open source practices where perceived as a threat by corporations (e.g., adjectives "viral" and "infectious" used for copyleft licenses[@https://en.wikipedia.org/wiki/Viral_license]).
 
 3 Project rationale
 ===================
