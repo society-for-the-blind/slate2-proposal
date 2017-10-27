@@ -37,3 +37,12 @@ A security system is only as secure as its secret. Beware of pseudo-secrets.
 To solve an interesting problem, start by finding a problem that is interesting to you.
 Provided the development coordinator has a communications medium at least as good as the Internet, and knows how to lead without coercion, many heads are inevitably better than one.
 
+
+# controversies, copyleft shakedowns, bait and switch etc
+
+## https://copyleft.org/guide/ (chapter 10)
+
+NOTE: Even FSF realized where it would lead if everything would be licensed under a strong copyleft:
+
+10.1 The First LGPL’d Program
+(if glibc would be distributed under the GPL, all derivative works would have to be licensed under GPL) [...] At first glance, such an outcome seems like a windfall for Free Software advocates, since it stops all proprietary software development on GNU/Linux systems. However, the outcome is a bit more subtle. In a world where many C libraries already exist, many of which could easily be ported to GNU/Linux, a GPL’d glibc would be unlikely to succeed. Proprietary vendors would see the excellent opportunity to license their C libraries to anyone who wished to write proprietary software for GNU/Linux systems. The de-facto standard for the C library on GNU/Linux would likely be not glibc, but the most popular proprietary one.
