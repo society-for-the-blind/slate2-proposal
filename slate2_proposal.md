@@ -769,7 +769,7 @@ The stipulation that the "_information necessary for reproducing and modifying t
 
 The idea of copyleft can be also applied to works that are not software. These licenses are usually called share-alike (see Creative Commons[@https://creativecommons.org/].
 
-##### 2.3.3.0.3 Types of copyleft licenses
+##### 2.3.3.0.3 Types
 
 ###### Strong and weak copyleft
 
@@ -791,11 +791,27 @@ Generally used for the creation of software libraries. The most well-known examp
 
 ###### Full and partial copyleft
 
+This classification is used by some sources but there is no authoritative source for their definitions by any of the well-established entities (for example, organization such as the Free Software Foundation, Open Source Initiative, Mozilla Foundation, or licensing websites such as choosealicense.com, TLDR-legal).
 
+---
 
-#### use cases
+Most of the definitions can be found in many places but they are
 
+  * vague without examples, and they are exact or minimally modified copies of each other[@https://en.wikipedia.org/wiki/Copyleft;@https://books.google.com/books?id=WRAFJNMrSdkC&pg=PA34&lpg=PA34&dq=full+partial+copyleft&source=bl&ots=lg50hOJ0oe&sig=h8i3mjiEPmbazN7mV63v2z2tKs8&hl=en&sa=X&ved=0ahUKEwjWsLWf2ZHXAhVJ2GMKHVvCBK8Q6AEIfzAQ#v=onepage&q=full%20partial%20copyleft&f=false;@http://machines.plannedobsolescence.net/marxwiki/index.php?title=Copyleft#Full_and_partial_copyleft;@http://www.yourdictionary.com/copyleft;@https://wikivisually.com/wiki/Weak_copyleft;@http://encyclopedia2.thefreedictionary.com/Copyleft+licensing;@https://www.pcmag.com/encyclopedia/term/40363/copyleft]
 
+  * indistinguishable in meaning from or bear close resemblance to weak/strong copyleft[@https://en.wikipedia.org/wiki/Copyleft;@https://fullmetallinux.wordpress.com/tag/copyleft/]
+
+  * describing the difference between conventional and "file-level"[@https://www.mozilla.org/en-US/MPL/2.0/FAQ/] (or "per-file"[@https://www.gnu.org/licenses/license-list.en.html]) copyleft[@https://prezi.com/0sdn2cpssmyn/copyleft-prezi/;@https://www.academia.edu/9259737/Demystifying_Copyleft_Creative_Commons_and_Open_Access_Rights_a_little_]
+
+    This makes the most sense but none of the sources provide explicit examples to this claim (such as CDDL or MPL as they would perfectly fit those descriptions).
+
+    The Software Freedom Law Center's report comes closest in supporting this theory as it uses both "strong" and "partial" to describe CDDL's copyleft properties.
+
+The adjective "full" is never used by any of the aforementioned entities to describe copyleft licenses[^footnote-osi_cat] and "partial" is used as a synonym to "weak" copyleft (with the exception mentioned in the last item above).[@http://oss-watch.ac.uk/resources/licensing-handout.pdf;@http://blog.docracy.com/post/51823372485/software-licensing-what-type-of-license-should-i/embed;@https://www.fsf.org/news/openoffice-apache-libreoffice;@https://books.google.com/books?id=isTBDAAAQBAJ&pg=PA276&lpg=PA276&dq=gnu+partial+copyleft&source=bl&ots=w4PESycpiK&sig=Hsb4A5DAlUVGMOyFoCJIA-8rmxk&hl=en&sa=X&ved=0ahUKEwjd_eWL5JHXAhUP-GMKHW6CCOEQ6AEIgwEwEA#v=onepage&q=gnu%20partial%20copyleft&f=false]
+
+[^footnote-osi_cat]: The Open Source Initiative goes further because it does not even use "weak" or "strong" to categorize copyleft licenses.
+
+The Free Software Foundation uses both "copyleft-weak" and "copyleft-partial" as explicit categories in its license description templates but only the latter is used[@https://directory.fsf.org/wiki/User:Jgay/license-categorization].
 
 #### 2.3.3.2 Open source licenses
 
