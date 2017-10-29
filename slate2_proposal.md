@@ -777,20 +777,29 @@ The idea of copyleft can be also applied to works that are not software. These l
 
 The stronger the license, the more it will seek to ensure that the same license will cover every version of derivative works, making them subject to its requirements.[@https://copyleft.org/guide/] Practically this means that the corresponding source code has to be made available to licensees. The ideological goal is to ensure the propagations of the software freedoms for each user.
 
-Usually larger end user programs, which cannot be used further as components, opt in using such licenses to prevent turning them into proprietary products[^footnote-strong_copyleft_abuse].
+Usually larger end user programs, which cannot be used further as a component, opt in using such licenses to prevent turning them into proprietary products.[^footnote-strong_copyleft_abuse] The versions of the GNU General Public License (GNU GPL) are the most commonly cited examples for strong copyleft.
 
-[^footnote-strong_copyleft_abuse]: This is not a rule though and strong copyleft licenses can be abused for the very purposes they were invented to prevent. See [Controversies].
+[^footnote-strong_copyleft_abuse]: This is not a rule though and strong copyleft licenses are known to be abused by the industry. See [Controversies].
 
-As the "copyleft" gets weaker, the license starts to introduce "trade offs" such as allowing cases of derivative works that are permitted to use another license and/or keeping the source closed.[@https://en.wikipedia.org/wiki/Copyleft][^footnote-weak_copyleft_exception]
+GNU GPL version 3 with its system library exception is cited (see 9.3.3 in [@https://copyleft.org/guide/]) as an example to prove that the strength of a license is indeed a spectrum.
 
-Generally used for the creation of software libraries. The most well-known example is "glibc", the GNU project's implementation of the C standard library. It was created to provide a common alternative to the proliferating world of proprietary implementations with limited functionality, specific to certain vendors. If it had used a stronger license, any software created with it would have to be shipped with the same license and would have had to provide their source code. "_The de-facto standard for the C library on GNU/Linux would likely be not glibc_"[@https://copyleft.org/guide/], a free software, but probably the most popular proprietary one that allows developers to create proprietary software.[^footnote-weak_copyleft_counter]
+As the "copyleft" gets weaker, the license starts to introduce "trade offs" such as allowing cases of derivative works that are permitted to use another license and/or keeping parts of the source closed in order to foster wider adoption but still try to hold on to most of copyleft's principles.[@https://en.wikipedia.org/wiki/Copyleft;@https://copyleft.org/guide/]
 
-[^footnote-weak_copyleft_counter]: This seems counter-intuitive but many times did more permissive licenses prove that ideological goals can be reached by giving more leeway. See [Controversies].
+The most well-known example for this seemingly counter-intuitive rationale is the history of the GNU Lesser General Public License (GNU LGPL) and "glibc", the GNU project's implementation of the C standard library. It was created to provide a common alternative to the world of proliferating proprietary implementations that had limited functionality, sometimes specific only to certain vendors. If it had used a stronger license (such as the GPL), any software created with it would have to be shipped with the same license, thus providing their source code would have been necessary to avoid violation of the license's terms. "_The de-facto standard for the C library on GNU/Linux would likely be not glibc_"[@https://copyleft.org/guide/], a free software, but probably the most popular proprietary one that allows developers to create proprietary software.
 
-[^footnote-weak_copyleft_exception]: A specific example is GPLv3 and its system library exception (see 9.3.3 in [@https://copyleft.org/guide/]) or the LGPL (see Chapter 10 in [@https://copyleft.org/guide/]).
+There are multiple ways to purposely weaken copyleft restrictions:
+
+  * "The LGPL distinguishes between two classes of works: “works based on the library,” and “works that use the library” and it is generally used for the creation of software libraries.[^footnote-lgpl_terms]
+
+  * The Mozilla Public License version 2.0 (MPL v2.0) is using a "file-level" copyleft instead[@https://www.mozilla.org/en-US/MPL/2.0/FAQ/] that "_treats the source code file as the boundary between MPL-licensed and proprietary parts, meaning that all or none of the code in a given source file falls under the MPL._"[@https://en.wikipedia.org/wiki/Mozilla_Public_License] It also allows sublicensing[@https://softwareengineering.stackexchange.com/questions/189633/what-sublicense-actually-means][^footnote-mpl_extra]
+
+[^footnote-lgpl_terms]: The quoted terms are specific to LGPLv2 and has been superseded by LGPLv3. See Chapters 10 and 11 in [@https://copyleft.org/guide/].
+
+[^footnote-mpl_extra]: Extra resources on when choosing MPL v2.0 could be beneficial to a project are [@https://christoph-conrads.name/why-i-chose-the-mozilla-public-license-2-0/;@https://julien.ponge.org/blog/mozilla-public-license-v2-a-good-middleground/].
 
 ###### Full and partial copyleft
 
+TODO links!
 This classification is used by some sources but there is no authoritative source for their definitions by any of the well-established entities (for example, organization such as the Free Software Foundation, Open Source Initiative, Mozilla Foundation, or licensing websites such as choosealicense.com, TLDR-legal).
 
 ---
@@ -832,7 +841,6 @@ The most prominent examples are the versions of the GNU General Public License[^
 
 [^footnote-gpl_v3]: The latest version is the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). For an extensive legal analysis is also available by the Software Freedom Law Center[@https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html] or see the de facto guide [@https://copyleft.org/guide/].
 
-#### 2.3.3.4 hybrid licenses, MPL, middle ground?
 #### 2.3.3.4 Choosing a license
 
 Choosing a license depends on many factors, such as use cases (e.g., end user product, software module), adopting entities (e.g., company, group of hobby developers), project goals (e.g., commercial product, free or for fee services).[@https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21,@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant,@https://news.ycombinator.com/item?id=1273231,@roads-and-bridges]
@@ -966,6 +974,7 @@ Choosing a license depends on many factors, such as use cases (e.g., end user pr
     Building on open source code on the other becomes more complex as each included project may have different (or even multiple) licenses. Fortunately, this requirement has become more and more a standardized and automated process with the lead of large open source non-profits such as the Linux Foundation or the Open Source Initiative.[@https://www.linuxfoundation.org/blog/why-companies-that-use-open-source-need-a-compliance-program/] One example is the Software Composition Analysis methodology[@https://blog.blackducksoftware.com/software-composition-analysis-compatible-agile-devops].
 
 ### 2.3.5 Commercial applicability
+#### controversies
 
 #### 2.3.5.1 Commercial versus proprietary software
 
