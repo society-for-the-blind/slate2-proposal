@@ -841,6 +841,9 @@ The most prominent examples are the versions of the GNU General Public License[^
 
 [^footnote-gpl_v3]: The latest version is the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). For an extensive legal analysis is also available by the Software Freedom Law Center[@https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html] or see the de facto guide [@https://copyleft.org/guide/].
 
+#### Compliance
+##### compatibility
+##### ?
 #### 2.3.3.4 Choosing a license
 
 Choosing a license depends on many factors, such as use cases (e.g., end user product, software module), adopting entities (e.g., company, group of hobby developers), project goals (e.g., commercial product, free or for fee services).[@https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21,@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant,@https://news.ycombinator.com/item?id=1273231,@roads-and-bridges]
