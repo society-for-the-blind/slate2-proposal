@@ -1,0 +1,65 @@
+  348  2017/09/29-22:17	pandoc
+  349  2017/09/29-22:17	sudo apt intall pandoc
+  350  2017/09/29-22:17	sudo apt install pandoc
+  351  2017/09/29-22:18	pandoc
+  352  2017/09/29-22:18	pandoc -help
+  353  2017/09/29-22:18	pandoc --list-highlight-languages
+  354  2017/09/29-22:18	pandoc --help
+  355  2017/09/29-22:19	pandoc --list-highlight-languages
+  356  2017/09/29-22:19	pandoc --help | ack list
+  364  2017/10/01-02:01	pandoc --help
+  365  2017/10/01-02:01	pandoc --help | ack data
+  366  2017/10/01-02:02	pandoc --data-dir
+  367  2017/10/01-02:02	man pandoc
+  369  2017/10/01-02:03	man pandoc
+  370  2017/10/01-02:03	pandoc --verions
+  371  2017/10/01-02:03	pandoc --version
+  372  2017/10/01-02:06	man pandoc
+  392  2017/10/01-03:11	pandoc --help | less
+  393  2017/10/01-03:16	pandoc -s proposals/slate2_proposal.md -o vmi.html
+  394  2017/10/01-03:18	pandoc --version
+  395  2017/10/01-03:20	pandoc -s proposals/slate2_proposal.md -o vmi.html
+  401  2017/10/01-03:44	pandoc -s slate2_proposal.md -o vmi.html
+  403  2017/10/01-03:45	pandoc -s slate2_proposal.md -o vmi.html
+  405  2017/10/01-13:51	sudo apt install pandoc-citeproc
+  408  2017/10/01-13:52	pandoc-citeproc -y slate2_proposal.bib 
+  409  2017/10/01-16:30	pandoc --filter pandoc-citeproc slate2_proposal.md 
+  410  2017/10/01-16:30	pandoc --filter pandoc-citeproc slate2_proposal.md -o vmi.html
+  412  2017/10/02-06:00	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.html
+  414  2017/10/02-06:02	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.html
+  416  2017/10/02-10:03	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.html
+  417  2017/10/02-10:13	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.pdf
+  420  2017/10/02-10:40	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.pdf
+  421  2017/10/02-10:40	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.html
+  422  2017/10/02-10:41	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.docx
+  423  2017/10/02-10:43	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.html
+  424  2017/10/02-10:48	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.docx
+  425  2017/10/02-10:53	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.html
+  426  2017/10/02-10:53	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.docx
+  427  2017/10/02-10:54	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.pdf
+  438  2017/10/02-10:59	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.pdf
+  442  2017/10/02-11:00	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.pdf
+  446  2017/10/02-11:13	pandoc -s --filter pandoc-citeproc slate2_proposal.md -o vmi.html
+  465  2017/10/02-11:33	ll | ack pandoc
+  466  2017/10/02-11:37	pandoc-citeproc --hlep
+  467  2017/10/02-11:37	pandoc-citeproc -j slate2_proposal.bib 
+  468  2017/10/02-11:37	pandoc-citeproc -j slate2_proposal.bib slate2_proposal.json
+  469  2017/10/02-11:37	pandoc-citeproc -j slate2_proposal.bib > slate2_proposal.json
+  471  2017/10/02-11:38	pandoc --help | less
+  472  2017/10/02-11:40	pandoc -s -S --bibliography slate2_proposal.json --filter pandoc-citeproc --csl din-1505-2-alphanumeric.csl slate2_proposal.md output/vmi.html
+  473  2017/10/02-11:40	pandoc -s -S --bibliography slate2_proposal.json --filter pandoc-citeproc --csl din-1505-2-alphanumeric.csl slate2_proposal.md -o output/vmi.html
+  475  2017/10/02-11:56	pandoc -s -S --bibliography slate2_proposal.json --filter pandoc-citeproc --csl din-1505-2-alphanumeric.csl slate2_proposal.md -o output/vmi.pdf
+  476  2017/10/02-12:00	pandoc -s -S --bibliography slate2_proposal.json --filter pandoc-citeproc --csl ieee-with-url.csl slate2_proposal.md -o output/vmi.html
+  477  2017/10/02-12:01	pandoc -s -S --bibliography slate2_proposal.json --filter pandoc-citeproc --csl ieee-with-url.csl slate2_proposal.md -o output/vmi.pdf
+  478  2017/10/02-12:09	pandoc --help | less
+  479  2017/10/02-12:11	pandoc-citeproc --help
+  480  2017/10/02-12:26	man pandoc
+  481  2017/10/02-12:28	pandoc --version
+  499  2017/10/02-13:49	pandoc -s -S --table-of-contents --bibliography slate2_proposal.json --filter pandoc-citeproc --csl ieee-with-url.csl slate2_proposal.md -o output/vmi.html
+  501  2017/10/02-13:49	pandoc -s -S --table-of-contents --bibliography slate2_proposal.json --filter pandoc-citeproc --csl ieee-with-url.csl slate2_proposal.md -o output/vmi.html
+  507  2017/10/02-13:53	pandoc -s -S --table-of-contents --bibliography bibliography.json --filter pandoc-citeproc --csl ieee-with-url.csl slate2_proposal.md meta.yaml -o output/vmi.html
+  508  2017/10/02-13:53	pandoc -s -S --table-of-contents --bibliography bibliography.json --filter pandoc-citeproc --csl ieee-with-url.csl slate2_proposal.md meta.yaml -o output/vmi.pdf
+  522  2017/10/02-14:06	pandoc -s -S --table-of-contents --bibliography bibliography.json --filter pandoc-citeproc --csl ieee-with-url.csl slate2_proposal.md meta.yaml -o output/vmi.pdf
+  523  2017/10/02-14:06	pandoc --help | less
+ 1824  2018/02/27-20:03	history | ag 'pandoc'
+ 1825  2018/02/27-20:03	history | ag 'pandoc' > pandoc_commands
