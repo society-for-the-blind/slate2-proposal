@@ -14,33 +14,33 @@ Develop a constituent relationship and service program management system that is
 **Activities/Tasks**                                    **Responsibility**       **Start**      **End**
 ------------------------------------------------------- ---------------------- -----------   ----------
 0 [Build local development environment](#env510)        Attila Gulyas          11/1/2017     12/15/2017
-1 [Plan agency-wide schema](#plan511)                   Attila Gulyas          11/1/2017     2/15/2018
-2 [Develop subsystem for educational](#dev512)          Attila Gulyas          11/1/2017     6/15/2018
+1 [Plan agency-wide schema](#plan511)                   Attila Gulyas          11/1/2017     6/15/2018
+2 [Develop subsystem for educational](#dev512)          Attila Gulyas          11/1/2017     10/15/2018
   [services departments](#dev512)
-3 [Prepare to move to the Cloud](#prep513)              Attila Gulyas          12/15/2017    2/1/2019
-4 [Focus on Resource Development](#resdev514)           Attila Gulyas           6/15/2018    12/15/2018
-5 Retail services                                       Attila Gulyas           2019
-6 Low Vision clinic                                     Attila Gulyas           2019
+3 [Prepare to move to the Cloud](#prep513)              Attila Gulyas          12/15/2017    4/1/2019
+4 [Focus on Resource Development](#resdev514)           Attila Gulyas
+5 Retail services                                       Attila Gulyas
+6 Low Vision clinic                                     Attila Gulyas
 
 [Budget](#bdgt)
 ---------------------
 
 **Activity**                                               **From**    **From**    **Cost**
 ------------------------------------------------------- ----------- ----------- -----------
-**3 [Prepare to move to the Cloud](#prep513)**          12/15/2017     2/1/2019
+**3 [Prepare to move to the Cloud](#prep513)**          12/15/2017     4/1/2019
 \
-3.1 [Replicate local development](#local5131)           12/15/2017     3/1/2018  [$40.04](https://cloud.google.com/products/calculator/#id=3a39d0d1-67c0-467e-82c0-ff1b48545b88)
+3.1 [Replicate local development](#local5131)           12/15/2017     6/15/2018  [$40.04](https://cloud.google.com/products/calculator/#id=3a39d0d1-67c0-467e-82c0-ff1b48545b88)
     [environment in the Cloud](#local5131)
-3.2 [Experiment with collaboration between](#exp5133)    3/1/2018      4/15/2018 [$35.42](https://cloud.google.com/products/calculator/#id=c77898a4-c560-4639-91ed-dc4d63696d4d)
+3.2 [Experiment with collaboration between](#exp5133)    5/1/2018      10/15/2018 [$35.42](https://cloud.google.com/products/calculator/#id=c77898a4-c560-4639-91ed-dc4d63696d4d)
     [local and remote subsystems](#exp5133)
-3.3 [Deploy stable educational](#dummy5132)              4/15/2018     9/20/2018 [$519.93](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)
+3.3 [Deploy stable educational](#dummy5132)              6/15/2018     10/15/2018 [$519.93](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)
     [subsystems for testing](#dummy5132)
-3.4 [Put data-processing subsystems into](#proc5134)     6/15/2018     10/1/2018 [$35.97](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)[^footnote-price]
+3.4 [Put data-processing subsystems into](#proc5134)     11/15/2018    12/20/2018 [$35.97](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)[^footnote-price]
     [production](#proc5134)
 \
 **Total**                                                                        **$631.36**
 \
-**Ongoing costs at full capability**                     10/1/2018               **[$3117.06](https://cloud.google.com/products/calculator/#id=3c01e636-6ae5-4585-8ae7-cd41e33bec7d)**
+**Ongoing costs at full capability**                     11/15/2018               **[$3117.06](https://cloud.google.com/products/calculator/#id=3c01e636-6ae5-4585-8ae7-cd41e33bec7d)**
 (see [_Notes_](#budgetnotes))
 -------------------------------------------------------------------------------
 
@@ -353,7 +353,7 @@ Table: Activity plan
 **0 [Build local development environment](#env510)**    Attila Gulyas          11/1/2017     12/15/2017
                                                         GNT Solutions
 .............................................
-**1 [Plan agency-wide schema](#plan511)**               Attila Gulyas           11/1/2017     2/15/2018
+**1 [Plan agency-wide schema](#plan511)**               Attila Gulyas           11/1/2017     6/15/2018
                                                         Staff
 \
 1.1 [Collect information about services](#collect5111)
@@ -361,42 +361,42 @@ Table: Activity plan
 1.2 [Evaluate workflows](#eval5112)
 1.3 [Identify service boundaries](#id5113)
 .............................................
-**2 [Develop subsystem for educational](#dev512)**      Attila Gulyas          11/1/2017     6/15/2018
+**2 [Develop subsystem for educational](#dev512)**      Attila Gulyas          11/1/2017     10/15/2018
   **[services departments](#dev512)**
 \
-2.1 [Cater for functionality common](#dev512)           Attila Gulyas          11/1/2017     4/15/2018
+2.1 [Cater for functionality common](#dev512)           Attila Gulyas          4/15/2018     6/15/2018
     [for both CORE and SIP](#cater5121)
-2.2 [Implement CORE-specific features](#imp5122)        Attila Gulyas          11/1/2017     6/15/2018
+2.2 [Implement CORE-specific features](#imp5122)        Attila Gulyas          6/15/2018      8/15/2018
                                                         Aser Tolentino
-2.3 [Implement SIP-specific features](#imp5123)         Attila Gulyas           2/15/2018     6/15/2018
+2.3 [Implement SIP-specific features](#imp5123)         Attila Gulyas           8/15/2018     10/15/2018
 .............................................
-**3 [Prepare to move to the Cloud](#prep513)**          Attila Gulyas          12/15/2017     2/1/2019
+**3 [Prepare to move to the Cloud](#prep513)**          Attila Gulyas          12/15/2017     4/1/2019
 \
-3.1 [Replicate local development](#local5131)           Attila Gulyas          12/15/2017     3/1/2018
+3.1 [Replicate local development](#local5131)           Attila Gulyas          12/15/2017     6/15/2018
     [environment in the Cloud](#local5131)
-3.2 [Experiment with collaboration between](#exp5133)   Attila Gulyas           3/1/2018      4/15/2018
+3.2 [Experiment with collaboration between](#exp5133)   Attila Gulyas           5/1/2018      10/15/2018
     [local and remote subsystems](#exp5133)
-3.3 [Deploy stable educational](#dummy5132)             Attila Gulyas           4/15/2018     9/20/2018
+3.3 [Deploy stable educational](#dummy5132)             Attila Gulyas           6/15/2018     10/15/2018
     [subsystems for testing](#dummy5132)
-3.4 [Put data-processing subsystems into](#proc5134)    Attila Gulyas           6/15/2018     10/1/2018
+3.4 [Put data-processing subsystems into](#proc5134)    Attila Gulyas           11/15/2018     12/20/2018
     [production](#proc5134)
-3.5 [Finish moving educational services](#fin5135)      Attila Gulyas          10/1/2018      2/1/2019
+3.5 [Finish moving educational services](#fin5135)      Attila Gulyas          12/20/2018      4/1/2019
     [and assess results](#fin5135)
 .............................................
-**4 [Focus on Resource Development](#resdev514)**       Attila Gulyas           6/15/2018    12/15/2018
+**4 [Focus on Resource Development](#resdev514)**       Attila Gulyas
 \
-4.1 [Develop subsystem to consolidate](#vol5141)        Attila Gulyas           6/15/2018     8/15/2018
+4.1 [Develop subsystem to consolidate](#vol5141)        Attila Gulyas
     [volunteer management](#vol5141)
-4.2 [Assess departmental needs and](#assess5142)        Attila Gulyas           6/15/2018    10/31/2018
+4.2 [Assess departmental needs and](#assess5142)        Attila Gulyas
     [current tools](#assess5142)                        Lina Lloyd \
                                                         Liz Culp
-4.3 [Create subsystem to replace or](#don5143)          Attila Gulyas           8/15/2018    12/15/2018
+4.3 [Create subsystem to replace or](#don5143)          Attila Gulyas
     [integrate current solutions for](#don5143)
     [donor and campaign management](#don5143)
 .............................................
-**5 Retail services**                                   Attila Gulyas           2019
+**5 Retail services**                                   Attila Gulyas
 .............................................
-**6 Low Vision clinic**                                 Attila Gulyas           2019
+**6 Low Vision clinic**                                 Attila Gulyas
 
 Notes:
 
@@ -494,23 +494,23 @@ Table: Budget
 
 **Activity**                                               **From**    **From**    **Cost**
 ------------------------------------------------------- ----------- ----------- -----------
-**3 [Prepare to move to the Cloud](#prep513)**          12/15/2017     2/1/2019
+**3 [Prepare to move to the Cloud](#prep513)**          12/15/2017     4/1/2019
 \
-3.1 [Replicate local development](#local5131)           12/15/2017     3/1/2018  [$40.04](https://cloud.google.com/products/calculator/#id=3a39d0d1-67c0-467e-82c0-ff1b48545b88)
+3.1 [Replicate local development](#local5131)           12/15/2017     6/15/2018  [$40.04](https://cloud.google.com/products/calculator/#id=3a39d0d1-67c0-467e-82c0-ff1b48545b88)
     [environment in the Cloud](#local5131)
 \
-3.2 [Experiment with collaboration between](#exp5133)    3/1/2018      4/15/2018 [$35.42](https://cloud.google.com/products/calculator/#id=c77898a4-c560-4639-91ed-dc4d63696d4d)
+3.2 [Experiment with collaboration between](#exp5133)    5/1/2018      10/15/2018 [$35.42](https://cloud.google.com/products/calculator/#id=c77898a4-c560-4639-91ed-dc4d63696d4d)
     [local and remote subsystems](#exp5133)
 \
-3.3 [Deploy stable educational](#dummy5132)              4/15/2018     9/20/2018 [$519.93](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)
+3.3 [Deploy stable educational](#dummy5132)              6/15/2018     10/15/2018 [$519.93](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)
     [subsystems for testing](#dummy5132)
 \
-3.4 [Put data-processing subsystems into](#proc5134)     6/15/2018     10/1/2018 [$35.97](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)[^footnote-price]
+3.4 [Put data-processing subsystems into](#proc5134)     11/15/2018     12/20/2018 [$35.97](https://cloud.google.com/products/calculator/#id=92c04925-6eb6-4373-9399-1c38050ad23f)[^footnote-price]
     [production](#proc5134)
 \
 **Total**                                                                        **$631.36**
 \
-**Ongoing costs at full capability**                     10/1/2018               **[$3117.06](https://cloud.google.com/products/calculator/#id=3c01e636-6ae5-4585-8ae7-cd41e33bec7d)**
+**Ongoing costs at full capability**                     11/15/2018               **[$3117.06](https://cloud.google.com/products/calculator/#id=3c01e636-6ae5-4585-8ae7-cd41e33bec7d)**
 (see [_Notes_](#budgetnotes))
 
 [^footnote-price]: Only adding the difference between task **3.3** and **3.4** which is 11 days at the same price a day as **3.3**.
